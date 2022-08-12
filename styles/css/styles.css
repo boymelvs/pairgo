@@ -310,17 +310,15 @@
   gap: 0.5rem;
   width: 100%;
   background: hsl(204deg, 68%, 30%);
-  color: hsl(180deg, 8%, 97%);
-  padding: 1rem 2rem;
+  padding: 1rem 0;
 }
 #hero .hero-contact .query-text {
   position: relative;
   width: 100%;
-  text-align: left;
   z-index: 1;
-  margin: 1rem 0 0 -1rem;
 }
 #hero .hero-contact .query-text span {
+  padding-left: 1rem;
   display: block;
   font-weight: 600;
 }
@@ -329,15 +327,19 @@
   width: 100%;
   position: absolute;
   bottom: -1rem;
-  left: -2rem;
+  left: 0;
   z-index: -1;
   border-right: 5rem solid transparent;
   border-bottom: 7rem solid hsl(45deg, 93%, 52%);
 }
 #hero .hero-contact .call-text {
   width: 100%;
-  margin-left: -2rem;
-  text-align: left;
+  color: hsl(180deg, 8%, 97%);
+  text-align: center;
+}
+#hero .hero-contact .hero-btn-container {
+  text-align: center;
+  padding-right: 2rem;
 }
 @media (min-width: 768px) {
   #hero .hero-contact .hero-btn-container {
