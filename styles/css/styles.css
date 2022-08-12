@@ -5,6 +5,16 @@
 /* font */
 /* font */
 /* bg */
+#hero .hero-contact .hero-btn-container #hero-btn {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+}
+#hero .hero-contact .hero-btn-container #hero-btn:hover {
+  cursor: pointer;
+}
+
 .nav-bar {
   background: hsl(45deg, 93%, 52%);
   position: absolute;
@@ -98,8 +108,8 @@
 }
 .hamburger .line {
   width: 4rem;
-  border: 0.2rem solid hsl(0deg, 0%, 90%);
-  background: hsl(0deg, 0%, 90%);
+  border: 0.2rem solid hsl(212deg, 29%, 13%);
+  background: hsl(212deg, 29%, 13%);
   transition: all 500ms ease-in-out;
 }
 .hamburger:hover {
@@ -145,7 +155,6 @@
   padding: 2rem;
   width: 100%;
   background: hsl(45deg, 93%, 52%);
-  position: relative;
   transition: all 300ms ease-in;
   z-index: 90;
 }
@@ -169,25 +178,190 @@
   width: 100%;
 }
 
+#sliders {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+#sliders .slide {
+  width: 100%;
+  height: 30rem;
+  position: absolute;
+  top: 0;
+  transition: all 1s ease-in-out;
+}
+@media (min-width: 768px) {
+  #sliders .slide {
+    height: 40rem;
+  }
+}
+@media (min-width: 992px) {
+  #sliders .slide {
+    min-height: 60vh;
+  }
+}
+@media (min-width: 1201px) {
+  #sliders .slide {
+    min-height: 100vh;
+  }
+}
+#sliders .slide:nth-child(1) {
+  transform: translateX(0%);
+}
+#sliders .slide:nth-child(2) {
+  transform: translateX(100%);
+}
+#sliders .slide:nth-child(3) {
+  transform: translateX(200%);
+}
+#sliders .slide img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#sliders .slide::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+#sliders .btn {
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 50%;
+  background-color: hsl(180deg, 8%, 97%);
+  font-size: 2rem;
+  color: hsl(212deg, 29%, 13%);
+}
+#sliders .btn:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+#sliders .btn:active {
+  transform: scale(1.1);
+}
+#sliders .btn.btn-prev {
+  top: 45%;
+  left: 0;
+  z-index: 5;
+}
+#sliders .btn.btn-next {
+  top: 45%;
+  right: 0;
+  z-index: 5;
+}
+
 #hero {
-  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  width: 100%;
+  height: 30rem;
+  position: relative;
+}
+@media (min-width: 768px) {
+  #hero {
+    height: 40rem;
+  }
+}
+@media (min-width: 992px) {
+  #hero {
+    min-height: 60vh;
+  }
+}
+@media (min-width: 1201px) {
+  #hero {
+    min-height: 100vh;
+  }
 }
 #hero h2 {
   text-align: center;
+  font-size: 4rem;
+  color: hsl(180deg, 8%, 97%);
+  position: absolute;
+  z-index: 2;
 }
-#hero .sliders {
-  width: 100%;
+@media (min-width: 768px) {
+  #hero h2 {
+    font-size: 7rem;
+    padding: 0 4rem;
+  }
 }
-#hero .sliders .slide {
+#hero .hero-contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 0.5rem;
   width: 100%;
+  background: hsl(204deg, 68%, 30%);
+  padding: 1rem 0;
 }
-#hero .sliders .slide img {
+#hero .hero-contact .query-text {
+  position: relative;
   width: 100%;
+  z-index: 1;
+}
+#hero .hero-contact .query-text span {
+  padding-left: 1rem;
+  display: block;
+  font-weight: 600;
+}
+#hero .hero-contact .query-text::before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  bottom: -1rem;
+  left: 0;
+  z-index: -1;
+  border-right: 5rem solid transparent;
+  border-bottom: 7rem solid hsl(45deg, 93%, 52%);
+}
+#hero .hero-contact .call-text {
+  width: 100%;
+  color: hsl(180deg, 8%, 97%);
+  text-align: center;
+}
+#hero .hero-contact .hero-btn-container {
+  text-align: center;
+  padding-right: 2rem;
+}
+@media (min-width: 768px) {
+  #hero .hero-contact .hero-btn-container {
+    width: 100%;
+  }
+}
+#hero .hero-contact .hero-btn-container #hero-btn {
+  padding: 1rem;
+  background: hsl(45deg, 93%, 52%);
 }
 
 #my-main {
   width: 100%;
   max-width: 144rem;
+  background: hsl(0deg, 0%, 90%);
+  min-height: 100vh;
+}
+
+#my-footer {
+  width: 100%;
+  max-width: 144rem;
+  background: hsl(0deg, 0%, 90%);
   min-height: 100vh;
 }
 

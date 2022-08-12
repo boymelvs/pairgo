@@ -5,16 +5,17 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>PairGo</title>
+      <link rel="shortcut icon" href="#" type="image/x-icon" />
       <link rel="stylesheet" href="./styles/css/styles.css" />
    </head>
-   <body>
+   <body id="stop-scroll">
       <div id="my-home" class="container">
          <header id="my-header">
             <input type="checkbox" name="burger-checkbox" id="burger-checkbox" aria-label="burger checkbox" />
 
             <div class="logo-container">
                <a href="#" class="logo">
-                  <img src="" class="" alt=" Tag Logo" />
+                  <img src="" class="" alt="Logo" />
                </a>
             </div>
 
@@ -38,10 +39,32 @@
 
          <main id="my-main">
             <section id="hero">
-               <h2 class="hero-title">A LEADER IN INDUSTRY</h2>
-               <div class="sliders">
+               <h2 class="hero-title">A LEADER IN THE INDUSTRY</h2>
+
+               <div id="sliders">
+                  <div class="slide">
+                     <img src="./images/hero/hero2.jpg" alt="Inside Warehouse" />
+                  </div>
+
                   <div class="slide">
                      <img src="./images/hero/hero1.jpg" alt="Inside Warehouse" />
+                  </div>
+
+                  <div class="slide">
+                     <img src="./images/hero/hero3.jpg" alt="Inside Warehouse" />
+                  </div>
+               </div>
+
+               <div class="hero-contact">
+                  <div class="query-text">
+                     <span> FOR ANY </span>
+                     <span> QUERIES </span>
+                  </div>
+
+                  <div class="call-text">Call 123456789</div>
+
+                  <div class="hero-btn-container">
+                     <input type="button" id="hero-btn" value="Contact Us" />
                   </div>
                </div>
             </section>
