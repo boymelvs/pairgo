@@ -1,0 +1,23 @@
+.triangle {
+  border-left: 130px solid red;
+  border-bottom: 130px solid #f9cb30;
+}
+
+.triangle-transparent {
+  border-left: 130px solid transparent;
+  border-bottom: 130px solid #f9cb30;
+}
+
+.container {
+  width: 90%;
+  margin: 30px auto;
+}
+
+
+<div class="container">
+  <div class="triangle"></div>  
+</div>
+
+<div class="container">
+  <div class="triangle-transparent"></div>
+</div>

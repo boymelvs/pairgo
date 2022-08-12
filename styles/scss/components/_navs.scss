@@ -1,0 +1,70 @@
+.nav-bar {
+   background: $moon-yellow;
+   position: absolute;
+   top: 0;
+   left: 0;
+   min-height: 100vh;
+   width: 100%;
+   transform: translateY(-250%);
+   transition: transform 500ms ease-in-out;
+
+   @media (min-width: 768px) {
+      @include flexBox(row, center, end, 2.5rem);
+      padding: 0;
+      position: unset;
+      min-height: unset;
+      transform: translate(0%);
+      transition: transform 00ms ease-in-out;
+      background: transparent;
+   }
+
+   .menu {
+      @include flexBox(column, start, start, 2.5rem);
+      width: 100%;
+      padding: 5rem 0 0 10rem;
+      text-align: left;
+
+      @media (min-width: 768px) {
+         @include flexBox(row, center, end, 2.5rem);
+         padding: 0;
+      }
+
+      & .menu-item {
+         list-style-type: none;
+         position: relative;
+
+         &::before {
+            content: "";
+            position: absolute;
+            bottom: -0.5rem;
+            left: 0;
+            width: 100%;
+            border-bottom: 0.3rem solid $black-pearl;
+            transform: scale(0, 1);
+            transform-origin: right;
+            transition: transform 300ms ease-in-out;
+         }
+
+         &:hover::before {
+            transform: scale(1, 1);
+            transform-origin: left;
+         }
+
+         &.active::before {
+            transform: scale(1, 1);
+            transform-origin: left;
+         }
+
+         & a {
+            font-size: 2rem;
+            text-decoration: none;
+            color: $black-pearl;
+            font-weight: $font-weight-600;
+         }
+      }
+   }
+}
+
+#burger-checkbox:checked ~ .nav-bar {
+   transform: translateY(0%);
+}

@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Work+Sans:wght@300;400;500;600&display=swap");
+/* fonts */
+/* 10px */
+/* colors */
+/* font */
+/* font */
+/* bg */
+.nav-bar {
+  background: hsl(45deg, 93%, 52%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  width: 100%;
+  transform: translateY(-250%);
+  transition: transform 500ms ease-in-out;
+}
+@media (min-width: 768px) {
+  .nav-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    gap: 2.5rem;
+    padding: 0;
+    position: unset;
+    min-height: unset;
+    transform: translate(0%);
+    transition: transform 0ms ease-in-out;
+    background: transparent;
+  }
+}
+.nav-bar .menu {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 2.5rem;
+  width: 100%;
+  padding: 5rem 0 0 10rem;
+  text-align: left;
+}
+@media (min-width: 768px) {
+  .nav-bar .menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    gap: 2.5rem;
+    padding: 0;
+  }
+}
+.nav-bar .menu .menu-item {
+  list-style-type: none;
+  position: relative;
+}
+.nav-bar .menu .menu-item::before {
+  content: "";
+  position: absolute;
+  bottom: -0.5rem;
+  left: 0;
+  width: 100%;
+  border-bottom: 0.3rem solid hsl(212deg, 29%, 13%);
+  transform: scale(0, 1);
+  transform-origin: right;
+  transition: transform 300ms ease-in-out;
+}
+.nav-bar .menu .menu-item:hover::before {
+  transform: scale(1, 1);
+  transform-origin: left;
+}
+.nav-bar .menu .menu-item.active::before {
+  transform: scale(1, 1);
+  transform-origin: left;
+}
+.nav-bar .menu .menu-item a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: hsl(212deg, 29%, 13%);
+  font-weight: 600;
+}
+
+#burger-checkbox:checked ~ .nav-bar {
+  transform: translateY(0%);
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  position: relative;
+  padding: 0.1rem;
+  background: transparent;
+  transition: all 300ms ease-in-out;
+  z-index: 99;
+}
+.hamburger .line {
+  width: 4rem;
+  border: 0.2rem solid hsl(0deg, 0%, 90%);
+  background: hsl(0deg, 0%, 90%);
+  transition: all 500ms ease-in-out;
+}
+.hamburger:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+#burger-checkbox {
+  display: none;
+  position: absolute;
+  visibility: hidden;
+}
+
+#burger-checkbox:checked ~ .hamburger > .line-top {
+  width: 2.8rem;
+  transform: rotate(45deg);
+  transform-origin: left top;
+}
+
+#burger-checkbox:checked ~ .hamburger > .line-inner {
+  visibility: hidden;
+  transition: all 250ms ease-in-out;
+}
+
+#burger-checkbox:checked ~ .hamburger > .line-bottom {
+  width: 2.8rem;
+  transform: rotate(-45deg);
+  transform-origin: left bottom;
+}
+
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+}
+#my-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0;
+  max-width: 144rem;
+  padding: 2rem;
+  width: 100%;
+  background: hsl(45deg, 93%, 52%);
+  position: relative;
+  transition: all 300ms ease-in;
+  z-index: 90;
+}
+#my-header.active {
+  position: fixed;
+  top: 0;
+  box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.5);
+}
+@media (min-width: 1201px) {
+  #my-header {
+    padding: 2rem 6rem;
+  }
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-between;
+  gap: 0;
+  width: 100%;
+}
+
+#hero {
+  padding: 0 2rem;
+}
+#hero h2 {
+  text-align: center;
+}
+#hero .sliders {
+  width: 100%;
+}
+#hero .sliders .slide {
+  width: 100%;
+}
+#hero .sliders .slide img {
+  width: 100%;
+}
+
+#my-main {
+  width: 100%;
+  max-width: 144rem;
+  min-height: 100vh;
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  transition: all 500ms ease-in-out;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  color: hsl(212deg, 29%, 13%);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  min-width: 32rem;
+  background: hsl(0deg, 0%, 90%);
+  max-width: 144rem;
+  margin: 0 auto;
+}
+
+::selection {
+  color: none;
+  background: none;
+}
+
+/*# sourceMappingURL=styles.css.map */

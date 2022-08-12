@@ -1,0 +1,35 @@
+@import "./global/topology";
+
+*,
+::before,
+::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html {
+   font-size: $font-size-10;
+   scroll-behavior: smooth;
+   transition: all 500ms ease-in-out;
+}
+
+body {
+   font-size: 1.6rem;
+   font-family: $font-fam-work;
+   font-weight: $font-weight-400;
+   color: $black-pearl;
+}
+
+.container {
+   @include flexBox(column, center, center, 0);
+   min-width: 32rem;
+   background: $whisper;
+   max-width: 144rem;
+   margin: 0 auto;
+}
+
+::selection {
+   color: none;
+   background: none;
+}

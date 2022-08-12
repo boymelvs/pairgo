@@ -1,0 +1,18 @@
+#hero {
+   padding: 0 2rem;
+
+   & h2 {
+      text-align: center;
+   }
+
+   & .sliders {
+      width: 100%;
+
+      & .slide {
+         width: 100%;
+         & img {
+            width: 100%;
+         }
+      }
+   }
+}
