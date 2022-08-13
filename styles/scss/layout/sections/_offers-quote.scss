@@ -1,6 +1,6 @@
 @import "../../components/quotes-forms";
 
-#offers {
+#services {
    @include flexBox(column, center, center, 2rem);
    width: 100%;
 
@@ -29,7 +29,7 @@
       }
 
       & .offer-services {
-         @include flexBox(row, center, center, 1rem);
+         @include flexBox(row, start, center, 1rem);
          padding: 2rem;
 
          @media (min-width: 992px) {

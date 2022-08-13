@@ -22,10 +22,10 @@ The is a group project and is about to build a website demostrating what we lear
 
 ### Group Member
 
+-  [**Bryan**](https://github.com/MarcAndrey1215)
+-  [**Dax**](https://github.com/daxtangco)
+-  [**Tj**](https://github.com/thygz)
 -  [**Melvin**](https://boymelvs.github.io/pairgo)
--  **Bryan**
--  **Dax**
--  **Tj**
 
 ### Links
 
