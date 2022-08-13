@@ -1,7 +1,7 @@
 @import "../../components/quotes-forms";
 
 #offers {
-   @include flexBox(column, center, center, 0);
+   @include flexBox(column, center, center, 2rem);
    width: 100%;
 
    @media (min-width: 768px) {
@@ -19,8 +19,13 @@
       }
 
       & .offers-title {
+         text-align: center;
          font-size: 2.5rem;
          font-weight: $font-weight-600;
+
+         @media (min-width: 768px) {
+            font-size: 3.5rem;
+         }
       }
 
       & .offer-services {

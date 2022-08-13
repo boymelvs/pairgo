@@ -3,7 +3,7 @@
 @import "./sections/offers-quote";
 
 #my-main {
-   @include flexBox(column, center, center, 4rem);
+   @include flexBox(column, center, center, 8rem);
    width: 100%;
    max-width: 144rem;
    background: $whisper;

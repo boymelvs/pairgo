@@ -13,11 +13,9 @@
          <header id="my-header">
             <input type="checkbox" name="burger-checkbox" id="burger-checkbox" aria-label="burger checkbox" />
 
-            <div class="logo-container">
-               <a href="#" class="logo">
-                  <img src="" class="" alt="Logo" />
-               </a>
-            </div>
+            <a href="#" class="logo-container">
+               <img src="./images/logo/logo.png" class="logo" alt="PairGO Logo" />
+            </a>
 
             <nav class="nav-bar">
                <ul class="menu">
@@ -77,13 +75,13 @@
                   <h2 class="offers-title">WHAT WE OFFER</h2>
                   <div class="offer-services">
                      <div class="card packaging">
-                        <img src="./images/icons/packages.svg" class="card-img" alt="Packages" />
+                        <img src="./images/icons/services/warehouse.svg" class="card-img" alt="Packages" />
                         <div class="card-title">Packaging & Storage</div>
                         <div class="card-description">Packaging is the technology of enclosing and protecting product.</div>
                      </div>
 
                      <div class="card packaging">
-                        <img src="./images/icons/cold-storage.svg" class="card-img" alt="Packages" />
+                        <img src="./images/icons/services/cold-storage.svg" class="card-img" alt="Packages" />
                         <div class="card-title">Cold Storage</div>
                         <div class="card-description">Special storage.</div>
                      </div>
@@ -91,13 +89,13 @@
 
                   <div class="offer-services">
                      <div class="card packaging">
-                        <img src="./images/icons/door-to-door.png" class="card-img" alt="Packages" />
+                        <img src="./images/icons/services/door-to-door.png" class="card-img" alt="Packages" />
                         <div class="card-title">Door to Door Delivery</div>
                         <div class="card-description">Bring products anywhere in the philippines.</div>
                      </div>
 
                      <div class="card packaging">
-                        <img src="./images/icons/road.svg" class="card-img" alt="Packages" />
+                        <img src="./images/icons/services/road.svg" class="card-img" alt="Packages" />
                         <div class="card-title">Ground Transport</div>
                         <div class="card-description">We provide transport support.</div>
                      </div>
@@ -113,7 +111,7 @@
                      </div>
 
                      <div class="field email-container">
-                        <label for="email">email</label>
+                        <label for="email">Email</label>
                         <input type="email" name="email" id="email" class="form-field" />
                      </div>
 
@@ -142,7 +140,7 @@
 
                      <div class="field message-container">
                         <label for="message">Message</label>
-                        <input type="text" name="message" id="message" class="form-field" />
+                        <textarea type="text" name="message" id="message" class="form-field" rows="4"></textarea>
                      </div>
 
                      <input type="button" class="quote-btn" value="REQUEST" />
@@ -150,7 +148,51 @@
                </div>
             </section>
          </main>
-         <footer id="my-footer"></footer>
+
+         <footer id="my-footer">
+            <div class="about-contact">
+               <div class="about-footer">
+                  <img src="./images/logo/logo.png" class="footer-logo" alt="PairGO footer logo" />
+
+                  <p class="about-para">Pairgo is a comprehensive cargo handling and storage service company established in 1987</p>
+
+                  <div class="social-media">
+                     <img src="./images/icons/social-media/facebook.svg" class="facebook" alt="facebook icon" />
+
+                     <img src="./images/icons/social-media/twitter.svg" class="twitter" alt="twitter icon" />
+
+                     <img src="./images/icons/social-media/youtube.svg" class="youtube" alt="youtube icon" />
+
+                     <img src="./images/icons/social-media/instagram.svg" class="instagram" alt="instagram icon" />
+                  </div>
+               </div>
+
+               <div class="contact-footer">
+                  <h2 class="contact-text-footer">Contacts</h2>
+                  <div class="contact-text-icon">
+                     <div class="contact-icon address">
+                        <img src="./images/icons/contact/icon-location.svg" alt="location icon" />
+                        <span>Nampicuan, Nueva Ecija</span>
+                     </div>
+
+                     <div class="contact-icon phone">
+                        <img src="./images/icons/contact/icon-phone.svg" alt="phone icon" />
+                        <span>0949 920 0932</span>
+                     </div>
+
+                     <div class="contact-icon mail">
+                        <img src="./images/icons/contact/icon-email.svg" alt="email icon" />
+                        <span>melvin@pairgo.com</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="copyright">
+               <img src="./images/icons/social-media/copyright.svg" alt="copyright" />
+               <span>Pairgo</span>
+            </div>
+         </footer>
       </div>
       <script src="./scripts/index.js"></script>
    </body>

@@ -159,7 +159,7 @@
   justify-content: space-between;
   gap: 0;
   max-width: 144rem;
-  padding: 2rem;
+  padding: 1rem 2rem;
   width: 100%;
   background: hsl(45deg, 93%, 52%);
   transition: all 300ms ease-in;
@@ -172,8 +172,20 @@
 }
 @media (min-width: 1201px) {
   #my-header {
-    padding: 2rem 6rem;
+    padding: 1rem 6rem;
   }
+}
+#my-header .logo-container {
+  width: 7rem;
+}
+@media (min-width: 768px) {
+  #my-header .logo-container {
+    width: 10rem;
+  }
+}
+#my-header .logo-container img {
+  width: 100%;
+  height: 100%;
 }
 
 .nav-bar {
@@ -406,7 +418,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap: 1rem;
   padding: 0 2rem;
   width: 100%;
 }
@@ -416,15 +428,21 @@
   }
 }
 .quote-container h2 {
+  text-align: center;
   font-size: 2.5rem;
   font-weight: 600;
+}
+@media (min-width: 768px) {
+  .quote-container h2 {
+    font-size: 3.5rem;
+  }
 }
 .quote-container form {
   display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: center;
-  gap: 2rem;
+  gap: 1rem;
   width: 100%;
 }
 .quote-container form .field {
@@ -432,6 +450,7 @@
 }
 .quote-container form .field label {
   display: block;
+  font-weight: 600;
 }
 .quote-container form .field .form-field {
   width: 100%;
@@ -451,7 +470,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 0;
+  gap: 2rem;
   width: 100%;
 }
 @media (min-width: 768px) {
@@ -475,8 +494,14 @@
   }
 }
 #offers .offer-container .offers-title {
+  text-align: center;
   font-size: 2.5rem;
   font-weight: 600;
+}
+@media (min-width: 768px) {
+  #offers .offer-container .offers-title {
+    font-size: 3.5rem;
+  }
 }
 #offers .offer-container .offer-services {
   display: flex;
@@ -516,7 +541,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 4rem;
+  gap: 8rem;
   width: 100%;
   max-width: 144rem;
   background: hsl(0deg, 0%, 90%);
@@ -524,10 +549,90 @@
 }
 
 #my-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
   width: 100%;
   max-width: 144rem;
-  background: hsl(0deg, 0%, 90%);
-  min-height: 100vh;
+  background: hsl(45deg, 93%, 52%);
+  margin-top: 5rem;
+  padding: 2rem;
+}
+#my-footer .about-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 4rem;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  #my-footer .about-contact {
+    flex-direction: row;
+  }
+}
+#my-footer .about-contact .about-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+}
+#my-footer .about-contact .about-footer img {
+  width: 7rem;
+}
+#my-footer .about-contact .about-footer .social-media {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+#my-footer .about-contact .about-footer .social-media img {
+  width: 3rem;
+}
+#my-footer .about-contact .about-footer .social-media img:hover {
+  cursor: pointer;
+}
+#my-footer .about-contact .about-footer .social-media .facebook:hover {
+  filter: invert(41%) sepia(28%) saturate(5354%) hue-rotate(193deg) brightness(104%) contrast(92%);
+}
+#my-footer .about-contact .about-footer .social-media .twitter:hover {
+  filter: invert(51%) sepia(56%) saturate(779%) hue-rotate(162deg) brightness(95%) contrast(100%);
+}
+#my-footer .about-contact .about-footer .social-media .youtube:hover {
+  filter: invert(20%) sepia(78%) saturate(5214%) hue-rotate(339deg) brightness(74%) contrast(112%);
+}
+#my-footer .about-contact .about-footer .social-media .instagram:hover {
+  filter: invert(42%) sepia(64%) saturate(1298%) hue-rotate(299deg) brightness(89%) contrast(95%);
+}
+#my-footer .about-contact .contact-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+}
+#my-footer .about-contact .contact-footer h2 {
+  font-size: 2rem;
+}
+#my-footer .about-contact .contact-footer .contact-text-icon .contact-icon {
+  font-weight: 600;
+}
+#my-footer .about-contact .contact-footer .contact-text-icon .contact-icon img {
+  width: 2rem;
+  height: 2rem;
+}
+#my-footer .copyright {
+  font-size: 1.2rem;
+  text-align: center;
+}
+#my-footer .copyright img {
+  width: 1rem;
 }
 
 *,
