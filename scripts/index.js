@@ -33,6 +33,6 @@ const runSlide = () => {
    currentSlide++;
 };
 
-// let timer = setInterval(() => {
-//    runSlide();
-// }, 5000);
+let timer = setInterval(() => {
+   runSlide();
+}, 5000);
