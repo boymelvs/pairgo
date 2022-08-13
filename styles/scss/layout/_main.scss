@@ -2,6 +2,8 @@
 
 @import "./sections/offers-quote";
 
+@import "./sections/testimonials";
+
 #my-main {
    @include flexBox(column, center, center, 8rem);
    width: 100%;
