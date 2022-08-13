@@ -1,0 +1,42 @@
+.quote-container {
+   @include flexBox(column, center, center, 2rem);
+   padding: 0 2rem;
+   width: 100%;
+
+   @media (min-width: 768px) {
+      padding: 0 4rem;
+   }
+
+   & h2 {
+      font-size: 2.5rem;
+      font-weight: $font-weight-600;
+   }
+
+   & form {
+      @include flexBox(column, start, center, 2rem);
+      width: 100%;
+
+      & .field {
+         width: 100%;
+
+         & label {
+            display: block;
+         }
+
+         & .form-field {
+            width: 100%;
+            padding: 1rem;
+            border: 0.1rem solid $black-pearl;
+            border-radius: 0.5rem;
+            outline: none;
+         }
+      }
+
+      & .quote-btn {
+         @extend %btn-style;
+         padding: 1rem;
+         width: 100%;
+         background: $moon-yellow;
+      }
+   }
+}

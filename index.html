@@ -39,7 +39,10 @@
 
          <main id="my-main">
             <section id="hero">
-               <h2 class="hero-title">A LEADER IN THE INDUSTRY</h2>
+               <h2 class="hero-title">
+                  <span> A LEADER IN THE </span>
+                  <span> INDUSTRY </span>
+               </h2>
 
                <div id="sliders">
                   <div class="slide">
@@ -61,11 +64,89 @@
                      <span> QUERIES </span>
                   </div>
 
-                  <div class="call-text">Call 123456789</div>
+                  <div class="call-text">Call: 123456789</div>
 
                   <div class="hero-btn-container">
                      <input type="button" id="hero-btn" value="Contact Us" />
                   </div>
+               </div>
+            </section>
+
+            <section id="offers">
+               <div class="offer-container">
+                  <h2 class="offers-title">WHAT WE OFFER</h2>
+                  <div class="offer-services">
+                     <div class="card packaging">
+                        <img src="./images/icons/packages.svg" class="card-img" alt="Packages" />
+                        <div class="card-title">Packaging & Storage</div>
+                        <div class="card-description">Packaging is the technology of enclosing and protecting product.</div>
+                     </div>
+
+                     <div class="card packaging">
+                        <img src="./images/icons/cold-storage.svg" class="card-img" alt="Packages" />
+                        <div class="card-title">Cold Storage</div>
+                        <div class="card-description">Special storage.</div>
+                     </div>
+                  </div>
+
+                  <div class="offer-services">
+                     <div class="card packaging">
+                        <img src="./images/icons/door-to-door.png" class="card-img" alt="Packages" />
+                        <div class="card-title">Door to Door Delivery</div>
+                        <div class="card-description">Bring products anywhere in the philippines.</div>
+                     </div>
+
+                     <div class="card packaging">
+                        <img src="./images/icons/road.svg" class="card-img" alt="Packages" />
+                        <div class="card-title">Ground Transport</div>
+                        <div class="card-description">We provide transport support.</div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="quote-container">
+                  <h2 class="quote-title">REQUEST A QUICK QUOTE</h2>
+                  <form action="">
+                     <div class="field name-container">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" class="form-field" />
+                     </div>
+
+                     <div class="field email-container">
+                        <label for="email">email</label>
+                        <input type="email" name="email" id="email" class="form-field" />
+                     </div>
+
+                     <div class="field select-container">
+                        <label for="select-services">Services</label>
+
+                        <select id="select-services" class="form-field select-services">
+                           <option selected disabled>Select Service</option>
+
+                           <option value="packaging">Packaging</option>
+
+                           <option value="Warehousing">Warehousing</option>
+
+                           <option value="cold-storag">Cold Storage</option>
+
+                           <option value="tranport-support">Transport Support</option>
+
+                           <option value="delivery">Delivery</option>
+                        </select>
+                     </div>
+
+                     <div class="field subject-container">
+                        <label for="subject">Subject</label>
+                        <input type="text" name="subject" id="subject" class="form-field" />
+                     </div>
+
+                     <div class="field message-container">
+                        <label for="message">Message</label>
+                        <input type="text" name="message" id="message" class="form-field" />
+                     </div>
+
+                     <input type="button" class="quote-btn" value="REQUEST" />
+                  </form>
                </div>
             </section>
          </main>
