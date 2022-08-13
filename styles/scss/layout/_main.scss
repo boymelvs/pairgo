@@ -4,6 +4,8 @@
 
 @import "./sections/testimonials";
 
+@import "./sections/team";
+
 #my-main {
    @include flexBox(column, center, center, 8rem);
    width: 100%;

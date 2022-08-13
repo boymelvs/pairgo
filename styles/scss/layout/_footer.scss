@@ -5,6 +5,10 @@
    background: $moon-yellow;
    padding: 2rem;
 
+   @media (min-width: 992px) {
+      padding: 2rem 6rem;
+   }
+
    & .about-contact {
       @include flexBox(column, start, center, 4rem);
       width: 100%;
