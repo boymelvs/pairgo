@@ -5,7 +5,7 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>PairGo</title>
-      <link rel="shortcut icon" href="#" type="image/x-icon" />
+      <link rel="shortcut icon" href="./images/logo/logo.png" type="image/x-icon" />
       <link rel="stylesheet" href="./styles/css/styles.css" />
    </head>
    <body id="stop-scroll">
@@ -13,11 +13,9 @@
          <header id="my-header">
             <input type="checkbox" name="burger-checkbox" id="burger-checkbox" aria-label="burger checkbox" />
 
-            <div class="logo-container">
-               <a href="#" class="logo">
-                  <img src="" class="" alt="Logo" />
-               </a>
-            </div>
+            <a href="#" class="logo-container">
+               <img src="./images/logo/logo.png" class="logo" alt="PairGO Logo" />
+            </a>
 
             <nav class="nav-bar">
                <ul class="menu">
@@ -38,6 +36,7 @@
          </header>
 
          <main id="my-main">
+            <!-- /* first section */ -->
             <section id="hero">
                <h2 class="hero-title">
                   <span> A LEADER IN THE </span>
@@ -61,7 +60,7 @@
                <div class="hero-contact">
                   <div class="query-text">
                      <span> FOR ANY </span>
-                     <span> QUERIES </span>
+                     <span> QUESTIONS </span>
                   </div>
 
                   <div class="call-text">Call: 123456789</div>
@@ -72,18 +71,19 @@
                </div>
             </section>
 
+            <!-- /* 2nd section */ -->
             <section id="offers">
                <div class="offer-container">
                   <h2 class="offers-title">WHAT WE OFFER</h2>
                   <div class="offer-services">
                      <div class="card packaging">
-                        <img src="./images/icons/packages.svg" class="card-img" alt="Packages" />
+                        <img src="./images/icons/services/warehouse.svg" class="card-img" alt="Packages" />
                         <div class="card-title">Packaging & Storage</div>
                         <div class="card-description">Packaging is the technology of enclosing and protecting product.</div>
                      </div>
 
                      <div class="card packaging">
-                        <img src="./images/icons/cold-storage.svg" class="card-img" alt="Packages" />
+                        <img src="./images/icons/services/cold-storage.svg" class="card-img" alt="Packages" />
                         <div class="card-title">Cold Storage</div>
                         <div class="card-description">Special storage.</div>
                      </div>
@@ -91,13 +91,13 @@
 
                   <div class="offer-services">
                      <div class="card packaging">
-                        <img src="./images/icons/door-to-door.png" class="card-img" alt="Packages" />
+                        <img src="./images/icons/services/door-to-door.png" class="card-img" alt="Packages" />
                         <div class="card-title">Door to Door Delivery</div>
                         <div class="card-description">Bring products anywhere in the philippines.</div>
                      </div>
 
                      <div class="card packaging">
-                        <img src="./images/icons/road.svg" class="card-img" alt="Packages" />
+                        <img src="./images/icons/services/road.svg" class="card-img" alt="Packages" />
                         <div class="card-title">Ground Transport</div>
                         <div class="card-description">We provide transport support.</div>
                      </div>
@@ -113,7 +113,7 @@
                      </div>
 
                      <div class="field email-container">
-                        <label for="email">email</label>
+                        <label for="email">Email</label>
                         <input type="email" name="email" id="email" class="form-field" />
                      </div>
 
@@ -142,15 +142,109 @@
 
                      <div class="field message-container">
                         <label for="message">Message</label>
-                        <input type="text" name="message" id="message" class="form-field" />
+                        <textarea type="text" name="message" id="message" class="form-field" rows="4"></textarea>
                      </div>
 
                      <input type="button" class="quote-btn" value="REQUEST" />
                   </form>
                </div>
             </section>
+
+            <!-- /* 3rd section */ -->
+            <section id="testimonial">
+               <h2 class="testi-title">TESTIMONIALS</h2>
+
+               <div class="testi-container">
+                  <div class="card-testi first-testi">
+                     <p class="testi-para">
+                        "Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine."
+                     </p>
+
+                     <div class="profile">
+                        <img src="./images/icons/testomonial/profile-1.jpg" alt="Satish Patel Pic" />
+
+                        <div class="name-position">
+                           <div class="name">Satish Patel</div>
+                           <div class="position">Founder & CEO, Huddle</div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="card-testi second-testi">
+                     <p class="testi-para">
+                        "Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine."
+                     </p>
+
+                     <div class="profile">
+                        <img src="./images/icons/testomonial/profile-2.jpg" alt="Bruce McKenzie Pic" />
+
+                        <div class="name-position">
+                           <div class="name">Bruce McKenzie</div>
+                           <div class="position">Founder & CEO, Huddle</div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="card-testi third-testi">
+                     <p class="testi-para">
+                        "Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine."
+                     </p>
+                     <div class="profile">
+                        <img src="./images/icons/testomonial/profile-3.jpg" alt="Iva Boyd Pic" />
+                        <div class="name_position">
+                           <div class="name">Iva Boyd</div>
+                           <div class="position">Founder & CEO, Huddle</div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
          </main>
-         <footer id="my-footer"></footer>
+
+         <footer id="my-footer">
+            <div class="about-contact">
+               <div class="about-footer">
+                  <img src="./images/logo/logo.png" class="footer-logo" alt="PairGO footer logo" />
+
+                  <p class="about-para">Pairgo is a comprehensive cargo handling and storage service company established in 1987</p>
+
+                  <div class="social-media">
+                     <img src="./images/icons/social-media/facebook.svg" class="facebook" alt="facebook icon" />
+
+                     <img src="./images/icons/social-media/twitter.svg" class="twitter" alt="twitter icon" />
+
+                     <img src="./images/icons/social-media/youtube.svg" class="youtube" alt="youtube icon" />
+
+                     <img src="./images/icons/social-media/instagram.svg" class="instagram" alt="instagram icon" />
+                  </div>
+               </div>
+
+               <div class="contact-footer">
+                  <h2 class="contact-text-footer">Contacts</h2>
+                  <div class="contact-text-icon">
+                     <div class="contact-icon address">
+                        <img src="./images/icons/contact/icon-location.svg" alt="location icon" />
+                        <span>Nampicuan, Nueva Ecija</span>
+                     </div>
+
+                     <div class="contact-icon phone">
+                        <img src="./images/icons/contact/icon-phone.svg" alt="phone icon" />
+                        <span>0949 920 0932</span>
+                     </div>
+
+                     <div class="contact-icon mail">
+                        <img src="./images/icons/contact/icon-email.svg" alt="email icon" />
+                        <span>melvin@pairgo.com</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="copyright">
+               <img src="./images/icons/social-media/copyright.svg" alt="copyright" />
+               <span>Pairgo</span>
+            </div>
+         </footer>
       </div>
       <script src="./scripts/index.js"></script>
    </body>

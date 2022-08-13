@@ -1,6 +1,82 @@
 #my-footer {
+   @include flexBox(column, center, center, 2rem);
    width: 100%;
    max-width: 144rem;
-   background: $whisper;
-   min-height: 100vh;
+   background: $moon-yellow;
+   padding: 2rem;
+
+   & .about-contact {
+      @include flexBox(column, start, center, 4rem);
+      width: 100%;
+
+      @media (min-width: 768px) {
+         flex-direction: row;
+      }
+
+      & .about-footer {
+         @include flexBox(column, start, center, 1rem);
+         width: 100%;
+
+         & img {
+            width: 7rem;
+         }
+
+         & .social-media {
+            @include flexBox(row, center, center, 1rem);
+
+            & img {
+               width: 3rem;
+
+               &:hover {
+                  cursor: pointer;
+               }
+            }
+
+            & .facebook:hover {
+               filter: invert(41%) sepia(28%) saturate(5354%) hue-rotate(193deg) brightness(104%) contrast(92%);
+            }
+
+            & .twitter:hover {
+               filter: invert(51%) sepia(56%) saturate(779%) hue-rotate(162deg) brightness(95%) contrast(100%);
+            }
+
+            & .youtube:hover {
+               filter: invert(20%) sepia(78%) saturate(5214%) hue-rotate(339deg) brightness(74%) contrast(112%);
+            }
+
+            & .instagram:hover {
+               filter: invert(42%) sepia(64%) saturate(1298%) hue-rotate(299deg) brightness(89%) contrast(95%);
+            }
+         }
+      }
+
+      & .contact-footer {
+         @include flexBox(column, start, center, 1rem);
+         width: 100%;
+
+         & h2 {
+            font-size: 2rem;
+         }
+
+         & .contact-text-icon {
+            & .contact-icon {
+               font-weight: $font-weight-600;
+
+               & img {
+                  width: 2rem;
+                  height: 2rem;
+               }
+            }
+         }
+      }
+   }
+
+   & .copyright {
+      font-size: 1.2rem;
+      text-align: center;
+
+      & img {
+         width: 1rem;
+      }
+   }
 }
