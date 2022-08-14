@@ -106,22 +106,24 @@
 
                <div class="quote-container">
                   <h2 class="quote-title">REQUEST A QUICK QUOTE</h2>
-                  <form action="">
+                  <form action="" id="quotes">
                      <div class="field name-container">
                         <label for="name">Name</label>
                         <input type="text" name="name" id="name" class="form-field" />
+                        <div class="warning">Must not empty. At least 5 characters.</div>
                      </div>
 
                      <div class="field email-container">
                         <label for="email">Email</label>
                         <input type="email" name="email" id="email" class="form-field" />
+                        <div class="warning">Invalid email. Must not empty.</div>
                      </div>
 
                      <div class="field select-container">
                         <label for="select-services">Services</label>
 
-                        <select id="select-services" class="form-field select-services">
-                           <option selected disabled>Select Service</option>
+                        <select id="select-services" name="services" class="form-field select-services">
+                           <option value="" selected disabled>Select Service</option>
 
                            <option value="packaging">Packaging</option>
 
@@ -133,19 +135,22 @@
 
                            <option value="delivery">Delivery</option>
                         </select>
+                        <div class="warning">Please select.</div>
                      </div>
 
                      <div class="field subject-container">
                         <label for="subject">Subject</label>
                         <input type="text" name="subject" id="subject" class="form-field" />
+                        <div class="warning">Must not empty. At least 5 characters.</div>
                      </div>
 
                      <div class="field message-container">
                         <label for="message">Message</label>
                         <textarea type="text" name="message" id="message" class="form-field" rows="4"></textarea>
+                        <div class="warning">Must not empty. At least 5 characters.</div>
                      </div>
 
-                     <input type="button" class="quote-btn" value="REQUEST" />
+                     <input type="submit" class="quote-btn" value="REQUEST" />
                   </form>
                </div>
             </section>
@@ -209,7 +214,7 @@
 
                      <div class="name">Melvin Enmocino</div>
 
-                     <a href="#" target="_blank" rel="noopener noreferrer" class="team-port">
+                     <a href="https://boymelvs.github.io/PORTFOLIO/" target="_blank" rel="noopener noreferrer" class="team-port">
                         <span> Portfolio </span>
                      </a>
                   </div>
@@ -287,5 +292,6 @@
          </footer>
       </div>
       <script src="./scripts/index.js"></script>
+      <script src="./scripts/form-validation.js"></script>
    </body>
 </html>
