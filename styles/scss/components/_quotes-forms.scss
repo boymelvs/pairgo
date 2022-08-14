@@ -36,6 +36,23 @@
             background: $light-whisper;
             border-radius: 0.5rem;
             outline: none;
+
+            &.active {
+               background-image: url("../../../images/icons/icon-error.svg");
+               background-repeat: no-repeat;
+               background-size: 1.5rem;
+               background-position: center right 2.5rem;
+            }
+         }
+
+         & .warning {
+            visibility: hidden;
+            font-size: 1.2rem;
+            color: $light-red;
+
+            &.active {
+               visibility: visible;
+            }
          }
       }
 
