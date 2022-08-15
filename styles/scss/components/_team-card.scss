@@ -24,14 +24,39 @@
       }
 
       & .name {
+         text-decoration: none;
          font-size: 2rem;
+         color: $black-pearl;
          font-weight: $font-weight-600;
+         position: relative;
+
+         &::before {
+            content: "";
+            position: absolute;
+            bottom: -0.5rem;
+            left: 0;
+            width: 100%;
+            border-bottom: 0.3rem solid $black-pearl;
+            transform: scale(0, 1);
+            transform-origin: right;
+            transition: transform 300ms ease-in-out;
+         }
+
+         &:hover::before {
+            transform: scale(1, 1);
+            transform-origin: left;
+         }
+
+         &.active::before {
+            transform: scale(1, 1);
+            transform-origin: left;
+         }
       }
 
       & .team-port {
          @include flexBox(row, center, center, 0);
+         font-size: 1.4rem;
          text-decoration: none;
-         color: $black-pearl;
          font-weight: $font-weight-600;
 
          &:hover {

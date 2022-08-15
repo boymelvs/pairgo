@@ -3,11 +3,13 @@
    width: 100%;
    color: $azure;
    font-size: 1.4rem;
+   line-height: 2.5rem;
    padding: 2rem;
    border: 0.1rem solid $azure;
    border-radius: 1rem;
    background: $lochmara;
    z-index: 2;
+   font-weight: $font-weight-300;
 
    @media (min-width: 576px) {
       width: 30rem;
@@ -28,6 +30,11 @@
 
       & .name-position {
          @include flexBox(column, start, center, 0rem);
+         line-height: 1.6rem;
+
+         & .name {
+            font-weight: $font-weight-400;
+         }
 
          & .position {
             font-size: 1rem;
