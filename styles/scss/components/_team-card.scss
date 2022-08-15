@@ -1,0 +1,67 @@
+.team-container {
+   @include flexBox(column, center, center, 2rem);
+   padding: 4rem 2rem;
+
+   @media (min-width: 768px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 4rem;
+   }
+
+   @media (min-width: 992px) {
+      padding: 8rem 2rem;
+   }
+
+   & .team-card {
+      @include flexBox(column, center, center, 1rem);
+      border: 0.1rem solid $black-pearl;
+      border-radius: 1rem;
+      padding: 2rem;
+
+      & img {
+         width: 20rem;
+         border-radius: 1rem;
+      }
+
+      & .name {
+         text-decoration: none;
+         font-size: 2rem;
+         color: $black-pearl;
+         font-weight: $font-weight-600;
+         position: relative;
+
+         &::before {
+            content: "";
+            position: absolute;
+            bottom: -0.5rem;
+            left: 0;
+            width: 100%;
+            border-bottom: 0.3rem solid $black-pearl;
+            transform: scale(0, 1);
+            transform-origin: right;
+            transition: transform 300ms ease-in-out;
+         }
+
+         &:hover::before {
+            transform: scale(1, 1);
+            transform-origin: left;
+         }
+
+         &.active::before {
+            transform: scale(1, 1);
+            transform-origin: left;
+         }
+      }
+
+      & .team-port {
+         @include flexBox(row, center, center, 0);
+         font-size: 1.4rem;
+         text-decoration: none;
+         font-weight: $font-weight-600;
+
+         &:hover {
+            color: $lochmara;
+         }
+      }
+   }
+}

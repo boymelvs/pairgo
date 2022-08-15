@@ -1,28 +1,37 @@
-// @import "../components/logo";
-
 @import "../components/navs";
 
 @import "../components/hamburger";
 
 #my-header {
    @include flexBox(row, center, space-between, 0);
+   position: fixed;
+   top: 0;
    max-width: 144rem;
-   padding: 2rem;
+   padding: 1rem 2rem;
    width: 100%;
-   background: $moon-yellow;
-   position: relative;
    transition: all 300ms ease-in;
    z-index: 90;
 
    &.active {
-      position: fixed;
-      top: 0;
-      //   background: linear-gradient(45deg, $black-pearl 0%, $navy-blue 150%);
+      background: $moon-yellow;
       box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.5);
    }
 
    @media (min-width: 1201px) {
-      padding: 2rem 6rem;
+      padding: 1rem 6rem;
+   }
+
+   & .logo-container {
+      width: 7rem;
+
+      @media (min-width: 768px) {
+         width: 10rem;
+      }
+
+      & img {
+         width: 100%;
+         height: 100%;
+      }
    }
 }
 

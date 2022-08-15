@@ -18,14 +18,14 @@ This is our Major Project II : Multi-page Responsive Website in bootcamp.
 
 ### The Project
 
-The is a group project and is about to build a website demostrating what we learn so far in bootcamp such as html5, sass, javascript ES6.
+The is a group project and is about to build a website demonstrating what we learn so far in bootcamp such as html5, sass, javascript ES6.
 
 ### Group Member
 
+-  [**Bryan**](https://github.com/MarcAndrey1215)
+-  [**Dax**](https://github.com/daxtangco)
+-  [**Tj**](https://github.com/thygz)
 -  [**Melvin**](https://boymelvs.github.io/pairgo)
--  **Bryan**
--  **Dax**
--  **Tj**
 
 ### Links
 

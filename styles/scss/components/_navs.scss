@@ -39,7 +39,7 @@
             bottom: -0.5rem;
             left: 0;
             width: 100%;
-            border-bottom: 0.3rem solid $black-pearl;
+            border-bottom: 0.3rem solid $azure;
             transform: scale(0, 1);
             transform-origin: right;
             transition: transform 300ms ease-in-out;
@@ -58,7 +58,7 @@
          & a {
             font-size: 2rem;
             text-decoration: none;
-            color: $black-pearl;
+            color: $azure;
             font-weight: $font-weight-600;
          }
       }

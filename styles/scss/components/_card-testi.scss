@@ -1,0 +1,44 @@
+.card-testi {
+   @include flexBox(column, start, center, 2rem);
+   width: 100%;
+   color: $azure;
+   font-size: 1.4rem;
+   line-height: 2.5rem;
+   padding: 2rem;
+   border: 0.1rem solid $azure;
+   border-radius: 1rem;
+   background: $lochmara;
+   z-index: 2;
+   font-weight: $font-weight-300;
+
+   @media (min-width: 576px) {
+      width: 30rem;
+   }
+
+   @media (min-width: 992px) {
+      width: 35rem;
+   }
+
+   & .profile {
+      @include flexBox(row, center, center, 1rem);
+
+      & img {
+         width: 4rem;
+         height: 4rem;
+         border-radius: 50%;
+      }
+
+      & .name-position {
+         @include flexBox(column, start, center, 0rem);
+         line-height: 1.6rem;
+
+         & .name {
+            font-weight: $font-weight-400;
+         }
+
+         & .position {
+            font-size: 1rem;
+         }
+      }
+   }
+}

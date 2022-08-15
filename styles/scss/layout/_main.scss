@@ -1,7 +1,17 @@
 @import "./sections/hero";
 
+@import "./sections/offers-quote";
+
+@import "./sections/clients";
+
+@import "./sections/testimonials";
+
+@import "./sections/team";
+
 #my-main {
+   @include flexBox(column, center, center, 8rem);
    width: 100%;
    max-width: 144rem;
+   background: $whisper;
    min-height: 100vh;
 }

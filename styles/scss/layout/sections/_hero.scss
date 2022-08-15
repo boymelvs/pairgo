@@ -1,17 +1,133 @@
+@import "../../components/sliders";
+
 #hero {
-   padding: 0 2rem;
+   @include flexBox(column, center, center, 0);
+   width: 100%;
+   height: 30rem;
+   position: relative;
+
+   @media (min-width: 768px) {
+      height: 40rem;
+   }
+
+   @media (min-width: 992px) {
+      min-height: 100vh;
+   }
 
    & h2 {
       text-align: center;
+      font-size: 4rem;
+      color: $azure;
+      position: absolute;
+      top: 25%;
+      z-index: 2;
+
+      & span {
+         display: block;
+      }
+
+      @media (min-width: 768px) {
+         font-size: 5rem;
+      }
+
+      @media (min-width: 992px) {
+         font-size: 7rem;
+         top: 30%;
+      }
    }
 
-   & .sliders {
+   & .hero-contact {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
       width: 100%;
+      background: $lochmara;
+      padding: 1rem 0;
+      position: relative;
 
-      & .slide {
+      @media (max-width: 374px) {
+         font-size: 1.2rem;
+      }
+
+      @media (min-width: 768px) {
+         font-size: 2rem;
+      }
+
+      @media (min-width: 992px) {
+         font-size: 3rem;
+      }
+
+      & .query-text {
+         @include flexBox(column, start, center, 0);
+         position: relative;
          width: 100%;
-         & img {
+         z-index: 1;
+
+         @media (min-width: 768px) {
+            align-items: center;
+         }
+
+         & span {
+            display: block;
+            text-align: center;
+            padding-left: 1rem;
+            font-weight: $font-weight-600;
+         }
+
+         &::before {
+            content: "";
             width: 100%;
+            position: absolute;
+            bottom: -1.01rem;
+            left: 0;
+            z-index: -1;
+
+            border-right: 5rem solid transparent;
+            border-bottom: 7rem solid $moon-yellow;
+
+            @media (min-width: 768px) {
+               border-right: 6rem solid transparent;
+               border-bottom: 8rem solid $moon-yellow;
+            }
+
+            @media (min-width: 992px) {
+               border-right: 8rem solid transparent;
+               border-bottom: 11rem solid $moon-yellow;
+            }
+         }
+      }
+
+      .call-text {
+         width: 100%;
+         color: $azure;
+         align-self: center;
+         text-align: center;
+         font-weight: $font-weight-600;
+
+         @media (min-width: 768px) {
+            font-size: 2.5rem;
+         }
+      }
+
+      .hero-btn-container {
+         text-align: center;
+         align-self: center;
+
+         @media (min-width: 768px) {
+            width: 100%;
+         }
+
+         & #hero-btn {
+            @extend %btn-style;
+            padding: 1rem;
+            background: $moon-yellow;
+
+            @media (max-width: 374px) {
+               font-size: 1.2rem;
+            }
+
+            @media (min-width: 768px) {
+               padding: 1rem 3rem;
+            }
          }
       }
    }
