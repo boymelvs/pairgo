@@ -118,8 +118,8 @@
 }
 .hamburger .line {
   width: 4rem;
-  border: 0.2rem solid hsl(212deg, 29%, 13%);
-  background: hsl(212deg, 29%, 13%);
+  border: 0.2rem solid hsl(180deg, 8%, 97%);
+  background: hsl(180deg, 8%, 97%);
   transition: all 500ms ease-in-out;
 }
 .hamburger:hover {
@@ -956,19 +956,52 @@
 #my-footer .about-contact .contact-footer h2 {
   font-size: 2rem;
 }
-#my-footer .about-contact .contact-footer .contact-text-icon .contact-icon {
-  font-weight: 600;
-}
 #my-footer .about-contact .contact-footer .contact-text-icon .contact-icon img {
   width: 2rem;
   height: 2rem;
 }
-#my-footer .copyright {
+#my-footer .copyright-privacy {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+}
+#my-footer .copyright-privacy .copyright {
   font-size: 1.2rem;
   text-align: center;
 }
-#my-footer .copyright img {
+#my-footer .copyright-privacy .copyright img {
   width: 1rem;
+}
+#my-footer .copyright-privacy .privacy {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+#my-footer .copyright-privacy .privacy a {
+  text-decoration: none;
+  color: hsl(180deg, 8%, 97%);
+  font-size: 1.4rem;
+  position: relative;
+}
+#my-footer .copyright-privacy .privacy a::before {
+  content: "";
+  position: absolute;
+  bottom: -0.5rem;
+  left: 0;
+  width: 100%;
+  border-bottom: 0.3rem solid hsl(180deg, 8%, 97%);
+  transform: scale(0, 1);
+  transform-origin: right;
+  transition: transform 300ms ease-in-out;
+}
+#my-footer .copyright-privacy .privacy a:hover::before {
+  transform: scale(1, 1);
+  transform-origin: left;
 }
 
 *,
