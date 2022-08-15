@@ -19,7 +19,7 @@
       font-size: 4rem;
       color: $azure;
       position: absolute;
-      top: 20%;
+      top: 25%;
       z-index: 2;
 
       & span {
@@ -27,11 +27,12 @@
       }
 
       @media (min-width: 768px) {
-         font-size: 7rem;
+         font-size: 5rem;
       }
 
       @media (min-width: 992px) {
-         top: 25%;
+         font-size: 7rem;
+         top: 30%;
       }
    }
 

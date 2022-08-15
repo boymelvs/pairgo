@@ -3,6 +3,7 @@
 #teams {
    @include flexBox(column, center, center, 0);
    width: 100%;
+   color: $black-pearl;
 
    & h2 {
       font-size: 2.5rem;

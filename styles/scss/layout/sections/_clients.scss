@@ -2,6 +2,7 @@
    @include flexBox(column, center, center, 2rem);
    width: 100%;
    text-align: center;
+   color: $black-pearl;
 
    & .max-capacity {
       @include flexBox(column, center, center, 2rem);
