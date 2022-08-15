@@ -4,16 +4,16 @@
 
 #my-header {
    @include flexBox(row, center, space-between, 0);
+   position: fixed;
+   top: 0;
    max-width: 144rem;
    padding: 1rem 2rem;
    width: 100%;
-   background: $moon-yellow;
    transition: all 300ms ease-in;
    z-index: 90;
 
    &.active {
-      position: fixed;
-      top: 0;
+      background: $moon-yellow;
       box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.5);
    }
 

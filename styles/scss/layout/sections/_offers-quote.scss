@@ -3,6 +3,7 @@
 #services {
    @include flexBox(column, center, center, 2rem);
    width: 100%;
+   color: $black-pearl;
 
    @media (min-width: 768px) {
       flex-direction: row;
