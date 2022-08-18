@@ -479,7 +479,7 @@ form .field .form-field {
   outline: none;
 }
 form .field .form-field.active {
-  background-image: url("../../../images/icons/icon-error.svg");
+  background-image: url("../../images/icons/icon-error.svg");
   background-repeat: no-repeat;
   background-size: 1.5rem;
   background-position: center right 2.5rem;
@@ -755,7 +755,7 @@ form .quote-btn {
   justify-content: center;
   gap: 2rem;
   padding: 4rem 2rem;
-  background-image: url("../../../../images/icons/testomonial/bg-quotes.png");
+  background-image: url("../../images/icons/testomonial/bg-quotes.png");
   background-repeat: no-repeat;
   background-size: 4rem;
   background-position: top 1rem left 1rem;
@@ -1057,7 +1057,7 @@ form .field .form-field {
   outline: none;
 }
 form .field .form-field.active {
-  background-image: url("../../../images/icons/icon-error.svg");
+  background-image: url("../../images/icons/icon-error.svg");
   background-repeat: no-repeat;
   background-size: 1.5rem;
   background-position: center right 2.5rem;
