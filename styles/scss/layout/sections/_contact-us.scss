@@ -19,6 +19,7 @@
    & h2 {
       font-size: 2.5rem;
       text-align: center;
+      font-weight: $font-weight-600;
 
       @media (min-width: 768px) {
          font-size: 5rem;
@@ -27,6 +28,10 @@
 
    & form {
       width: 100%;
+      padding: 4rem;
+      border: 0.1rem solid $black-pearl;
+      border-radius: 0.5rem;
+      box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
 
       & h3 {
          text-align: center;

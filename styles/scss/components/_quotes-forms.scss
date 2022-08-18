@@ -21,6 +21,10 @@
 form {
    @include flexBox(column, start, center, 1rem);
    width: 100%;
+   padding: 4rem;
+   border: 0.1rem solid $black-pearl;
+   border-radius: 0.5rem;
+   box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
 
    & .field {
       width: 100%;

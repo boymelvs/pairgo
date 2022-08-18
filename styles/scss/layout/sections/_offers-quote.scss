@@ -43,6 +43,10 @@
 
             & .card-img {
                width: 10rem;
+
+               @media (min-width: 768px) {
+                  width: 15rem;
+               }
             }
 
             & .card-title {
