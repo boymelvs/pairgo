@@ -8,6 +8,7 @@
       <link rel="shortcut icon" href="./images/logo/logo.png" type="image/x-icon" />
       <link rel="stylesheet" href="./styles/css/styles.css" />
    </head>
+
    <body id="stop-scroll">
       <div id="my-home" class="container">
          <header id="my-header">
@@ -20,10 +21,10 @@
             <nav class="nav-bar">
                <ul class="menu">
                   <li class="menu-item hero"><a href="#my-home">Home</a></li>
-                  <li class="menu-item services"><a href="#query-text">Services</a></li>
+                  <li class="menu-item services"><a href="#services">Services</a></li>
                   <li class="menu-item clients"><a href="#clients">Clients</a></li>
-                  <li class="menu-item about"><a href="#name-position">About us</a></li>
-                  <li class="menu-item contacts"><a href="#contacts">Contact us</a></li>
+                  <li class="menu-item about"><a href="#">About us</a></li>
+                  <li class="menu-item contacts"><a href="./pages/contact.html">Contact us</a></li>
                </ul>
             </nav>
 
@@ -108,20 +109,20 @@
                   <form action="" id="quotes">
                      <div class="field name-container">
                         <label for="name">Name</label>
-                        <input type="text" name="name" id="name" class="form-field" />
-                        <div class="warning">Must not empty. At least 5 characters.</div>
+                        <input type="text" name="name" id="name" class="form-field" required />
+                        <div class="warning">Must not empty. At least min 5 & max 30 characters.</div>
                      </div>
 
                      <div class="field email-container">
                         <label for="email">Email</label>
-                        <input type="email" name="email" id="email" class="form-field" />
+                        <input type="email" name="email" id="email" class="form-field" required />
                         <div class="warning">Invalid email. Must not empty.</div>
                      </div>
 
                      <div class="field select-container">
                         <label for="select-services">Services</label>
 
-                        <select id="select-services" name="services" class="form-field select-services">
+                        <select id="select-services" name="services" class="form-field select-services" required>
                            <option value="" selected disabled>Select Service</option>
 
                            <option value="packaging">Packaging</option>
@@ -139,14 +140,14 @@
 
                      <div class="field subject-container">
                         <label for="subject">Subject</label>
-                        <input type="text" name="subject" id="subject" class="form-field" />
-                        <div class="warning">Must not empty. At least 5 characters.</div>
+                        <input type="text" name="subject" id="subject" class="form-field" required />
+                        <div class="warning">Must not empty. At least min 5 & max 30 characters.</div>
                      </div>
 
                      <div class="field message-container">
                         <label for="message">Message</label>
-                        <textarea type="text" name="message" id="message" class="form-field" rows="4"></textarea>
-                        <div class="warning">Must not empty. At least 5 characters.</div>
+                        <textarea type="text" name="message" id="message" class="form-field" rows="4" required></textarea>
+                        <div class="warning">Must not empty. At least min 5 & max 30 characters.</div>
                      </div>
 
                      <input type="submit" class="quote-btn" value="REQUEST" />
@@ -285,7 +286,7 @@
                      <img src="./images/profile/profile-1.jpg" alt="melvin" />
 
                      <a href="#" target="_blank" rel="noopener noreferrer" class="name">
-                        <span> Melvin Enmocino </span>
+                        <span> Dax </span>
                      </a>
 
                      <div class="team-port">Career Shifter</div>
@@ -295,7 +296,7 @@
                      <img src="./images/profile/profile-1.jpg" alt="melvin" />
 
                      <a href="#" target="_blank" rel="noopener noreferrer" class="name">
-                        <span> Melvin Enmocino </span>
+                        <span> TJ </span>
                      </a>
 
                      <div class="team-port">Career Shifter</div>
@@ -305,7 +306,7 @@
                      <img src="./images/profile/profile-1.jpg" alt="melvin" />
 
                      <a href="#" target="_blank" rel="noopener noreferrer" class="name">
-                        <span> Melvin Enmocino </span>
+                        <span> Bryan </span>
                      </a>
 
                      <div class="team-port">Career Shifter</div>
@@ -315,7 +316,7 @@
                      <img src="./images/profile/profile-1.jpg" alt="melvin" />
 
                      <a href="https://boymelvs.github.io/PORTFOLIO/" target="_blank" rel="noopener noreferrer" class="name">
-                        <span> Melvin Enmocino </span>
+                        <span> Melvin </span>
                      </a>
 
                      <div class="team-port">Career Shifter</div>

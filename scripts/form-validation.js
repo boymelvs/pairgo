@@ -1,5 +1,6 @@
 "user strict";
 const quoteForm = document.querySelector("#quotes");
+const contactForm = document.querySelector("#contact-form");
 const warnings = document.querySelectorAll(".warning");
 
 /* form validation */
@@ -83,29 +84,46 @@ const checkMessage = (item) => {
    return false;
 };
 
-quoteForm.addEventListener("submit", (e) => {
-   e.preventDefault();
-   let value = e.target;
-
+const isInputAllValid = (value) => {
    let isNameValid = checkName(value);
    let isEmailValid = checkEmail(value);
-   let isSelectedValid = checkSelected(value);
    let isSubjectValid = checkSubject(value);
    let isMessageValid = checkMessage(value);
 
-   if (isNameValid && isEmailValid && isSelectedValid && isMessageValid && isSubjectValid) {
-      quoteForm.reset();
-      alert("Request Successfully Sent!");
+   if (isNameValid && isEmailValid && isMessageValid && isSubjectValid) {
+      return true;
    }
-});
+
+   return false;
+};
+
+quoteForm &&
+   quoteForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      let value = e.target;
+      let isSelectedValid = checkSelected(value);
+
+      if (isInputAllValid(value) && isSelectedValid) {
+         alert("Request Successfully Sent!");
+         quoteForm.reset();
+      }
+   });
+
+contactForm &&
+   contactForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      let value = e.target;
+
+      if (isInputAllValid(value)) {
+         alert("Successfully Sent!");
+         contactForm.reset();
+      }
+   });
 
 /* ================= REAL TIME FORM VALIDATION ================= */
 let timeOut;
 
-quoteForm.addEventListener("input", (e) => {
-   e.preventDefault();
-   let getId = e.target.id;
-
+const isAllClear = (getId, forms) => {
    if (timeOut) {
       clearTimeout(timeOut);
    }
@@ -113,24 +131,24 @@ quoteForm.addEventListener("input", (e) => {
    timeOut = setTimeout(() => {
       switch (getId) {
          case "name":
-            if (checkName(quoteForm)) {
-               let element = quoteForm.name;
+            if (checkName(forms)) {
+               let element = forms.name;
                showWarning(element.nextElementSibling, "remove");
                showWarning(element, "remove");
             }
             break;
 
          case "email":
-            if (checkEmail(quoteForm)) {
-               let element = quoteForm.email;
+            if (checkEmail(forms)) {
+               let element = forms.email;
                showWarning(element.nextElementSibling, "remove");
                showWarning(element, "remove");
             }
             break;
 
          case "select-services":
-            if (checkSelected(quoteForm)) {
-               let element = quoteForm.services;
+            if (checkSelected(forms)) {
+               let element = forms.services;
                showWarning(element.nextElementSibling, "remove");
                showWarning(element, "remove");
             }
@@ -138,19 +156,37 @@ quoteForm.addEventListener("input", (e) => {
             break;
 
          case "subject":
-            if (checkSubject(quoteForm)) {
-               let element = quoteForm.subject;
+            if (checkSubject(forms)) {
+               let element = forms.subject;
                showWarning(element.nextElementSibling, "remove");
                showWarning(element, "remove");
             }
             break;
 
          case "message":
-            if (checkMessage(quoteForm)) {
-               let element = quoteForm.message;
+            if (checkMessage(forms)) {
+               let element = forms.message;
                showWarning(element.nextElementSibling, "remove");
                showWarning(element, "remove");
             }
       }
    }, 500);
-});
+};
+
+quoteForm &&
+   quoteForm.addEventListener("input", (e) => {
+      e.preventDefault();
+      let forms = quoteForm;
+      let getId = e.target.id;
+
+      isAllClear(getId, forms);
+   });
+
+contactForm &&
+   contactForm.addEventListener("input", (e) => {
+      e.preventDefault();
+      let forms = contactForm;
+      let getId = e.target.id;
+
+      isAllClear(getId, forms);
+   });
