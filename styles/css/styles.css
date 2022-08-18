@@ -462,6 +462,10 @@ form {
   justify-content: center;
   gap: 1rem;
   width: 100%;
+  padding: 4rem;
+  border: 0.1rem solid hsl(212deg, 29%, 13%);
+  border-radius: 0.5rem;
+  box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
 }
 form .field {
   width: 100%;
@@ -561,6 +565,11 @@ form .quote-btn {
 #services .offer-container .offer-services .card .card-img {
   width: 10rem;
 }
+@media (min-width: 768px) {
+  #services .offer-container .offer-services .card .card-img {
+    width: 15rem;
+  }
+}
 #services .offer-container .offer-services .card .card-title {
   text-align: center;
   font-weight: 600;
@@ -568,6 +577,34 @@ form .quote-btn {
 #services .offer-container .offer-services .card .card-description {
   text-align: center;
   font-size: 1.2rem;
+}
+#services .offer-container .service-rates {
+  font-size: 2rem;
+  position: relative;
+}
+#services .offer-container .service-rates::before {
+  content: "";
+  position: absolute;
+  bottom: -0.5rem;
+  left: 0;
+  width: 100%;
+  border-bottom: 0.3rem solid hsl(212deg, 29%, 13%);
+  transform: scale(0, 1);
+  transform-origin: right;
+  transition: transform 300ms ease-in-out;
+}
+#services .offer-container .service-rates:hover::before {
+  transform: scale(1, 1);
+  transform-origin: left;
+}
+#services .offer-container .service-rates.active::before {
+  transform: scale(1, 1);
+  transform-origin: left;
+}
+#services .offer-container .service-rates a {
+  text-decoration: none;
+  color: hsl(212deg, 29%, 13%);
+  font-weight: 600;
 }
 
 #clients {
@@ -878,7 +915,6 @@ form .quote-btn {
   width: 100%;
   max-width: 144rem;
   background: hsl(0deg, 0%, 90%);
-  min-height: 100vh;
 }
 
 #my-footer {
@@ -1040,6 +1076,10 @@ form {
   justify-content: center;
   gap: 1rem;
   width: 100%;
+  padding: 4rem;
+  border: 0.1rem solid hsl(212deg, 29%, 13%);
+  border-radius: 0.5rem;
+  box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
 }
 form .field {
   width: 100%;
@@ -1100,6 +1140,7 @@ form .quote-btn {
 #contact-us h2 {
   font-size: 2.5rem;
   text-align: center;
+  font-weight: 600;
 }
 @media (min-width: 768px) {
   #contact-us h2 {
@@ -1108,10 +1149,216 @@ form .quote-btn {
 }
 #contact-us form {
   width: 100%;
+  padding: 4rem;
+  border: 0.1rem solid hsl(212deg, 29%, 13%);
+  border-radius: 0.5rem;
+  box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
 }
 #contact-us form h3 {
   text-align: center;
   width: 100%;
+}
+
+.my-main {
+  background: hsl(204deg, 68%, 30%);
+  width: 100%;
+  min-width: 35rem;
+}
+
+#service-offers,
+#rates {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0rem;
+  margin-top: 9rem;
+  min-width: 35rem;
+  width: 100%;
+}
+#service-offers .services-title, #service-offers .rates-title,
+#rates .services-title,
+#rates .rates-title {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  #service-offers .services-title, #service-offers .rates-title,
+#rates .services-title,
+#rates .rates-title {
+    font-size: 5rem;
+  }
+}
+#service-offers .miscellaneous,
+#rates .miscellaneous {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
+  width: 100%;
+}
+#service-offers .miscellaneous div,
+#rates .miscellaneous div {
+  padding: 0 2rem;
+}
+@media (min-width: 768px) {
+  #service-offers .miscellaneous div,
+#rates .miscellaneous div {
+    padding: 0rem 4rem;
+  }
+}
+#service-offers .miscellaneous ol,
+#rates .miscellaneous ol {
+  padding: 2rem;
+}
+@media (min-width: 768px) {
+  #service-offers .miscellaneous ol,
+#rates .miscellaneous ol {
+    padding: 2rem 4rem;
+  }
+}
+
+.services-container,
+.rates-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+  width: 100%;
+  padding: 4rem;
+  font-size: 1rem;
+}
+@media (min-width: 768px) {
+  .services-container,
+.rates-container {
+    font-size: 1.4rem;
+  }
+}
+.services-container .warehouse-container, .services-container .office-container, .services-container .storage-racks-container, .services-container .cold-storage-container, .services-container .special-storage-container, .services-container .vehicle-area-container, .services-container .basic-rate-container, .services-container .special-cargo-container, .services-container .service-charge-container, .services-container .deconsolidation-fee-container, .services-container .return-fee-container,
+.rates-container .warehouse-container,
+.rates-container .office-container,
+.rates-container .storage-racks-container,
+.rates-container .cold-storage-container,
+.rates-container .special-storage-container,
+.rates-container .vehicle-area-container,
+.rates-container .basic-rate-container,
+.rates-container .special-cargo-container,
+.rates-container .service-charge-container,
+.rates-container .deconsolidation-fee-container,
+.rates-container .return-fee-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.services-container .warehouse-container h2, .services-container .office-container h2, .services-container .storage-racks-container h2, .services-container .cold-storage-container h2, .services-container .special-storage-container h2, .services-container .vehicle-area-container h2, .services-container .basic-rate-container h2, .services-container .special-cargo-container h2, .services-container .service-charge-container h2, .services-container .deconsolidation-fee-container h2, .services-container .return-fee-container h2,
+.rates-container .warehouse-container h2,
+.rates-container .office-container h2,
+.rates-container .storage-racks-container h2,
+.rates-container .cold-storage-container h2,
+.rates-container .special-storage-container h2,
+.rates-container .vehicle-area-container h2,
+.rates-container .basic-rate-container h2,
+.rates-container .special-cargo-container h2,
+.rates-container .service-charge-container h2,
+.rates-container .deconsolidation-fee-container h2,
+.rates-container .return-fee-container h2 {
+  text-align: left;
+  width: 100%;
+}
+.services-container .warehouse, .services-container .office,
+.rates-container .warehouse,
+.rates-container .office {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: auto;
+  text-align: center;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.services-container .storage-racks, .services-container .cold-storage, .services-container .special-storage-fee, .services-container .vehicle-area, .services-container .basic-rate, .services-container .special-cargo, .services-container .service-charge, .services-container .deconsolidation-fee, .services-container .return-fee,
+.rates-container .storage-racks,
+.rates-container .cold-storage,
+.rates-container .special-storage-fee,
+.rates-container .vehicle-area,
+.rates-container .basic-rate,
+.rates-container .special-cargo,
+.rates-container .service-charge,
+.rates-container .deconsolidation-fee,
+.rates-container .return-fee {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto;
+  text-align: center;
+  width: 100%;
+}
+.services-container .storage-racks .total, .services-container .storage-racks .location, .services-container .storage-racks .size, .services-container .cold-storage .total, .services-container .cold-storage .location, .services-container .cold-storage .size, .services-container .special-storage-fee .total, .services-container .special-storage-fee .location, .services-container .special-storage-fee .size, .services-container .vehicle-area .total, .services-container .vehicle-area .location, .services-container .vehicle-area .size, .services-container .basic-rate .total, .services-container .basic-rate .location, .services-container .basic-rate .size, .services-container .special-cargo .total, .services-container .special-cargo .location, .services-container .special-cargo .size, .services-container .service-charge .total, .services-container .service-charge .location, .services-container .service-charge .size, .services-container .deconsolidation-fee .total, .services-container .deconsolidation-fee .location, .services-container .deconsolidation-fee .size, .services-container .return-fee .total, .services-container .return-fee .location, .services-container .return-fee .size,
+.rates-container .storage-racks .total,
+.rates-container .storage-racks .location,
+.rates-container .storage-racks .size,
+.rates-container .cold-storage .total,
+.rates-container .cold-storage .location,
+.rates-container .cold-storage .size,
+.rates-container .special-storage-fee .total,
+.rates-container .special-storage-fee .location,
+.rates-container .special-storage-fee .size,
+.rates-container .vehicle-area .total,
+.rates-container .vehicle-area .location,
+.rates-container .vehicle-area .size,
+.rates-container .basic-rate .total,
+.rates-container .basic-rate .location,
+.rates-container .basic-rate .size,
+.rates-container .special-cargo .total,
+.rates-container .special-cargo .location,
+.rates-container .special-cargo .size,
+.rates-container .service-charge .total,
+.rates-container .service-charge .location,
+.rates-container .service-charge .size,
+.rates-container .deconsolidation-fee .total,
+.rates-container .deconsolidation-fee .location,
+.rates-container .deconsolidation-fee .size,
+.rates-container .return-fee .total,
+.rates-container .return-fee .location,
+.rates-container .return-fee .size {
+  font-weight: 600;
+  padding: 1rem;
+}
+
+.border {
+  height: 6rem;
+  padding: 1rem;
+  border: 1px solid hsl(180deg, 8%, 97%);
+}
+
+.cols-1 {
+  grid-column: 1/span 2;
+}
+
+.cols-2 {
+  grid-column: 3/span 2;
+}
+
+.cols-3 {
+  grid-column: 5/span 2;
+}
+
+.cols-4 {
+  grid-column: 7/span 2;
+}
+
+.cols-5 {
+  grid-column: 9/span 2;
+}
+
+.cols-6 {
+  grid-column: 11/span 2;
 }
 
 *,
