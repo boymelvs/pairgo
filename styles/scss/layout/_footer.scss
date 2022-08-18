@@ -12,6 +12,7 @@
    & .about-contact {
       @include flexBox(column, start, center, 4rem);
       width: 100%;
+      margin-bottom: 2rem;
 
       @media (min-width: 768px) {
          flex-direction: row;
@@ -74,12 +75,13 @@
    }
 
    & .copyright-privacy {
-      @include flexBox(row, center, space-between, 1rem);
+      @include flexBox(row, center, space-between, 0);
       width: 100%;
 
       & .copyright {
          font-size: 1.2rem;
-         text-align: center;
+         text-align: left;
+         width: 100%;
 
          & img {
             width: 1rem;
@@ -87,7 +89,8 @@
       }
 
       & .privacy {
-         @include flexBox(row, center, center, 1rem);
+         @include flexBox(row, center, end, 1rem);
+         width: 100%;
 
          & a {
             text-decoration: none;
