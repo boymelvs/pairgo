@@ -507,7 +507,7 @@ form .quote-btn {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap: 4rem;
   width: 100%;
   color: hsl(212deg, 29%, 13%);
 }
@@ -515,6 +515,7 @@ form .quote-btn {
   #services {
     flex-direction: row;
     align-items: start;
+    gap: 0rem;
   }
 }
 #services .offer-container {
@@ -579,7 +580,6 @@ form .quote-btn {
   font-size: 1.2rem;
 }
 #services .offer-container .service-rates {
-  font-size: 2rem;
   position: relative;
 }
 #services .offer-container .service-rates::before {
@@ -602,6 +602,7 @@ form .quote-btn {
   transform-origin: left;
 }
 #services .offer-container .service-rates a {
+  font-size: 2.5rem;
   text-decoration: none;
   color: hsl(212deg, 29%, 13%);
   font-weight: 600;
@@ -1188,6 +1189,16 @@ form .quote-btn {
     font-size: 5rem;
   }
 }
+#service-offers .service-text .para,
+#rates .service-text .para {
+  padding: 2rem;
+}
+@media (min-width: 768px) {
+  #service-offers .service-text .para,
+#rates .service-text .para {
+    padding: 2rem 4rem;
+  }
+}
 #service-offers .miscellaneous,
 #rates .miscellaneous {
   display: flex;
@@ -1300,42 +1311,16 @@ form .quote-btn {
   text-align: center;
   width: 100%;
 }
-.services-container .storage-racks .total, .services-container .storage-racks .location, .services-container .storage-racks .size, .services-container .cold-storage .total, .services-container .cold-storage .location, .services-container .cold-storage .size, .services-container .special-storage-fee .total, .services-container .special-storage-fee .location, .services-container .special-storage-fee .size, .services-container .vehicle-area .total, .services-container .vehicle-area .location, .services-container .vehicle-area .size, .services-container .basic-rate .total, .services-container .basic-rate .location, .services-container .basic-rate .size, .services-container .special-cargo .total, .services-container .special-cargo .location, .services-container .special-cargo .size, .services-container .service-charge .total, .services-container .service-charge .location, .services-container .service-charge .size, .services-container .deconsolidation-fee .total, .services-container .deconsolidation-fee .location, .services-container .deconsolidation-fee .size, .services-container .return-fee .total, .services-container .return-fee .location, .services-container .return-fee .size,
-.rates-container .storage-racks .total,
-.rates-container .storage-racks .location,
-.rates-container .storage-racks .size,
-.rates-container .cold-storage .total,
-.rates-container .cold-storage .location,
-.rates-container .cold-storage .size,
-.rates-container .special-storage-fee .total,
-.rates-container .special-storage-fee .location,
-.rates-container .special-storage-fee .size,
-.rates-container .vehicle-area .total,
-.rates-container .vehicle-area .location,
-.rates-container .vehicle-area .size,
-.rates-container .basic-rate .total,
-.rates-container .basic-rate .location,
-.rates-container .basic-rate .size,
-.rates-container .special-cargo .total,
-.rates-container .special-cargo .location,
-.rates-container .special-cargo .size,
-.rates-container .service-charge .total,
-.rates-container .service-charge .location,
-.rates-container .service-charge .size,
-.rates-container .deconsolidation-fee .total,
-.rates-container .deconsolidation-fee .location,
-.rates-container .deconsolidation-fee .size,
-.rates-container .return-fee .total,
-.rates-container .return-fee .location,
-.rates-container .return-fee .size {
-  font-weight: 600;
-  padding: 1rem;
-}
 
 .border {
   height: 6rem;
   padding: 1rem;
   border: 1px solid hsl(180deg, 8%, 97%);
+}
+@media (min-width: 768px) {
+  .border {
+    height: 5rem;
+  }
 }
 
 .cols-1 {

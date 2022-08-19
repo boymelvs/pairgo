@@ -1,13 +1,14 @@
 @import "../../components/quotes-forms";
 
 #services {
-   @include flexBox(column, center, center, 2rem);
+   @include flexBox(column, center, center, 4rem);
    width: 100%;
    color: $black-pearl;
 
    @media (min-width: 768px) {
       flex-direction: row;
       align-items: start;
+      gap: 0rem;
    }
 
    & .offer-container {
@@ -62,7 +63,6 @@
       }
 
       & .service-rates {
-         font-size: 2rem;
          position: relative;
 
          &::before {
@@ -88,6 +88,7 @@
          }
 
          & a {
+            font-size: 2.5rem;
             text-decoration: none;
             color: $black-pearl;
             font-weight: $font-weight-600;
