@@ -89,7 +89,7 @@ form .quote-btn:active, #hero .hero-contact .hero-btn-container #hero-btn:active
   transform: scale(1, 1);
   transform-origin: left;
 }
-.nav-bar .menu .menu-item.active::before {
+.nav-bar .menu .menu-item.active::before, .nav-bar .menu .menu-item.active-link::before {
   transform: scale(1, 1);
   transform-origin: left;
 }
@@ -714,6 +714,44 @@ form .quote-btn {
   #clients .client-container img {
     width: 15rem;
     height: 15rem;
+  }
+}
+#clients .see-all {
+  margin-top: 2rem;
+  position: relative;
+}
+#clients .see-all::before {
+  content: "";
+  position: absolute;
+  bottom: -0.5rem;
+  left: 0;
+  width: 100%;
+  border-bottom: 0.3rem solid hsl(212deg, 29%, 13%);
+  transform: scale(0, 1);
+  transform-origin: right;
+  transition: transform 300ms ease-in-out;
+}
+#clients .see-all:hover::before {
+  transform: scale(1, 1);
+  transform-origin: left;
+}
+#clients .see-all.active::before {
+  transform: scale(1, 1);
+  transform-origin: left;
+}
+#clients .see-all a {
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: hsl(212deg, 29%, 13%);
+  font-weight: 600;
+}
+
+.clients-page {
+  padding: 8rem 2rem;
+}
+@media (min-width: 768px) {
+  .clients-page {
+    padding: 10rem 2rem;
   }
 }
 
