@@ -451,7 +451,7 @@ form .quote-btn:active, #hero .hero-contact .hero-btn-container #hero-btn:active
 }
 @media (min-width: 768px) {
   .quote-container h2 {
-    font-size: 3.5rem;
+    font-size: 5rem;
   }
 }
 
@@ -549,6 +549,11 @@ form .quote-btn {
 @media (min-width: 768px) {
   #services .offer-container .offers-title {
     font-size: 3.5rem;
+  }
+}
+@media (min-width: 992px) {
+  #services .offer-container .offers-title {
+    font-size: 5rem;
   }
 }
 #services .offer-container .offer-services {
@@ -682,6 +687,11 @@ form .quote-btn {
     font-size: 3.5rem;
   }
 }
+@media (min-width: 992px) {
+  #clients h2 {
+    font-size: 5rem;
+  }
+}
 #clients .client-para {
   padding: 1rem 2rem;
 }
@@ -752,6 +762,14 @@ form .quote-btn {
 @media (min-width: 768px) {
   .clients-page {
     padding: 10rem 2rem;
+  }
+}
+.clients-page #clients-page-title {
+  font-size: 2.5rem;
+}
+@media (min-width: 768px) {
+  .clients-page #clients-page-title {
+    font-size: 5rem;
   }
 }
 
@@ -831,6 +849,11 @@ form .quote-btn {
 @media (min-width: 768px) {
   #testimonial h2 {
     font-size: 3.5rem;
+  }
+}
+@media (min-width: 992px) {
+  #testimonial h2 {
+    font-size: 5rem;
   }
 }
 #testimonial .testi-container {
@@ -951,6 +974,11 @@ form .quote-btn {
 @media (min-width: 768px) {
   #teams h2 {
     font-size: 3.5rem;
+  }
+}
+@media (min-width: 992px) {
+  #teams h2 {
+    font-size: 5rem;
   }
 }
 
@@ -1113,7 +1141,7 @@ form .quote-btn {
 }
 @media (min-width: 768px) {
   .quote-container h2 {
-    font-size: 3.5rem;
+    font-size: 5rem;
   }
 }
 
@@ -1207,6 +1235,11 @@ form .quote-btn {
 }
 @media (min-width: 768px) {
   #contact-us h2 {
+    font-size: 3.5rem;
+  }
+}
+@media (min-width: 992px) {
+  #contact-us h2 {
     font-size: 5rem;
   }
 }
@@ -1249,6 +1282,13 @@ form .quote-btn {
   text-align: center;
 }
 @media (min-width: 768px) {
+  #service-offers .services-title, #service-offers .rates-title,
+#rates .services-title,
+#rates .rates-title {
+    font-size: 3.5rem;
+  }
+}
+@media (min-width: 992px) {
   #service-offers .services-title, #service-offers .rates-title,
 #rates .services-title,
 #rates .rates-title {
@@ -1411,6 +1451,69 @@ form .quote-btn {
 
 .cols-6 {
   grid-column: 11/span 2;
+}
+
+#about-main {
+  background: hsl(204deg, 68%, 30%);
+  width: 100%;
+  min-width: 35rem;
+}
+
+#about-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 8rem 2rem;
+}
+@media (min-width: 768px) {
+  #about-us {
+    padding: 10rem 2rem;
+  }
+}
+#about-us h2 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  #about-us h2 {
+    font-size: 3.5rem;
+  }
+}
+@media (min-width: 992px) {
+  #about-us h2 {
+    font-size: 5rem;
+  }
+}
+#about-us .sub-para {
+  text-align: center;
+  padding: 0 2rem;
+}
+@media (min-width: 768px) {
+  #about-us .sub-para {
+    padding: 0 10rem;
+  }
+}
+@media (min-width: 992px) {
+  #about-us .sub-para {
+    padding: 0 20rem;
+  }
+}
+@media (min-width: 1200px) {
+  #about-us .sub-para {
+    padding: 0 30rem;
+  }
+}
+#about-us .about-para {
+  padding: 1rem;
+  text-align: justify;
+}
+@media (min-width: 768px) {
+  #about-us .about-para {
+    padding: 1rem 2rem;
+    font-size: 2.5rem;
+  }
 }
 
 *,

@@ -51,6 +51,10 @@
       @media (min-width: 768px) {
          font-size: 3.5rem;
       }
+
+      @media (min-width: 992px) {
+         font-size: 5rem;
+      }
    }
 
    & .client-para {
@@ -126,5 +130,13 @@
 
    @media (min-width: 768px) {
       padding: 10rem 2rem;
+   }
+
+   & #clients-page-title {
+      font-size: 2.5rem;
+
+      @media (min-width: 768px) {
+         font-size: 5rem;
+      }
    }
 }
