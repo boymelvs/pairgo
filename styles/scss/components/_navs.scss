@@ -50,7 +50,8 @@
             transform-origin: left;
          }
 
-         &.active::before {
+         &.active::before,
+         &.active-link::before {
             transform: scale(1, 1);
             transform-origin: left;
          }
