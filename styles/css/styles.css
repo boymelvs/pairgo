@@ -225,11 +225,6 @@ form .quote-btn:active, #hero .hero-contact .hero-btn-container #hero-btn:active
 }
 @media (min-width: 992px) {
   #sliders .slide {
-    min-height: 60vh;
-  }
-}
-@media (min-width: 1201px) {
-  #sliders .slide {
     min-height: 100vh;
   }
 }
