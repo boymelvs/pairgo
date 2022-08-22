@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Work+Sans:wght@300;400;500;600&display=swap");
-
 /* fonts */
 /* 10px */
 /* colors */
@@ -8,8 +7,7 @@
 /* font */
 /* bg */
 /* forms input bg */
-form .quote-btn,
-#hero .hero-contact .hero-btn-container #hero-btn {
+form .quote-btn, #hero .hero-contact .hero-btn-container #hero-btn {
   font-size: 1.8rem;
   padding: 1rem 2rem;
   border: none;
@@ -18,16 +16,12 @@ form .quote-btn,
   color: hsl(180deg, 8%, 97%);
   transition: all 300ms ease-in-out;
 }
-
-form .quote-btn:hover,
-#hero .hero-contact .hero-btn-container #hero-btn:hover {
+form .quote-btn:hover, #hero .hero-contact .hero-btn-container #hero-btn:hover {
   cursor: pointer;
   color: hsl(204deg, 68%, 30%);
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
 }
-
-form .quote-btn:active,
-#hero .hero-contact .hero-btn-container #hero-btn:active {
+form .quote-btn:active, #hero .hero-contact .hero-btn-container #hero-btn:active {
   opacity: 0.6;
 }
 
@@ -41,7 +35,6 @@ form .quote-btn:active,
   transform: translateY(-250%);
   transition: transform 500ms ease-in-out;
 }
-
 @media (min-width: 768px) {
   .nav-bar {
     display: flex;
@@ -57,7 +50,6 @@ form .quote-btn:active,
     background: transparent;
   }
 }
-
 .nav-bar .menu {
   display: flex;
   flex-direction: column;
@@ -68,7 +60,6 @@ form .quote-btn:active,
   padding: 5rem 0 0 10rem;
   text-align: left;
 }
-
 @media (min-width: 768px) {
   .nav-bar .menu {
     display: flex;
@@ -79,12 +70,10 @@ form .quote-btn:active,
     padding: 0;
   }
 }
-
 .nav-bar .menu .menu-item {
   list-style-type: none;
   position: relative;
 }
-
 .nav-bar .menu .menu-item::before {
   content: "";
   position: absolute;
@@ -96,18 +85,14 @@ form .quote-btn:active,
   transform-origin: right;
   transition: transform 300ms ease-in-out;
 }
-
 .nav-bar .menu .menu-item:hover::before {
   transform: scale(1, 1);
   transform-origin: left;
 }
-
-.nav-bar .menu .menu-item.active::before,
-.nav-bar .menu .menu-item.active-link::before {
+.nav-bar .menu .menu-item.active::before, .nav-bar .menu .menu-item.active-link::before {
   transform: scale(1, 1);
   transform-origin: left;
 }
-
 .nav-bar .menu .menu-item a {
   font-size: 2rem;
   text-decoration: none;
@@ -115,7 +100,7 @@ form .quote-btn:active,
   font-weight: 600;
 }
 
-#burger-checkbox:checked~.nav-bar {
+#burger-checkbox:checked ~ .nav-bar {
   transform: translateY(0%);
 }
 
@@ -131,14 +116,12 @@ form .quote-btn:active,
   transition: all 300ms ease-in-out;
   z-index: 99;
 }
-
 .hamburger .line {
   width: 4rem;
   border: 0.2rem solid hsl(180deg, 8%, 97%);
   background: hsl(180deg, 8%, 97%);
   transition: all 500ms ease-in-out;
 }
-
 .hamburger:hover {
   transform: scale(1.1);
   cursor: pointer;
@@ -150,18 +133,18 @@ form .quote-btn:active,
   visibility: hidden;
 }
 
-#burger-checkbox:checked~.hamburger>.line-top {
+#burger-checkbox:checked ~ .hamburger > .line-top {
   width: 2.8rem;
   transform: rotate(45deg);
   transform-origin: left top;
 }
 
-#burger-checkbox:checked~.hamburger>.line-inner {
+#burger-checkbox:checked ~ .hamburger > .line-inner {
   visibility: hidden;
   transition: all 250ms ease-in-out;
 }
 
-#burger-checkbox:checked~.hamburger>.line-bottom {
+#burger-checkbox:checked ~ .hamburger > .line-bottom {
   width: 2.8rem;
   transform: rotate(-45deg);
   transform-origin: left bottom;
@@ -172,7 +155,6 @@ form .quote-btn:active,
     display: none;
   }
 }
-
 #my-header {
   display: flex;
   flex-direction: row;
@@ -187,28 +169,23 @@ form .quote-btn:active,
   transition: all 300ms ease-in;
   z-index: 90;
 }
-
 #my-header.active {
   background: hsl(45deg, 93%, 50%);
   box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.5);
 }
-
 @media (min-width: 1201px) {
   #my-header {
     padding: 1rem 6rem;
   }
 }
-
 #my-header .logo-container {
   width: 7rem;
 }
-
 @media (min-width: 768px) {
   #my-header .logo-container {
     width: 10rem;
   }
 }
-
 #my-header .logo-container img {
   width: 100%;
   height: 100%;
@@ -234,7 +211,6 @@ form .quote-btn:active,
   position: relative;
   overflow: hidden;
 }
-
 #sliders .slide {
   width: 100%;
   height: 30rem;
@@ -242,37 +218,30 @@ form .quote-btn:active,
   top: 0;
   transition: all 1s ease-in-out;
 }
-
 @media (min-width: 768px) {
   #sliders .slide {
     height: 40rem;
   }
 }
-
 @media (min-width: 992px) {
   #sliders .slide {
     min-height: 100vh;
   }
 }
-
 #sliders .slide:nth-child(1) {
   transform: translateX(0%);
 }
-
 #sliders .slide:nth-child(2) {
   transform: translateX(100%);
 }
-
 #sliders .slide:nth-child(3) {
   transform: translateX(200%);
 }
-
 #sliders .slide img {
   width: 100%;
   height: 100%;
   position: relative;
 }
-
 #sliders .slide::before {
   content: "";
   width: 100%;
@@ -283,7 +252,6 @@ form .quote-btn:active,
   background: rgba(0, 0, 0, 0.4);
   z-index: 1;
 }
-
 #sliders .btn {
   position: absolute;
   width: 4rem;
@@ -295,22 +263,18 @@ form .quote-btn:active,
   font-size: 2rem;
   color: hsl(212deg, 29%, 13%);
 }
-
 #sliders .btn:hover {
   cursor: pointer;
   opacity: 0.8;
 }
-
 #sliders .btn:active {
   transform: scale(1.1);
 }
-
 #sliders .btn.btn-prev {
   top: 45%;
   left: 0;
   z-index: 5;
 }
-
 #sliders .btn.btn-next {
   top: 45%;
   right: 0;
@@ -327,19 +291,16 @@ form .quote-btn:active,
   height: 30rem;
   position: relative;
 }
-
 @media (min-width: 768px) {
   #hero {
     height: 40rem;
   }
 }
-
 @media (min-width: 992px) {
   #hero {
     min-height: 100vh;
   }
 }
-
 #hero h2 {
   text-align: center;
   font-size: 4rem;
@@ -348,24 +309,20 @@ form .quote-btn:active,
   top: 25%;
   z-index: 2;
 }
-
 #hero h2 span {
   display: block;
 }
-
 @media (min-width: 768px) {
   #hero h2 {
     font-size: 5rem;
   }
 }
-
 @media (min-width: 992px) {
   #hero h2 {
     font-size: 7rem;
     top: 30%;
   }
 }
-
 #hero .hero-contact {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -374,25 +331,21 @@ form .quote-btn:active,
   padding: 1rem 0;
   position: relative;
 }
-
 @media (max-width: 374px) {
   #hero .hero-contact {
     font-size: 1.2rem;
   }
 }
-
 @media (min-width: 768px) {
   #hero .hero-contact {
     font-size: 2rem;
   }
 }
-
 @media (min-width: 992px) {
   #hero .hero-contact {
     font-size: 3rem;
   }
 }
-
 #hero .hero-contact .query-text {
   display: flex;
   flex-direction: column;
@@ -403,20 +356,17 @@ form .quote-btn:active,
   width: 100%;
   z-index: 1;
 }
-
 @media (min-width: 768px) {
   #hero .hero-contact .query-text {
     align-items: center;
   }
 }
-
 #hero .hero-contact .query-text span {
   display: block;
   text-align: center;
   padding-left: 1rem;
   font-weight: 600;
 }
-
 #hero .hero-contact .query-text::before {
   content: "";
   width: 100%;
@@ -427,21 +377,18 @@ form .quote-btn:active,
   border-right: 5rem solid transparent;
   border-bottom: 7rem solid hsl(45deg, 93%, 50%);
 }
-
 @media (min-width: 768px) {
   #hero .hero-contact .query-text::before {
     border-right: 6rem solid transparent;
     border-bottom: 8rem solid hsl(45deg, 93%, 50%);
   }
 }
-
 @media (min-width: 992px) {
   #hero .hero-contact .query-text::before {
     border-right: 8rem solid transparent;
     border-bottom: 11rem solid hsl(45deg, 93%, 50%);
   }
 }
-
 #hero .hero-contact .call-text {
   width: 100%;
   color: hsl(180deg, 8%, 97%);
@@ -449,35 +396,29 @@ form .quote-btn:active,
   text-align: center;
   font-weight: 600;
 }
-
 @media (min-width: 768px) {
   #hero .hero-contact .call-text {
     font-size: 2.5rem;
   }
 }
-
 #hero .hero-contact .hero-btn-container {
   text-align: center;
   align-self: center;
 }
-
 @media (min-width: 768px) {
   #hero .hero-contact .hero-btn-container {
     width: 100%;
   }
 }
-
 #hero .hero-contact .hero-btn-container #hero-btn {
   padding: 1rem;
   background: hsl(45deg, 93%, 50%);
 }
-
 @media (max-width: 374px) {
   #hero .hero-contact .hero-btn-container #hero-btn {
     font-size: 1.2rem;
   }
 }
-
 @media (min-width: 768px) {
   #hero .hero-contact .hero-btn-container #hero-btn {
     padding: 1rem 3rem;
@@ -493,19 +434,16 @@ form .quote-btn:active,
   padding: 0 2rem;
   width: 100%;
 }
-
 @media (min-width: 768px) {
   .quote-container {
     padding: 0 4rem;
   }
 }
-
 .quote-container h2 {
   text-align: center;
   font-size: 2.5rem;
   font-weight: 600;
 }
-
 @media (min-width: 768px) {
   .quote-container h2 {
     font-size: 5rem;
@@ -520,7 +458,6 @@ form {
   gap: 1rem;
   width: 100%;
 }
-
 @media (min-width: 992px) {
   form {
     border-radius: 0.5rem;
@@ -529,16 +466,13 @@ form {
     box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
   }
 }
-
 form .field {
   width: 100%;
 }
-
 form .field label {
   display: block;
   font-weight: 600;
 }
-
 form .field .form-field {
   width: 100%;
   padding: 1rem;
@@ -548,14 +482,12 @@ form .field .form-field {
   outline: none;
   position: relative;
 }
-
 form .field .form-field.active {
   background-image: url("../../images/icons/icon-error.svg");
   background-repeat: no-repeat;
   background-size: 1.5rem;
   background-position: center right 2.5rem;
 }
-
 form .field .warning {
   position: absolute;
   top: 0;
@@ -564,12 +496,10 @@ form .field .warning {
   color: hsl(0deg, 100%, 63%);
   transition: all 300ms ease-in-out;
 }
-
 form .field .warning.active {
   position: unset;
   visibility: visible;
 }
-
 form .quote-btn {
   padding: 1.5rem;
   width: 100%;
@@ -585,7 +515,6 @@ form .quote-btn {
   width: 100%;
   color: hsl(212deg, 29%, 13%);
 }
-
 @media (min-width: 768px) {
   #services {
     flex-direction: row;
@@ -593,7 +522,6 @@ form .quote-btn {
     gap: 0rem;
   }
 }
-
 #services .offer-container {
   display: flex;
   flex-direction: column;
@@ -601,7 +529,6 @@ form .quote-btn {
   justify-content: center;
   gap: 0;
 }
-
 @media (min-width: 768px) {
   #services .offer-container {
     width: 100%;
@@ -609,25 +536,21 @@ form .quote-btn {
     gap: 2rem;
   }
 }
-
 #services .offer-container .offers-title {
   text-align: center;
   font-size: 2.5rem;
   font-weight: 600;
 }
-
 @media (min-width: 768px) {
   #services .offer-container .offers-title {
     font-size: 3.5rem;
   }
 }
-
 @media (min-width: 992px) {
   #services .offer-container .offers-title {
     font-size: 5rem;
   }
 }
-
 #services .offer-container .offer-services {
   display: flex;
   flex-direction: row;
@@ -636,13 +559,11 @@ form .quote-btn {
   gap: 1rem;
   padding: 2rem;
 }
-
 @media (min-width: 992px) {
   #services .offer-container .offer-services {
     gap: 5rem;
   }
 }
-
 #services .offer-container .offer-services .card {
   display: flex;
   flex-direction: column;
@@ -651,31 +572,25 @@ form .quote-btn {
   gap: 0;
   width: 100%;
 }
-
 #services .offer-container .offer-services .card .card-img {
   width: 10rem;
 }
-
 @media (min-width: 768px) {
   #services .offer-container .offer-services .card .card-img {
     width: 15rem;
   }
 }
-
 #services .offer-container .offer-services .card .card-title {
   text-align: center;
   font-weight: 600;
 }
-
 #services .offer-container .offer-services .card .card-description {
   text-align: center;
   font-size: 1.2rem;
 }
-
 #services .offer-container .service-rates {
   position: relative;
 }
-
 #services .offer-container .service-rates::before {
   content: "";
   position: absolute;
@@ -687,17 +602,14 @@ form .quote-btn {
   transform-origin: right;
   transition: transform 300ms ease-in-out;
 }
-
 #services .offer-container .service-rates:hover::before {
   transform: scale(1, 1);
   transform-origin: left;
 }
-
 #services .offer-container .service-rates.active::before {
   transform: scale(1, 1);
   transform-origin: left;
 }
-
 #services .offer-container .service-rates a {
   font-size: 2.5rem;
   text-decoration: none;
@@ -715,7 +627,6 @@ form .quote-btn {
   text-align: center;
   color: hsl(212deg, 29%, 13%);
 }
-
 #clients .max-capacity {
   display: flex;
   flex-direction: column;
@@ -728,74 +639,61 @@ form .quote-btn {
   color: hsl(180deg, 8%, 97%);
   background: hsl(204deg, 68%, 30%);
 }
-
 @media (min-width: 768px) {
   #clients .max-capacity {
     padding: 8rem;
   }
 }
-
 @media (min-width: 992px) {
   #clients .max-capacity {
     padding: 10rem 12rem;
   }
 }
-
 #clients .max-capacity .client-title {
   font-size: 2.5rem;
   font-weight: 600;
 }
-
 @media (min-width: 768px) {
   #clients .max-capacity .client-title {
     font-size: 3.5rem;
     padding: 0 4rem;
   }
 }
-
 #clients .max-capacity .capacity {
   font-size: 2rem;
 }
-
 @media (min-width: 768px) {
   #clients .max-capacity .capacity {
     font-size: 2.5rem;
     padding: 0 4rem;
   }
 }
-
 @media (min-width: 992px) {
   #clients .max-capacity .capacity {
     padding: 0 8rem;
     line-height: 4rem;
   }
 }
-
 #clients h2 {
   font-size: 2.5rem;
 }
-
 @media (min-width: 768px) {
   #clients h2 {
     font-size: 3.5rem;
   }
 }
-
 @media (min-width: 992px) {
   #clients h2 {
     font-size: 5rem;
   }
 }
-
 #clients .client-para {
   padding: 1rem 2rem;
 }
-
 #clients .client-para span {
   font-size: 2rem;
   display: block;
 }
-
 #clients .client-container {
   display: flex;
   flex-direction: row;
@@ -804,35 +702,29 @@ form .quote-btn {
   gap: 2rem;
   flex-wrap: wrap;
 }
-
 @media (min-width: 768px) {
   #clients .client-container {
     padding: 0 4rem;
   }
 }
-
 #clients .client-container img {
   width: 10rem;
   height: 10rem;
   transition: all 300ms ease-in-out;
 }
-
 #clients .client-container img:hover {
   transform: scale(1.05);
 }
-
 @media (min-width: 768px) {
   #clients .client-container img {
     width: 15rem;
     height: 15rem;
   }
 }
-
 #clients .see-all {
   margin-top: 2rem;
   position: relative;
 }
-
 #clients .see-all::before {
   content: "";
   position: absolute;
@@ -844,17 +736,14 @@ form .quote-btn {
   transform-origin: right;
   transition: transform 300ms ease-in-out;
 }
-
 #clients .see-all:hover::before {
   transform: scale(1, 1);
   transform-origin: left;
 }
-
 #clients .see-all.active::before {
   transform: scale(1, 1);
   transform-origin: left;
 }
-
 #clients .see-all a {
   font-size: 2.5rem;
   text-decoration: none;
@@ -865,17 +754,14 @@ form .quote-btn {
 .clients-page {
   padding: 8rem 2rem;
 }
-
 @media (min-width: 768px) {
   .clients-page {
     padding: 10rem 2rem;
   }
 }
-
 .clients-page #clients-page-title {
   font-size: 2.5rem;
 }
-
 @media (min-width: 768px) {
   .clients-page #clients-page-title {
     font-size: 5rem;
@@ -889,7 +775,6 @@ form .quote-btn {
   justify-content: center;
   gap: 2rem;
   width: 100%;
-  color: hsl(180deg, 8%, 97%);
   font-size: 1.4rem;
   line-height: 2.5rem;
   padding: 2rem;
@@ -899,19 +784,19 @@ form .quote-btn {
   z-index: 2;
   font-weight: 300;
 }
-
 @media (min-width: 576px) {
   .card-testi {
     width: 30rem;
   }
 }
-
 @media (min-width: 992px) {
   .card-testi {
     width: 35rem;
   }
 }
-
+.card-testi .testi-para {
+  color: hsl(180deg, 8%, 97%);
+}
 .card-testi .profile {
   display: flex;
   flex-direction: row;
@@ -919,13 +804,11 @@ form .quote-btn {
   justify-content: center;
   gap: 1rem;
 }
-
 .card-testi .profile img {
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
 }
-
 .card-testi .profile .name-position {
   display: flex;
   flex-direction: column;
@@ -934,11 +817,9 @@ form .quote-btn {
   gap: 0rem;
   line-height: 1.6rem;
 }
-
 .card-testi .profile .name-position .name {
   font-weight: 400;
 }
-
 .card-testi .profile .name-position .position {
   font-size: 1rem;
 }
@@ -953,30 +834,25 @@ form .quote-btn {
   width: 100%;
   padding: 2rem 0;
 }
-
 @media (min-width: 576px) {
   #testimonial {
     padding: 4rem;
   }
 }
-
 #testimonial h2 {
   font-size: 2.5rem;
   color: hsl(180deg, 8%, 97%);
 }
-
 @media (min-width: 768px) {
   #testimonial h2 {
     font-size: 3.5rem;
   }
 }
-
 @media (min-width: 992px) {
   #testimonial h2 {
     font-size: 5rem;
   }
 }
-
 #testimonial .testi-container {
   display: flex;
   flex-direction: column;
@@ -990,7 +866,6 @@ form .quote-btn {
   background-position: top 1rem left 1rem;
   z-index: 1;
 }
-
 @media (min-width: 576px) {
   #testimonial .testi-container {
     flex-direction: row;
@@ -998,7 +873,6 @@ form .quote-btn {
     background-position: top 1rem left 2rem;
   }
 }
-
 @media (min-width: 992px) {
   #testimonial .testi-container {
     gap: 4rem;
@@ -1015,7 +889,6 @@ form .quote-btn {
   gap: 2rem;
   padding: 4rem 2rem;
 }
-
 @media (min-width: 768px) {
   .team-container {
     flex-direction: row;
@@ -1023,13 +896,11 @@ form .quote-btn {
     gap: 4rem;
   }
 }
-
 @media (min-width: 992px) {
   .team-container {
     padding: 8rem 2rem;
   }
 }
-
 .team-container .team-card {
   display: flex;
   flex-direction: column;
@@ -1040,12 +911,10 @@ form .quote-btn {
   border-radius: 1rem;
   padding: 2rem;
 }
-
 .team-container .team-card img {
   width: 20rem;
   border-radius: 1rem;
 }
-
 .team-container .team-card .name {
   text-decoration: none;
   font-size: 2rem;
@@ -1053,7 +922,6 @@ form .quote-btn {
   font-weight: 600;
   position: relative;
 }
-
 .team-container .team-card .name::before {
   content: "";
   position: absolute;
@@ -1065,17 +933,14 @@ form .quote-btn {
   transform-origin: right;
   transition: transform 300ms ease-in-out;
 }
-
 .team-container .team-card .name:hover::before {
   transform: scale(1, 1);
   transform-origin: left;
 }
-
 .team-container .team-card .name.active::before {
   transform: scale(1, 1);
   transform-origin: left;
 }
-
 .team-container .team-card .team-port {
   display: flex;
   flex-direction: row;
@@ -1086,7 +951,6 @@ form .quote-btn {
   text-decoration: none;
   font-weight: 600;
 }
-
 .team-container .team-card .team-port:hover {
   color: hsl(204deg, 68%, 30%);
 }
@@ -1100,18 +964,15 @@ form .quote-btn {
   width: 100%;
   color: hsl(212deg, 29%, 13%);
 }
-
 #teams h2 {
   font-size: 2.5rem;
   text-align: center;
 }
-
 @media (min-width: 768px) {
   #teams h2 {
     font-size: 3.5rem;
   }
 }
-
 @media (min-width: 992px) {
   #teams h2 {
     font-size: 5rem;
@@ -1140,13 +1001,11 @@ form .quote-btn {
   background: hsl(45deg, 93%, 50%);
   padding: 2rem;
 }
-
 @media (min-width: 992px) {
   #my-footer {
     padding: 2rem 6rem;
   }
 }
-
 #my-footer .about-contact {
   display: flex;
   flex-direction: column;
@@ -1156,13 +1015,11 @@ form .quote-btn {
   width: 100%;
   margin-bottom: 2rem;
 }
-
 @media (min-width: 768px) {
   #my-footer .about-contact {
     flex-direction: row;
   }
 }
-
 #my-footer .about-contact .about-footer {
   display: flex;
   flex-direction: column;
@@ -1171,11 +1028,9 @@ form .quote-btn {
   gap: 1rem;
   width: 100%;
 }
-
 #my-footer .about-contact .about-footer img {
   width: 7rem;
 }
-
 #my-footer .about-contact .about-footer .social-media {
   display: flex;
   flex-direction: row;
@@ -1183,31 +1038,24 @@ form .quote-btn {
   justify-content: center;
   gap: 1rem;
 }
-
 #my-footer .about-contact .about-footer .social-media img {
   width: 3rem;
 }
-
 #my-footer .about-contact .about-footer .social-media img:hover {
   cursor: pointer;
 }
-
 #my-footer .about-contact .about-footer .social-media .facebook:hover {
   filter: invert(41%) sepia(28%) saturate(5354%) hue-rotate(193deg) brightness(104%) contrast(92%);
 }
-
 #my-footer .about-contact .about-footer .social-media .twitter:hover {
   filter: invert(51%) sepia(56%) saturate(779%) hue-rotate(162deg) brightness(95%) contrast(100%);
 }
-
 #my-footer .about-contact .about-footer .social-media .youtube:hover {
   filter: invert(20%) sepia(78%) saturate(5214%) hue-rotate(339deg) brightness(74%) contrast(112%);
 }
-
 #my-footer .about-contact .about-footer .social-media .instagram:hover {
   filter: invert(42%) sepia(64%) saturate(1298%) hue-rotate(299deg) brightness(89%) contrast(95%);
 }
-
 #my-footer .about-contact .contact-footer {
   display: flex;
   flex-direction: column;
@@ -1216,16 +1064,13 @@ form .quote-btn {
   gap: 1rem;
   width: 100%;
 }
-
 #my-footer .about-contact .contact-footer h2 {
   font-size: 2rem;
 }
-
 #my-footer .about-contact .contact-footer .contact-text-icon .contact-icon img {
   width: 2rem;
   height: 2rem;
 }
-
 #my-footer .copyright-privacy {
   display: flex;
   flex-direction: row;
@@ -1234,17 +1079,14 @@ form .quote-btn {
   gap: 0;
   width: 100%;
 }
-
 #my-footer .copyright-privacy .copyright {
   font-size: 1.2rem;
   text-align: left;
   width: 100%;
 }
-
 #my-footer .copyright-privacy .copyright img {
   width: 1rem;
 }
-
 #my-footer .copyright-privacy .privacy {
   display: flex;
   flex-direction: row;
@@ -1253,14 +1095,12 @@ form .quote-btn {
   gap: 1rem;
   width: 100%;
 }
-
 #my-footer .copyright-privacy .privacy a {
   text-decoration: none;
   color: hsl(180deg, 8%, 97%);
   font-size: 1.4rem;
   position: relative;
 }
-
 #my-footer .copyright-privacy .privacy a::before {
   content: "";
   position: absolute;
@@ -1272,7 +1112,6 @@ form .quote-btn {
   transform-origin: right;
   transition: transform 300ms ease-in-out;
 }
-
 #my-footer .copyright-privacy .privacy a:hover::before {
   transform: scale(1, 1);
   transform-origin: left;
@@ -1287,19 +1126,16 @@ form .quote-btn {
   padding: 0 2rem;
   width: 100%;
 }
-
 @media (min-width: 768px) {
   .quote-container {
     padding: 0 4rem;
   }
 }
-
 .quote-container h2 {
   text-align: center;
   font-size: 2.5rem;
   font-weight: 600;
 }
-
 @media (min-width: 768px) {
   .quote-container h2 {
     font-size: 5rem;
@@ -1314,7 +1150,6 @@ form {
   gap: 1rem;
   width: 100%;
 }
-
 @media (min-width: 992px) {
   form {
     border-radius: 0.5rem;
@@ -1323,16 +1158,13 @@ form {
     box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
   }
 }
-
 form .field {
   width: 100%;
 }
-
 form .field label {
   display: block;
   font-weight: 600;
 }
-
 form .field .form-field {
   width: 100%;
   padding: 1rem;
@@ -1342,14 +1174,12 @@ form .field .form-field {
   outline: none;
   position: relative;
 }
-
 form .field .form-field.active {
   background-image: url("../../images/icons/icon-error.svg");
   background-repeat: no-repeat;
   background-size: 1.5rem;
   background-position: center right 2.5rem;
 }
-
 form .field .warning {
   position: absolute;
   top: 0;
@@ -1358,12 +1188,10 @@ form .field .warning {
   color: hsl(0deg, 100%, 63%);
   transition: all 300ms ease-in-out;
 }
-
 form .field .warning.active {
   position: unset;
   visibility: visible;
 }
-
 form .quote-btn {
   padding: 1.5rem;
   width: 100%;
@@ -1385,43 +1213,36 @@ form .quote-btn {
   color: hsl(212deg, 29%, 13%);
   min-height: 100vh;
 }
-
 @media (min-width: 768px) {
   #contact-us {
     width: 65%;
     padding: 10rem 2rem;
   }
 }
-
 @media (min-width: 992px) {
   #contact-us {
     width: 50%;
     padding: 10rem 2rem;
   }
 }
-
 #contact-us h2 {
   font-size: 2.5rem;
   text-align: center;
   font-weight: 600;
 }
-
 @media (min-width: 768px) {
   #contact-us h2 {
     font-size: 3.5rem;
   }
 }
-
 @media (min-width: 992px) {
   #contact-us h2 {
     font-size: 5rem;
   }
 }
-
 #contact-us form {
   width: 100%;
 }
-
 @media (min-width: 768px) {
   #contact-us form {
     border: 0.1rem solid hsl(212deg, 29%, 13%);
@@ -1430,7 +1251,6 @@ form .quote-btn {
     box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
   }
 }
-
 #contact-us form h3 {
   text-align: center;
   width: 100%;
@@ -1453,47 +1273,35 @@ form .quote-btn {
   min-width: 35rem;
   width: 100%;
 }
-
-#service-offers .services-title,
-#service-offers .rates-title,
+#service-offers .services-title, #service-offers .rates-title,
 #rates .services-title,
 #rates .rates-title {
   text-align: center;
 }
-
 @media (min-width: 768px) {
-
-  #service-offers .services-title,
-  #service-offers .rates-title,
-  #rates .services-title,
-  #rates .rates-title {
+  #service-offers .services-title, #service-offers .rates-title,
+#rates .services-title,
+#rates .rates-title {
     font-size: 3.5rem;
   }
 }
-
 @media (min-width: 992px) {
-
-  #service-offers .services-title,
-  #service-offers .rates-title,
-  #rates .services-title,
-  #rates .rates-title {
+  #service-offers .services-title, #service-offers .rates-title,
+#rates .services-title,
+#rates .rates-title {
     font-size: 5rem;
   }
 }
-
 #service-offers .service-text .para,
 #rates .service-text .para {
   padding: 2rem;
 }
-
 @media (min-width: 768px) {
-
   #service-offers .service-text .para,
-  #rates .service-text .para {
+#rates .service-text .para {
     padding: 2rem 4rem;
   }
 }
-
 #service-offers .miscellaneous,
 #rates .miscellaneous {
   display: flex;
@@ -1504,29 +1312,23 @@ form .quote-btn {
   padding: 2rem;
   width: 100%;
 }
-
 #service-offers .miscellaneous div,
 #rates .miscellaneous div {
   padding: 0 2rem;
 }
-
 @media (min-width: 768px) {
-
   #service-offers .miscellaneous div,
-  #rates .miscellaneous div {
+#rates .miscellaneous div {
     padding: 0rem 4rem;
   }
 }
-
 #service-offers .miscellaneous ol,
 #rates .miscellaneous ol {
   padding: 2rem;
 }
-
 @media (min-width: 768px) {
-
   #service-offers .miscellaneous ol,
-  #rates .miscellaneous ol {
+#rates .miscellaneous ol {
     padding: 2rem 4rem;
   }
 }
@@ -1542,27 +1344,14 @@ form .quote-btn {
   padding: 4rem 2rem;
   font-size: 1rem;
 }
-
 @media (min-width: 768px) {
-
   .services-container,
-  .rates-container {
+.rates-container {
     padding: 4rem;
     font-size: 1.4rem;
   }
 }
-
-.services-container .warehouse-container,
-.services-container .office-container,
-.services-container .storage-racks-container,
-.services-container .cold-storage-container,
-.services-container .special-storage-container,
-.services-container .vehicle-area-container,
-.services-container .basic-rate-container,
-.services-container .special-cargo-container,
-.services-container .service-charge-container,
-.services-container .deconsolidation-fee-container,
-.services-container .return-fee-container,
+.services-container .warehouse-container, .services-container .office-container, .services-container .storage-racks-container, .services-container .cold-storage-container, .services-container .special-storage-container, .services-container .vehicle-area-container, .services-container .basic-rate-container, .services-container .special-cargo-container, .services-container .service-charge-container, .services-container .deconsolidation-fee-container, .services-container .return-fee-container,
 .rates-container .warehouse-container,
 .rates-container .office-container,
 .rates-container .storage-racks-container,
@@ -1583,18 +1372,7 @@ form .quote-btn {
   justify-content: center;
   width: 100%;
 }
-
-.services-container .warehouse-container h2,
-.services-container .office-container h2,
-.services-container .storage-racks-container h2,
-.services-container .cold-storage-container h2,
-.services-container .special-storage-container h2,
-.services-container .vehicle-area-container h2,
-.services-container .basic-rate-container h2,
-.services-container .special-cargo-container h2,
-.services-container .service-charge-container h2,
-.services-container .deconsolidation-fee-container h2,
-.services-container .return-fee-container h2,
+.services-container .warehouse-container h2, .services-container .office-container h2, .services-container .storage-racks-container h2, .services-container .cold-storage-container h2, .services-container .special-storage-container h2, .services-container .vehicle-area-container h2, .services-container .basic-rate-container h2, .services-container .special-cargo-container h2, .services-container .service-charge-container h2, .services-container .deconsolidation-fee-container h2, .services-container .return-fee-container h2,
 .rates-container .warehouse-container h2,
 .rates-container .office-container h2,
 .rates-container .storage-racks-container h2,
@@ -1609,9 +1387,7 @@ form .quote-btn {
   text-align: left;
   width: 100%;
 }
-
-.services-container .warehouse,
-.services-container .office,
+.services-container .warehouse, .services-container .office,
 .rates-container .warehouse,
 .rates-container .office {
   display: grid;
@@ -1622,16 +1398,7 @@ form .quote-btn {
   align-items: center;
   justify-content: center;
 }
-
-.services-container .storage-racks,
-.services-container .cold-storage,
-.services-container .special-storage-fee,
-.services-container .vehicle-area,
-.services-container .basic-rate,
-.services-container .special-cargo,
-.services-container .service-charge,
-.services-container .deconsolidation-fee,
-.services-container .return-fee,
+.services-container .storage-racks, .services-container .cold-storage, .services-container .special-storage-fee, .services-container .vehicle-area, .services-container .basic-rate, .services-container .special-cargo, .services-container .service-charge, .services-container .deconsolidation-fee, .services-container .return-fee,
 .rates-container .storage-racks,
 .rates-container .cold-storage,
 .rates-container .special-storage-fee,
@@ -1653,7 +1420,6 @@ form .quote-btn {
   padding: 1rem;
   border: 1px solid hsl(180deg, 8%, 97%);
 }
-
 @media (min-width: 768px) {
   .border {
     height: 5rem;
@@ -1685,76 +1451,61 @@ form .quote-btn {
 }
 
 #about-main {
-  background-image: linear-gradient(135deg, rgba(19,94,156,0.5469538157059699) 0%, rgba(2,15,29,0.4125000341933649) 100%), url(https://img.freepik.com/free-photo/industrial-park-factory-building-warehouse_1417-1932.jpg?w=2000);
-  background-position: center;
-  background-size: cover;
+  background: hsl(204deg, 68%, 30%);
   width: 100%;
-  height: 80vh;
   min-width: 35rem;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
 }
 
-
+#about-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 8rem 2rem;
+}
 @media (min-width: 768px) {
   #about-us {
     padding: 10rem 2rem;
   }
 }
-
 #about-us h2 {
   font-size: 2.5rem;
   text-align: center;
-  color: hsl(180deg, 8%, 97%);
-  text-shadow: 1px 1px 2px rgb(30, 21, 22);
-  z-index: 5;
 }
-
 @media (min-width: 768px) {
   #about-us h2 {
     font-size: 3.5rem;
   }
 }
-
 @media (min-width: 992px) {
   #about-us h2 {
     font-size: 5rem;
   }
 }
-
 #about-us .sub-para {
+  text-align: center;
   padding: 0 2rem;
-  text-shadow: 1px 1px 2px rgb(30, 21, 22);
-  font-size: 17px;
-  color: hsl(180deg, 8%, 97%);
-  z-index: 5;
 }
-
 @media (min-width: 768px) {
   #about-us .sub-para {
     padding: 0 10rem;
   }
 }
-
 @media (min-width: 992px) {
   #about-us .sub-para {
     padding: 0 20rem;
   }
 }
-
 @media (min-width: 1200px) {
   #about-us .sub-para {
     padding: 0 30rem;
   }
 }
-
 #about-us .about-para {
   padding: 1rem;
   text-align: justify;
 }
-
 @media (min-width: 768px) {
   #about-us .about-para {
     padding: 1rem 2rem;
@@ -1799,246 +1550,5 @@ body {
   color: none;
   background: none;
 }
-
-
-
-/* About Us */
-.about-detail {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.about-container {
-  max-width: 80%;
-  margin: 50px 0;
-}
-
-.mission {
-  display: flex;
-}
-
-.mission .statement {
-  max-width: 50%;
-  padding: 0 20px;
-}
-
-.statement {
-  display: flex;
-  flex-direction: column;
-  text-align: justify;
-  justify-content: center;
-}
-
-.statement h2,
-p {
-  color: hsl(212deg, 29%, 13%);
-}
-
-
-.mission img {
-  max-width: 100%;
-}
-
-.capability {
-  display: flex;
-}
-
-.capability .statement {
-  max-width: 50%;
-  padding: 0 20px;
-}
-
-.capability img {
-  max-width: 100%;
-}
-
-.help {
-  background-image: url(https://media.istockphoto.com/vectors/abstract-modern-white-background-design-futuristic-wallpaper-vector-id1336661359?k=20&m=1336661359&s=612x612&w=0&h=uhC6hA-WTEL6q1Pjaxr71vsxkmrP5DKR_QmTFwHPUoo=);
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.help-container {
-  max-width: 80%;
-  margin: 30px 0;
-}
-
-.help-area {
-  display: flex;
-}
-
-.help-area .help-message {
-  max-width: 50%;
-  padding: 0 20px;
-}
-
-.help-area .quote-container {
-  max-width: 50%;
-}
-
-.help-message {
-  display: flex;
-  flex-direction: column;
-  text-align: justify;
-  justify-content: center;
-}
-
-.help-message h2 {
-  color: hsl(212deg, 29%, 13%);
-  font-size: 40px;
-}
-
-.help-message p {
-  color: hsl(212deg, 29%, 13%);
-}
-
-.quote-container h2,
-label {
-  color: hsl(212deg, 29%, 13%);
-}
-
-.quote-container h2 {
-  font-size: 40px;
-}
-
-
-.rate {
-  background-image: url(https://i.pinimg.com/originals/c4/41/6a/c4416a83590840f3be2206a94411ef6d.png);
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.rate-container {
-  max-width: 100%;
-  margin-bottom: 70px;
-}
-
-.rate-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-.details {
-  border: 1px solid whitesmoke;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 30px 70px;
-}
-
-.rate-row h2 {
-  font-size: 40px;
-  color: #CE1126;
-  font-weight: bolder;
-}
-
-@media (max-width:991px) {
-  .details {
-    padding: 30px 60px;
-  }
-  .help-message, .quote-container {
-    width: 100%;
-  }
-}
-
-@media (max-width: 768px) {
-  .mission {
-    flex-direction: column-reverse;
-  }
-  .capability{
-    flex-direction: column;
-    margin-top: 50px;
-  }  
-  .mission, .statement, .capability {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .mission .statement {
-    max-width: 100%;
-  }
-  .capability .statement {
-    max-width: 100%;
-  }
-
-  .rate-row h2 {
-    font-size: 30px;
-  }
-  .rate-row p {
-    font-size: 13px;
-  }
-  .details {
-    padding: 30px 50px;
-  }
-  .rate-container {
-    margin-bottom: 0px;
-  }
-  .help-area {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
- 
-  .help-area .help-message {
-    max-width: 100%;
-    padding: 0 10px;
-  }
-  
-  .help-area .quote-container {
-    max-width: 100%;
-    margin-top: 50px;
-  }
-}
-
-
-@media (max-width: 600px) {
-  .details {
-    padding: 20px 30px;
-  }
-  .rate-row h2 {
-    font-size: 20px;
-  }
-  #about-us h2 {
-    font-size: 20px;
-  }
-  #about-us .sub-para {
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 480px) {
-  .details {
-    padding: 15px 15px;
-  }
-  .help-message h2 {
-    font-size: 30px;
-  }
-  .quote-container h2 {
-    font-size: 30px;
-  }
-  .help-area .quote-container {
-    padding: 0 5px;
-  }
-  .mission .statement {
-    padding: 0 5px;
-  }
-  .capability .statement {
-    padding: 0 5px;
-  }
-  
-}
-
-
-
 
 /*# sourceMappingURL=styles.css.map */
