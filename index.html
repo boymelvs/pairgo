@@ -8,6 +8,7 @@
       <link rel="shortcut icon" href="./images/logo/logo.png" type="image/x-icon" />
       <link rel="stylesheet" href="./styles/css/styles.css" />
    </head>
+
    <body id="stop-scroll">
       <div id="my-home" class="container">
          <header id="my-header">
@@ -19,11 +20,12 @@
 
             <nav class="nav-bar">
                <ul class="menu">
-                  <li class="menu-item hero"><a href="#my-home">Home</a></li>
+                  <li class="menu-item hero active"><a href="#my-home">Home</a></li>
                   <li class="menu-item services"><a href="#services">Services</a></li>
                   <li class="menu-item clients"><a href="#clients">Clients</a></li>
-                  <li class="menu-item about"><a href="#about">About us</a></li>
-                  <li class="menu-item contacts"><a href="#contacts">Contact us</a></li>
+                  <li class="menu-item teams"><a href="#teams">Our Team</a></li>
+                  <li class="menu-item about"><a href="./pages/about.html">About us</a></li>
+                  <li class="menu-item contacts"><a href="./pages/contact.html">Contact us</a></li>
                </ul>
             </nav>
 
@@ -57,7 +59,7 @@
                </div>
 
                <div class="hero-contact">
-                  <div class="query-text">
+                  <div class="query-text" id="query-text">
                      <span> FOR ANY </span>
                      <span> QUESTIONS </span>
                   </div>
@@ -65,7 +67,9 @@
                   <div class="call-text">Call: 123456789</div>
 
                   <div class="hero-btn-container">
-                     <input type="button" id="hero-btn" value="Contact Us" />
+                     <a href="./pages/contact.html" rel="noopener noreferrer">
+                        <input type="button" id="hero-btn" value="Contact Us" />
+                     </a>
                   </div>
                </div>
             </section>
@@ -73,7 +77,9 @@
             <!-- /* 2nd section */ -->
             <section id="services">
                <div class="offer-container">
-                  <h2 class="offers-title">WHAT WE OFFER</h2>
+                  <h2 class="offers-title">SERVICES</h2>
+                  <h3 class="offers-subtitle">WHAT WE OFFER</h3>
+
                   <div class="offer-services">
                      <div class="card packaging">
                         <img src="./images/icons/services/warehouse.svg" class="card-img" alt="Packages" />
@@ -81,7 +87,7 @@
                         <div class="card-description">Packaging is the technology of enclosing and protecting product.</div>
                      </div>
 
-                     <div class="card packaging">
+                     <div class="card cold-storage">
                         <img src="./images/icons/services/cold-storage.svg" class="card-img" alt="Packages" />
                         <div class="card-title">Cold Storage</div>
                         <div class="card-description">Special storage.</div>
@@ -89,39 +95,43 @@
                   </div>
 
                   <div class="offer-services">
-                     <div class="card packaging">
+                     <div class="card door-to-door">
                         <img src="./images/icons/services/door-to-door.png" class="card-img" alt="Packages" />
-                        <div class="card-title">Door to Door Delivery</div>
+                        <div class="card-title">Delivery</div>
                         <div class="card-description">Bring products anywhere in the philippines.</div>
                      </div>
 
-                     <div class="card packaging">
+                     <div class="card transport-support">
                         <img src="./images/icons/services/road.svg" class="card-img" alt="Packages" />
                         <div class="card-title">Ground Transport</div>
                         <div class="card-description">We provide transport support.</div>
                      </div>
                   </div>
+
+                  <div class="service-rates">
+                     <a href="./pages/services.html"> READ MORE... </a>
+                  </div>
                </div>
 
                <div class="quote-container">
-                  <h2 class="quote-title">REQUEST A QUICK QUOTE</h2>
+                  <h2 class="quote-title">REQUEST A QUOTE</h2>
                   <form action="" id="quotes">
                      <div class="field name-container">
                         <label for="name">Name</label>
-                        <input type="text" name="name" id="name" class="form-field" />
-                        <div class="warning">Must not empty. At least 5 characters.</div>
+                        <input type="text" name="name" id="name" class="form-field" required />
+                        <div class="warning">Must not empty. At least min 5 & max 30 characters.</div>
                      </div>
 
                      <div class="field email-container">
                         <label for="email">Email</label>
-                        <input type="email" name="email" id="email" class="form-field" />
+                        <input type="email" name="email" id="email" class="form-field" required />
                         <div class="warning">Invalid email. Must not empty.</div>
                      </div>
 
                      <div class="field select-container">
                         <label for="select-services">Services</label>
 
-                        <select id="select-services" name="services" class="form-field select-services">
+                        <select id="select-services" name="services" class="form-field select-services" required>
                            <option value="" selected disabled>Select Service</option>
 
                            <option value="packaging">Packaging</option>
@@ -139,14 +149,14 @@
 
                      <div class="field subject-container">
                         <label for="subject">Subject</label>
-                        <input type="text" name="subject" id="subject" class="form-field" />
-                        <div class="warning">Must not empty. At least 5 characters.</div>
+                        <input type="text" name="subject" id="subject" class="form-field" required />
+                        <div class="warning">Must not empty. At least min 5 & max 30 characters.</div>
                      </div>
 
                      <div class="field message-container">
                         <label for="message">Message</label>
-                        <textarea type="text" name="message" id="message" class="form-field" rows="4"></textarea>
-                        <div class="warning">Must not empty. At least 5 characters.</div>
+                        <textarea type="text" name="message" id="message" class="form-field" rows="4" required></textarea>
+                        <div class="warning">Must not empty. At least min 5 & max 30 characters.</div>
                      </div>
 
                      <input type="submit" class="quote-btn" value="REQUEST" />
@@ -219,6 +229,10 @@
 
                   <img src="./images/client/delta-airlines.svg" class="clients" alt="delta airlines" />
                </div>
+
+               <div class="see-all">
+                  <a href="./pages/client.html"> SEE ALL... </a>
+               </div>
             </section>
 
             <!-- /* 4th section */ -->
@@ -236,7 +250,7 @@
                      <div class="profile">
                         <img src="./images/icons/testomonial/profile-1.jpg" alt="Satish Patel Pic" />
 
-                        <div class="name-position">
+                        <div class="name-position" id="name-position">
                            <div class="name">Satish Patel</div>
                            <div class="position">Founder & CEO, Huddle</div>
                         </div>
@@ -288,8 +302,28 @@
                   <div class="team-card">
                      <img src="./images/profile/profile-1.jpg" alt="melvin" />
 
-                     <a href="https://boymelvs.github.io/PORTFOLIO/" target="_blank" rel="noopener noreferrer" class="name">
-                        <span> Melvin Enmocino </span>
+                     <a href="#" target="_blank" rel="noopener noreferrer" class="name">
+                        <span> Dax </span>
+                     </a>
+
+                     <div class="team-port">Career Shifter</div>
+                  </div>
+
+                  <div class="team-card">
+                     <img src="./images/profile/profile-1.jpg" alt="melvin" />
+
+                     <a href="#" target="_blank" rel="noopener noreferrer" class="name">
+                        <span> TJ </span>
+                     </a>
+
+                     <div class="team-port">Career Shifter</div>
+                  </div>
+
+                  <div class="team-card">
+                     <img src="./images/profile/profile-1.jpg" alt="melvin" />
+
+                     <a href="#" target="_blank" rel="noopener noreferrer" class="name">
+                        <span> Bryan </span>
                      </a>
 
                      <div class="team-port">Chief Executive Officer</div>
@@ -298,31 +332,7 @@
                   <div class="team-card">
                      <img src="./images/profile/profile-1.jpg" alt="melvin" />
 
-                     <a href="https://boymelvs.github.io/PORTFOLIO/" target="_blank" rel="noopener noreferrer" class="name">
-                        <span> Dax Axis Tangco </span>
-                     </a>
-
-                     <div class="team-port">Chief Operating Officer</div>
-                     
-                  </div>
-
-                  <div class="team-card">
-                     <img src="./images/profile/profile-1.jpg" alt="melvin" />
-
-                     <a href="https://boymelvs.github.io/PORTFOLIO/" target="_blank" rel="noopener noreferrer" class="name">
-                        <span> Teejay Villaluz </span>
-                     </a>
-
-                     <div class="team-port">Chief Financial Officer</div>
-                  </div>
-
-                  <div class="team-card">
-                     <img src="./images/profile/profile-1.jpg" alt="melvin" />
-
-                     <a href="" target="_blank" rel="noopener noreferrer" class="name">
-                        <span> Bryan Perez </span>
-                     </a>
-
+                     <a href="https://boymelvs.github.io/PORTFOLIO/" target="_blank" rel="noopener noreferrer" class="name/>;
                      <div class="team-port">Chief Technology Officer</div>
                   </div>
                </div>
@@ -398,9 +408,16 @@
                </div>
             </div>
 
-            <div class="copyright">
-               <img src="./images/icons/social-media/copyright.svg" alt="copyright" />
-               <span>Pairgo</span>
+            <div class="copyright-privacy">
+               <div class="copyright">
+                  <img src="./images/icons/social-media/copyright.svg" alt="copyright" />
+                  <span>Pairgo</span>
+               </div>
+
+               <div class="privacy">
+                  <a href="#" target="_blank" rel="noopener noreferrer">Privacy Policy</a> |
+                  <a href="#" target="_blank" rel="noopener noreferrer">Terms & Conditions</a>
+               </div>
             </div>
          </footer>
 
