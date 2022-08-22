@@ -28,7 +28,7 @@ const slides = document.querySelectorAll(".slide");
 let currentSlide = 0;
 
 const runSlide = () => {
-   if (currentSlide == 3) {
+   if (currentSlide == slides.length) {
       currentSlide = 0;
    }
 

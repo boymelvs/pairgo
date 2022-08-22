@@ -1,7 +1,6 @@
 .card-testi {
    @include flexBox(column, start, center, 2rem);
    width: 100%;
-   color: $azure;
    font-size: 1.4rem;
    line-height: 2.5rem;
    padding: 2rem;
@@ -17,6 +16,10 @@
 
    @media (min-width: 992px) {
       width: 35rem;
+   }
+
+   & .testi-para {
+      color: $azure;
    }
 
    & .profile {
