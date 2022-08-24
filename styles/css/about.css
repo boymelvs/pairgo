@@ -298,7 +298,7 @@ form .quote-btn:active,
    padding: 0 2rem;
    text-shadow: 1px 1px 2px rgb(30, 21, 22);
    font-size: 17px;
-   color: hsl(180deg, 8%, 97%);
+   color: hsl(0, 0%, 100%);
    z-index: 5;
 }
 
@@ -573,8 +573,6 @@ form .field .form-field.active {
 }
 
 form .field .warning {
-   position: absolute;
-   top: 0;
    visibility: hidden;
    font-size: 1.2rem;
    color: hsl(0deg, 100%, 63%);
@@ -582,7 +580,6 @@ form .field .warning {
 }
 
 form .field .warning.active {
-   position: unset;
    visibility: visible;
 }
 
