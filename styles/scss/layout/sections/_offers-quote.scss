@@ -9,6 +9,20 @@
       flex-direction: row;
       align-items: start;
       gap: 0rem;
+      a {
+         text-decoration: none;
+         transition: all ease .2s;
+      }
+      a:hover {
+         text-decoration: underline;
+         transform: translateY(-10px);
+      }
+      a:active {
+         color: black;
+      }
+      a:visited {
+         color:black;
+      }
    }
 
    & .offer-container {
@@ -66,37 +80,5 @@
          }
       }
 
-      & .service-rates {
-         position: relative;
-
-         &::before {
-            content: "";
-            position: absolute;
-            bottom: -0.5rem;
-            left: 0;
-            width: 100%;
-            border-bottom: 0.3rem solid $black-pearl;
-            transform: scale(0, 1);
-            transform-origin: right;
-            transition: transform 300ms ease-in-out;
-         }
-
-         &:hover::before {
-            transform: scale(1, 1);
-            transform-origin: left;
-         }
-
-         &.active::before {
-            transform: scale(1, 1);
-            transform-origin: left;
-         }
-
-         & a {
-            font-size: 2.5rem;
-            text-decoration: none;
-            color: $black-pearl;
-            font-weight: $font-weight-600;
-         }
-      }
    }
 }

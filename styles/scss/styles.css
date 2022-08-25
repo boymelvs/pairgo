@@ -3,7 +3,6 @@
 /* 10px */
 /* colors */
 /* warning */
-/* warning */
 /* navigation footer bg */
 /* font */
 /* font */
@@ -434,9 +433,10 @@ form .quote-btn:active, #hero .hero-contact .hero-btn-container #hero-btn:active
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  padding: 0 2rem;
   width: 100%;
 }
-@media (min-width: 1201px) {
+@media (min-width: 768px) {
   .quote-container {
     padding: 0 4rem;
   }
@@ -448,13 +448,12 @@ form .quote-btn:active, #hero .hero-contact .hero-btn-container #hero-btn:active
 }
 @media (min-width: 768px) {
   .quote-container h2 {
-    font-size: 3.5rem;
-  }
-}
-@media (min-width: 992px) {
-  .quote-container h2 {
     font-size: 5rem;
   }
+}
+
+#quotes {
+  box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
 }
 
 form {
@@ -464,12 +463,11 @@ form {
   justify-content: center;
   gap: 1rem;
   width: 100%;
-  border-radius: 0.5rem;
-  padding: 2rem;
-  border: 0.1rem solid hsl(212deg, 29%, 13%);
 }
 @media (min-width: 992px) {
   form {
+    border-radius: 0.5rem;
+    border: 0.1rem solid hsl(212deg, 29%, 13%);
     padding: 4rem;
   }
 }
@@ -494,7 +492,6 @@ form .field .form-field.active {
   background-repeat: no-repeat;
   background-size: 1.5rem;
   background-position: center right 2.5rem;
-  border: 0.1rem solid hsl(0deg, 100%, 63%);
 }
 form .field .warning {
   visibility: hidden;
@@ -510,11 +507,6 @@ form .quote-btn {
   background: hsl(45deg, 93%, 50%);
 }
 
-@media (min-width: 768px) {
-  #quotes {
-    box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
-  }
-}
 #services {
   display: flex;
   flex-direction: column;
@@ -529,20 +521,6 @@ form .quote-btn {
     flex-direction: row;
     align-items: start;
     gap: 0rem;
-  }
-  #services a {
-    text-decoration: none;
-    transition: all ease 0.2s;
-  }
-  #services a:hover {
-    text-decoration: underline;
-    transform: translateY(-10px);
-  }
-  #services a:active {
-    color: black;
-  }
-  #services a:visited {
-    color: black;
   }
 }
 #services .offer-container {
@@ -610,6 +588,34 @@ form .quote-btn {
 #services .offer-container .offer-services .card .card-description {
   text-align: center;
   font-size: 1.2rem;
+}
+#services .offer-container .service-rates {
+  position: relative;
+}
+#services .offer-container .service-rates::before {
+  content: "";
+  position: absolute;
+  bottom: -0.5rem;
+  left: 0;
+  width: 100%;
+  border-bottom: 0.3rem solid hsl(212deg, 29%, 13%);
+  transform: scale(0, 1);
+  transform-origin: right;
+  transition: transform 300ms ease-in-out;
+}
+#services .offer-container .service-rates:hover::before {
+  transform: scale(1, 1);
+  transform-origin: left;
+}
+#services .offer-container .service-rates.active::before {
+  transform: scale(1, 1);
+  transform-origin: left;
+}
+#services .offer-container .service-rates a {
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: hsl(212deg, 29%, 13%);
+  font-weight: 600;
 }
 
 #clients {
@@ -908,7 +914,6 @@ form .quote-btn {
 }
 .team-container .team-card img {
   width: 20rem;
-  height: 20rem;
   border-radius: 1rem;
 }
 .team-container .team-card .name {
@@ -1119,9 +1124,10 @@ form .quote-btn {
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  padding: 0 2rem;
   width: 100%;
 }
-@media (min-width: 1201px) {
+@media (min-width: 768px) {
   .quote-container {
     padding: 0 4rem;
   }
@@ -1133,13 +1139,12 @@ form .quote-btn {
 }
 @media (min-width: 768px) {
   .quote-container h2 {
-    font-size: 3.5rem;
-  }
-}
-@media (min-width: 992px) {
-  .quote-container h2 {
     font-size: 5rem;
   }
+}
+
+#quotes {
+  box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
 }
 
 form {
@@ -1149,12 +1154,11 @@ form {
   justify-content: center;
   gap: 1rem;
   width: 100%;
-  border-radius: 0.5rem;
-  padding: 2rem;
-  border: 0.1rem solid hsl(212deg, 29%, 13%);
 }
 @media (min-width: 992px) {
   form {
+    border-radius: 0.5rem;
+    border: 0.1rem solid hsl(212deg, 29%, 13%);
     padding: 4rem;
   }
 }
@@ -1179,7 +1183,6 @@ form .field .form-field.active {
   background-repeat: no-repeat;
   background-size: 1.5rem;
   background-position: center right 2.5rem;
-  border: 0.1rem solid hsl(0deg, 100%, 63%);
 }
 form .field .warning {
   visibility: hidden;
@@ -1195,11 +1198,6 @@ form .quote-btn {
   background: hsl(45deg, 93%, 50%);
 }
 
-@media (min-width: 768px) {
-  #quotes {
-    box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
-  }
-}
 .my-header {
   background: hsl(45deg, 93%, 50%);
 }
@@ -1260,10 +1258,7 @@ form .quote-btn {
   }
 }
 #contact-us #contact-form .form-field {
-  border: 0.2rem solid transparent;
-}
-#contact-us #contact-form .form-field.active {
-  border: 0.2rem solid hsl(0deg, 100%, 63%);
+  border: none;
 }
 #contact-us #contact-form:hover {
   box-shadow: 0rem 0rem 1.5rem hsla(212deg, 29%, 13%, 0.4);
@@ -1291,20 +1286,33 @@ form .quote-btn {
   min-width: 35rem;
   width: 100%;
 }
-#service-offers .services-title,
-#rates .services-title {
+#service-offers .services-title, #service-offers .rates-title,
+#rates .services-title,
+#rates .rates-title {
   text-align: center;
 }
 @media (min-width: 768px) {
-  #service-offers .services-title,
-#rates .services-title {
+  #service-offers .services-title, #service-offers .rates-title,
+#rates .services-title,
+#rates .rates-title {
     font-size: 3.5rem;
   }
 }
 @media (min-width: 992px) {
-  #service-offers .services-title,
-#rates .services-title {
+  #service-offers .services-title, #service-offers .rates-title,
+#rates .services-title,
+#rates .rates-title {
     font-size: 5rem;
+  }
+}
+#service-offers .service-text .para,
+#rates .service-text .para {
+  padding: 2rem;
+}
+@media (min-width: 768px) {
+  #service-offers .service-text .para,
+#rates .service-text .para {
+    padding: 2rem 4rem;
   }
 }
 #service-offers .miscellaneous,
@@ -1394,8 +1402,6 @@ form .quote-btn {
   text-align: center;
   width: 100%;
   color: hsl(45deg, 93%, 50%);
-  font-size: 5rem;
-  text-shadow: 1px 2px 3px rgb(0, 0, 0);
 }
 .services-container .warehouse-container h3, .services-container .office-container h3, .services-container .storage-racks-container h3, .services-container .cold-storage-container h3, .services-container .refrigerated-van-container h3, .services-container .special-storage-container h3, .services-container .vehicle-area-container h3, .services-container .basic-rate-container h3, .services-container .special-cargo-container h3, .services-container .service-charge-container h3, .services-container .deconsolidation-fee-container h3, .services-container .return-fee-container h3,
 .rates-container .warehouse-container h3,
@@ -1413,7 +1419,7 @@ form .quote-btn {
   text-align: center;
   width: 100%;
   color: white;
-  font-size: 4rem;
+  font-size: 5rem;
 }
 .services-container .warehouse-container ul, .services-container .office-container ul, .services-container .storage-racks-container ul, .services-container .cold-storage-container ul, .services-container .refrigerated-van-container ul, .services-container .special-storage-container ul, .services-container .vehicle-area-container ul, .services-container .basic-rate-container ul, .services-container .special-cargo-container ul, .services-container .service-charge-container ul, .services-container .deconsolidation-fee-container ul, .services-container .return-fee-container ul,
 .rates-container .warehouse-container ul,
@@ -1452,125 +1458,11 @@ form .quote-btn {
 .rates-container .service-charge,
 .rates-container .deconsolidation-fee,
 .rates-container .return-fee {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto;
   text-align: center;
   width: 100%;
-  justify-content: center;
-}
-.services-container .storage-units-main, .services-container .cold-storage-type,
-.rates-container .storage-units-main,
-.rates-container .cold-storage-type {
-  display: block;
-  align-items: center;
-  width: 100%;
-  background: rgb(16, 33, 64);
-  padding-left: 70px;
-  padding-right: 70px;
-  padding-top: 25px;
-  height: 150px;
-  border-radius: 30px;
-}
-.services-container .storage-racks-container-row,
-.rates-container .storage-racks-container-row {
-  margin: 30px;
-  justify-content: center;
-  align-items: center;
-}
-.services-container .storage-units-info,
-.rates-container .storage-units-info {
-  width: 100%;
-  background: rgba(16, 33, 64, 0.65);
-  padding: 20px;
-  margin-top: 10px;
-  border-radius: 30px;
-  height: 100px;
-  text-align: center;
-}
-.services-container .storage-units-info li,
-.rates-container .storage-units-info li {
-  font-size: 1.75rem;
-}
-.services-container .basic-flex,
-.rates-container .basic-flex {
-  display: flex;
-}
-.services-container .gen-cargo, .services-container .from, .services-container .to,
-.rates-container .gen-cargo,
-.rates-container .from,
-.rates-container .to {
-  width: 100%;
-  background: rgb(16, 33, 64);
-  padding: auto;
-  margin: 10px;
-  height: 100%;
-  border-radius: 30px;
-  text-align: center;
-  white-space: nowrap;
-  overflow: visible;
-}
-.services-container .gen-cargo h4, .services-container .from h4, .services-container .to h4,
-.rates-container .gen-cargo h4,
-.rates-container .from h4,
-.rates-container .to h4 {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  margin-left: 50px;
-  margin-right: 50px;
-  font-size: 2.5rem;
-}
-.services-container .gen-cargo-type,
-.rates-container .gen-cargo-type {
-  width: 100%;
-  background: rgb(64, 91, 141);
-  padding: 20px;
-  margin: 10px;
-  border-radius: 30px;
-  text-align: center;
-}
-.services-container .gen-cargo-type h5,
-.rates-container .gen-cargo-type h5 {
-  font-size: 2rem;
-}
-.services-container .rate-range,
-.rates-container .rate-range {
-  width: 100%;
-  background: rgb(64, 91, 141);
-  padding: 25px;
-  margin-right: 15px;
-  margin-left: 15px;
-  margin-top: 12px;
-  gap: 10px;
-  border-radius: 20px;
-  text-align: center;
-}
-.services-container .rate-range-to,
-.rates-container .rate-range-to {
-  width: 100%;
-  background: rgb(64, 91, 141);
-  padding: 25px;
-  margin-right: 15px;
-  margin-left: 20px;
-  margin-top: 12px;
-  gap: 10px;
-  border-radius: 20px;
-  text-align: center;
-}
-.services-container .rate-container,
-.rates-container .rate-container {
-  width: 100%;
-  background: rgb(16, 33, 64);
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 20px;
-  padding-top: 20px;
-  margin: 10px;
-  height: 100%;
-  border-radius: 30px;
-  text-align: center;
-  white-space: nowrap;
-  overflow: visible;
-  display: flex;
-  justify-content: start;
 }
 
 .border {
