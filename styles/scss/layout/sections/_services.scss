@@ -11,16 +11,7 @@
    min-width: 35rem;
    width: 100%;
 
-   & .services-title {
-      text-align: center;
-      @media (min-width: 768px) {
-         font-size: 3.5rem;
-      }
-
-      @media (min-width: 992px) {
-         font-size: 5rem;
-      }
-   }
+   & .services-title,
 
    & .miscellaneous {
       @include flexBox(column, center, center, 1rem);
@@ -97,7 +88,7 @@
    & .warehouse,
    & .office {
       display: grid;
-      grid-template-columns: repeat(10, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       grid-template-rows: auto;
       text-align: center;
       width: 100%;
@@ -203,18 +194,17 @@
       border-radius: 20px;
       text-align: center;
    }
-   & .rate-range-to {
+   & .rate-range {
       width: 100%;
       background: rgb(64, 91, 141);
       padding: 25px;
       margin-right:15px;
-      margin-left: 20px;
+      margin-left: 15px;
       margin-top: 12px;
       gap: 10px;
       border-radius: 20px;
       text-align: center;
-   }
-
+}
    & .rate-container {
       width: 100%;
       background: rgba(16, 33, 64, 1);

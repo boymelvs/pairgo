@@ -1291,23 +1291,8 @@ form .quote-btn {
   min-width: 35rem;
   width: 100%;
 }
-#service-offers .services-title,
-#rates .services-title {
-  text-align: center;
-}
-@media (min-width: 768px) {
-  #service-offers .services-title,
-#rates .services-title {
-    font-size: 3.5rem;
-  }
-}
-@media (min-width: 992px) {
-  #service-offers .services-title,
-#rates .services-title {
-    font-size: 5rem;
-  }
-}
-#service-offers .miscellaneous,
+#service-offers .services-title, #service-offers .miscellaneous,
+#rates .services-title,
 #rates .miscellaneous {
   display: flex;
   flex-direction: column;
@@ -1317,22 +1302,26 @@ form .quote-btn {
   padding: 2rem;
   width: 100%;
 }
-#service-offers .miscellaneous div,
+#service-offers .services-title div, #service-offers .miscellaneous div,
+#rates .services-title div,
 #rates .miscellaneous div {
   padding: 0 2rem;
 }
 @media (min-width: 768px) {
-  #service-offers .miscellaneous div,
+  #service-offers .services-title div, #service-offers .miscellaneous div,
+#rates .services-title div,
 #rates .miscellaneous div {
     padding: 0rem 4rem;
   }
 }
-#service-offers .miscellaneous ol,
+#service-offers .services-title ol, #service-offers .miscellaneous ol,
+#rates .services-title ol,
 #rates .miscellaneous ol {
   padding: 2rem;
 }
 @media (min-width: 768px) {
-  #service-offers .miscellaneous ol,
+  #service-offers .services-title ol, #service-offers .miscellaneous ol,
+#rates .services-title ol,
 #rates .miscellaneous ol {
     padding: 2rem 4rem;
   }
@@ -1434,7 +1423,7 @@ form .quote-btn {
 .rates-container .warehouse,
 .rates-container .office {
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
   text-align: center;
   width: 100%;
@@ -1543,13 +1532,13 @@ form .quote-btn {
   border-radius: 20px;
   text-align: center;
 }
-.services-container .rate-range-to,
-.rates-container .rate-range-to {
+.services-container .rate-range,
+.rates-container .rate-range {
   width: 100%;
   background: rgb(64, 91, 141);
   padding: 25px;
   margin-right: 15px;
-  margin-left: 20px;
+  margin-left: 15px;
   margin-top: 12px;
   gap: 10px;
   border-radius: 20px;
