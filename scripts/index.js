@@ -41,7 +41,7 @@ const runSlide = () => {
 
 let timer = setInterval(() => {
    runSlide();
-}, 5000);
+}, 3000);
 
 /* ================= MENU ITEM ================= */
 /* function that add/remove active class in menu items */

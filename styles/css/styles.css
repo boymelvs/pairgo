@@ -434,10 +434,9 @@ form .quote-btn:active, #hero .hero-contact .hero-btn-container #hero-btn:active
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  padding: 0 2rem;
   width: 100%;
 }
-@media (min-width: 768px) {
+@media (min-width: 1201px) {
   .quote-container {
     padding: 0 4rem;
   }
@@ -449,12 +448,13 @@ form .quote-btn:active, #hero .hero-contact .hero-btn-container #hero-btn:active
 }
 @media (min-width: 768px) {
   .quote-container h2 {
-    font-size: 5rem;
+    font-size: 3.5rem;
   }
 }
-
-#quotes {
-  box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+@media (min-width: 992px) {
+  .quote-container h2 {
+    font-size: 5rem;
+  }
 }
 
 form {
@@ -464,11 +464,12 @@ form {
   justify-content: center;
   gap: 1rem;
   width: 100%;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  border: 0.1rem solid hsl(212deg, 29%, 13%);
 }
 @media (min-width: 992px) {
   form {
-    border-radius: 0.5rem;
-    border: 0.1rem solid hsl(212deg, 29%, 13%);
     padding: 4rem;
   }
 }
@@ -509,6 +510,11 @@ form .quote-btn {
   background: hsl(45deg, 93%, 50%);
 }
 
+@media (min-width: 768px) {
+  #quotes {
+    box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+  }
+}
 #services {
   display: flex;
   flex-direction: column;
@@ -916,6 +922,7 @@ form .quote-btn {
 }
 .team-container .team-card img {
   width: 20rem;
+  height: 20rem;
   border-radius: 1rem;
 }
 .team-container .team-card .name {
@@ -1126,10 +1133,9 @@ form .quote-btn {
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  padding: 0 2rem;
   width: 100%;
 }
-@media (min-width: 768px) {
+@media (min-width: 1201px) {
   .quote-container {
     padding: 0 4rem;
   }
@@ -1141,12 +1147,13 @@ form .quote-btn {
 }
 @media (min-width: 768px) {
   .quote-container h2 {
-    font-size: 5rem;
+    font-size: 3.5rem;
   }
 }
-
-#quotes {
-  box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+@media (min-width: 992px) {
+  .quote-container h2 {
+    font-size: 5rem;
+  }
 }
 
 form {
@@ -1156,11 +1163,12 @@ form {
   justify-content: center;
   gap: 1rem;
   width: 100%;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  border: 0.1rem solid hsl(212deg, 29%, 13%);
 }
 @media (min-width: 992px) {
   form {
-    border-radius: 0.5rem;
-    border: 0.1rem solid hsl(212deg, 29%, 13%);
     padding: 4rem;
   }
 }
@@ -1201,6 +1209,11 @@ form .quote-btn {
   background: hsl(45deg, 93%, 50%);
 }
 
+@media (min-width: 768px) {
+  #quotes {
+    box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+  }
+}
 .my-header {
   background: hsl(45deg, 93%, 50%);
 }
