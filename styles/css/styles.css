@@ -2,6 +2,8 @@
 /* fonts */
 /* 10px */
 /* colors */
+/* warning */
+/* navigation footer bg */
 /* font */
 /* font */
 /* font */
@@ -450,6 +452,10 @@ form .quote-btn:active, #hero .hero-contact .hero-btn-container #hero-btn:active
   }
 }
 
+#quotes {
+  box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -463,7 +469,6 @@ form {
     border-radius: 0.5rem;
     border: 0.1rem solid hsl(212deg, 29%, 13%);
     padding: 4rem;
-    box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
   }
 }
 form .field {
@@ -489,15 +494,11 @@ form .field .form-field.active {
   background-position: center right 2.5rem;
 }
 form .field .warning {
-  position: absolute;
-  top: 0;
   visibility: hidden;
   font-size: 1.2rem;
   color: hsl(0deg, 100%, 63%);
-  transition: all 300ms ease-in-out;
 }
 form .field .warning.active {
-  position: unset;
   visibility: visible;
 }
 form .quote-btn {
@@ -775,7 +776,6 @@ form .quote-btn {
   justify-content: center;
   gap: 2rem;
   width: 100%;
-  color: hsl(180deg, 8%, 97%);
   font-size: 1.4rem;
   line-height: 2.5rem;
   padding: 2rem;
@@ -794,6 +794,9 @@ form .quote-btn {
   .card-testi {
     width: 35rem;
   }
+}
+.card-testi .testi-para {
+  color: hsl(180deg, 8%, 97%);
 }
 .card-testi .profile {
   display: flex;
@@ -1140,6 +1143,10 @@ form .quote-btn {
   }
 }
 
+#quotes {
+  box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -1153,7 +1160,6 @@ form {
     border-radius: 0.5rem;
     border: 0.1rem solid hsl(212deg, 29%, 13%);
     padding: 4rem;
-    box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
   }
 }
 form .field {
@@ -1179,15 +1185,11 @@ form .field .form-field.active {
   background-position: center right 2.5rem;
 }
 form .field .warning {
-  position: absolute;
-  top: 0;
   visibility: hidden;
   font-size: 1.2rem;
   color: hsl(0deg, 100%, 63%);
-  transition: all 300ms ease-in-out;
 }
 form .field .warning.active {
-  position: unset;
   visibility: visible;
 }
 form .quote-btn {
@@ -1206,10 +1208,11 @@ form .quote-btn {
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  padding: 8rem 2rem;
+  padding: 8rem 1rem;
   width: 100%;
   color: hsl(212deg, 29%, 13%);
   min-height: 100vh;
+  background: hsl(0deg, 0%, 90%);
 }
 @media (min-width: 768px) {
   #contact-us {
@@ -1227,6 +1230,7 @@ form .quote-btn {
   font-size: 2.5rem;
   text-align: center;
   font-weight: 600;
+  color: hsl(204deg, 68%, 30%);
 }
 @media (min-width: 768px) {
   #contact-us h2 {
@@ -1238,18 +1242,29 @@ form .quote-btn {
     font-size: 5rem;
   }
 }
-#contact-us form {
+#contact-us #contact-form {
   width: 100%;
+  padding: 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: hsl(204deg, 68%, 30%);
+  color: hsl(180deg, 8%, 97%);
+  transition: all 300ms ease-in-out;
+  gap: 2rem;
 }
-@media (min-width: 768px) {
-  #contact-us form {
-    border: 0.1rem solid hsl(212deg, 29%, 13%);
+@media (min-width: 425px) {
+  #contact-us #contact-form {
     padding: 4rem;
-    border-radius: 0.5rem;
-    box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
   }
 }
-#contact-us form h3 {
+#contact-us #contact-form .form-field {
+  border: none;
+}
+#contact-us #contact-form:hover {
+  box-shadow: 0rem 0rem 1.5rem hsla(212deg, 29%, 13%, 0.4);
+  cursor: pointer;
+}
+#contact-us #contact-form h3 {
   text-align: center;
   width: 100%;
 }
