@@ -3,6 +3,7 @@
 /* 10px */
 /* colors */
 /* warning */
+/* warning */
 /* navigation footer bg */
 /* font */
 /* font */
@@ -492,6 +493,7 @@ form .field .form-field.active {
   background-repeat: no-repeat;
   background-size: 1.5rem;
   background-position: center right 2.5rem;
+  border: 0.1rem solid hsl(0deg, 100%, 63%);
 }
 form .field .warning {
   visibility: hidden;
@@ -1183,6 +1185,7 @@ form .field .form-field.active {
   background-repeat: no-repeat;
   background-size: 1.5rem;
   background-position: center right 2.5rem;
+  border: 0.1rem solid hsl(0deg, 100%, 63%);
 }
 form .field .warning {
   visibility: hidden;
@@ -1258,7 +1261,10 @@ form .quote-btn {
   }
 }
 #contact-us #contact-form .form-field {
-  border: none;
+  border: 0.2rem solid transparent;
+}
+#contact-us #contact-form .form-field.active {
+  border: 0.2rem solid hsl(0deg, 100%, 63%);
 }
 #contact-us #contact-form:hover {
   box-shadow: 0rem 0rem 1.5rem hsla(212deg, 29%, 13%, 0.4);
