@@ -1532,13 +1532,13 @@ form .quote-btn {
   border-radius: 20px;
   text-align: center;
 }
-.services-container .rate-range,
-.rates-container .rate-range {
+.services-container .rate-range-to,
+.rates-container .rate-range-to {
   width: 100%;
   background: rgb(64, 91, 141);
   padding: 25px;
   margin-right: 15px;
-  margin-left: 15px;
+  margin-left: 20px;
   margin-top: 12px;
   gap: 10px;
   border-radius: 20px;
