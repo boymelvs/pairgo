@@ -28,7 +28,7 @@ const slides = document.querySelectorAll(".slide");
 let currentSlide = 0;
 
 const runSlide = () => {
-   if (currentSlide == 3) {
+   if (currentSlide == slides.length) {
       currentSlide = 0;
    }
 
@@ -41,7 +41,7 @@ const runSlide = () => {
 
 let timer = setInterval(() => {
    runSlide();
-}, 5000);
+}, 3000);
 
 /* ================= MENU ITEM ================= */
 /* function that add/remove active class in menu items */

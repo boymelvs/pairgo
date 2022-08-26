@@ -3,7 +3,6 @@
 /* 10px */
 /* colors */
 /* warning */
-/* warning */
 /* navigation footer bg */
 /* font */
 /* font */
@@ -434,9 +433,10 @@ form .quote-btn:active, #hero .hero-contact .hero-btn-container #hero-btn:active
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  padding: 0 2rem;
   width: 100%;
 }
-@media (min-width: 1201px) {
+@media (min-width: 768px) {
   .quote-container {
     padding: 0 4rem;
   }
@@ -448,13 +448,12 @@ form .quote-btn:active, #hero .hero-contact .hero-btn-container #hero-btn:active
 }
 @media (min-width: 768px) {
   .quote-container h2 {
-    font-size: 3.5rem;
-  }
-}
-@media (min-width: 992px) {
-  .quote-container h2 {
     font-size: 5rem;
   }
+}
+
+#quotes {
+  box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
 }
 
 form {
@@ -464,12 +463,11 @@ form {
   justify-content: center;
   gap: 1rem;
   width: 100%;
-  border-radius: 0.5rem;
-  padding: 2rem;
-  border: 0.1rem solid hsl(212deg, 29%, 13%);
 }
 @media (min-width: 992px) {
   form {
+    border-radius: 0.5rem;
+    border: 0.1rem solid hsl(212deg, 29%, 13%);
     padding: 4rem;
   }
 }
@@ -494,7 +492,6 @@ form .field .form-field.active {
   background-repeat: no-repeat;
   background-size: 1.5rem;
   background-position: center right 2.5rem;
-  border: 0.1rem solid hsl(0deg, 100%, 63%);
 }
 form .field .warning {
   visibility: hidden;
@@ -510,11 +507,6 @@ form .quote-btn {
   background: hsl(45deg, 93%, 50%);
 }
 
-@media (min-width: 768px) {
-  #quotes {
-    box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
-  }
-}
 #services {
   display: flex;
   flex-direction: column;
@@ -922,7 +914,6 @@ form .quote-btn {
 }
 .team-container .team-card img {
   width: 20rem;
-  height: 20rem;
   border-radius: 1rem;
 }
 .team-container .team-card .name {
@@ -983,78 +974,6 @@ form .quote-btn {
     font-size: 3.5rem;
   }
 }
-<<<<<<< HEAD
-#teams h3 {
-  font-size: 1.8rem;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  text-align: center;
-  color: rgb(26, 24, 24);
-}
-@media (min-width: 768px) {
-  #teams h3 {
-    font-size: 1.8rem;
-  }
-}
-
-#about {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0;
-  background: hsl(204deg, 68%, 30%);
-  width: 100%;
-  padding: 2rem 0;
-  text-align: center;
-}
-@media (min-width: 576px) {
-  #about {
-    padding: 4rem;
-  }
-}
-#about h1 {
-  font-size: 3rem;
-  font-style: underline;
-}
-#about h2 {
-  font-size: 2rem;
-  color: hsl(180deg, 8%, 97%);
-}
-@media (min-width: 768px) {
-  #about h2 {
-    font-size: 3.5rem;
-  }
-}
-#about {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-  padding: 4rem 2rem;
-  background-image: url("../../../../images/icons/testomonial/bg-quotes.png");
-  background-repeat: no-repeat;
-  background-size: 4rem;
-  background-position: top 1rem left 1rem;
-  z-index: 1;
-}
-@media (min-width: 576px) {
-  #about {
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-position: top 1rem left 2rem;
-  }
-}
-@media (min-width: 992px) {
-  #about {
-    gap: 4rem;
-    padding: 8rem 2rem;
-    background-position: top 5rem left 2rem;
-  }
-}
-
-=======
->>>>>>> f4f6230a1b145776f63d0e0ab45eec67f9acff45
 @media (min-width: 992px) {
   #teams h2 {
     font-size: 5rem;
@@ -1205,9 +1124,10 @@ form .quote-btn {
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  padding: 0 2rem;
   width: 100%;
 }
-@media (min-width: 1201px) {
+@media (min-width: 768px) {
   .quote-container {
     padding: 0 4rem;
   }
@@ -1219,13 +1139,12 @@ form .quote-btn {
 }
 @media (min-width: 768px) {
   .quote-container h2 {
-    font-size: 3.5rem;
-  }
-}
-@media (min-width: 992px) {
-  .quote-container h2 {
     font-size: 5rem;
   }
+}
+
+#quotes {
+  box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
 }
 
 form {
@@ -1235,12 +1154,11 @@ form {
   justify-content: center;
   gap: 1rem;
   width: 100%;
-  border-radius: 0.5rem;
-  padding: 2rem;
-  border: 0.1rem solid hsl(212deg, 29%, 13%);
 }
 @media (min-width: 992px) {
   form {
+    border-radius: 0.5rem;
+    border: 0.1rem solid hsl(212deg, 29%, 13%);
     padding: 4rem;
   }
 }
@@ -1265,7 +1183,6 @@ form .field .form-field.active {
   background-repeat: no-repeat;
   background-size: 1.5rem;
   background-position: center right 2.5rem;
-  border: 0.1rem solid hsl(0deg, 100%, 63%);
 }
 form .field .warning {
   visibility: hidden;
@@ -1281,11 +1198,6 @@ form .quote-btn {
   background: hsl(45deg, 93%, 50%);
 }
 
-@media (min-width: 768px) {
-  #quotes {
-    box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
-  }
-}
 .my-header {
   background: hsl(45deg, 93%, 50%);
 }
@@ -1346,10 +1258,7 @@ form .quote-btn {
   }
 }
 #contact-us #contact-form .form-field {
-  border: 0.2rem solid transparent;
-}
-#contact-us #contact-form .form-field.active {
-  border: 0.2rem solid hsl(0deg, 100%, 63%);
+  border: none;
 }
 #contact-us #contact-form:hover {
   box-shadow: 0rem 0rem 1.5rem hsla(212deg, 29%, 13%, 0.4);
@@ -1377,27 +1286,22 @@ form .quote-btn {
   min-width: 35rem;
   width: 100%;
 }
-#service-offers .services-title, #service-offers .rates-title, #service-offers .quote-title,
+#service-offers .services-title, #service-offers .rates-title,
 #rates .services-title,
-#rates .rates-title,
-#rates .quote-title {
+#rates .rates-title {
   text-align: center;
-  text-shadow: 1px 2px 3px rgb(0, 0, 0);
-  color: hsl(45deg, 93%, 50%);
 }
 @media (min-width: 768px) {
-  #service-offers .services-title, #service-offers .rates-title, #service-offers .quote-title,
+  #service-offers .services-title, #service-offers .rates-title,
 #rates .services-title,
-#rates .rates-title,
-#rates .quote-title {
+#rates .rates-title {
     font-size: 3.5rem;
   }
 }
 @media (min-width: 992px) {
-  #service-offers .services-title, #service-offers .rates-title, #service-offers .quote-title,
+  #service-offers .services-title, #service-offers .rates-title,
 #rates .services-title,
-#rates .rates-title,
-#rates .quote-title {
+#rates .rates-title {
     font-size: 5rem;
   }
 }
@@ -1460,11 +1364,12 @@ form .quote-btn {
     font-size: 1.4rem;
   }
 }
-.services-container .warehouse-container, .services-container .office-container, .services-container .storage-racks-container, .services-container .cold-storage-container, .services-container .special-storage-container, .services-container .vehicle-area-container, .services-container .basic-rate-container, .services-container .special-cargo-container, .services-container .service-charge-container, .services-container .deconsolidation-fee-container, .services-container .return-fee-container,
+.services-container .warehouse-container, .services-container .office-container, .services-container .storage-racks-container, .services-container .cold-storage-container, .services-container .refrigerated-van-container, .services-container .special-storage-container, .services-container .vehicle-area-container, .services-container .basic-rate-container, .services-container .special-cargo-container, .services-container .service-charge-container, .services-container .deconsolidation-fee-container, .services-container .return-fee-container,
 .rates-container .warehouse-container,
 .rates-container .office-container,
 .rates-container .storage-racks-container,
 .rates-container .cold-storage-container,
+.rates-container .refrigerated-van-container,
 .rates-container .special-storage-container,
 .rates-container .vehicle-area-container,
 .rates-container .basic-rate-container,
@@ -1481,11 +1386,12 @@ form .quote-btn {
   justify-content: center;
   width: 100%;
 }
-.services-container .warehouse-container h2, .services-container .office-container h2, .services-container .storage-racks-container h2, .services-container .cold-storage-container h2, .services-container .special-storage-container h2, .services-container .vehicle-area-container h2, .services-container .basic-rate-container h2, .services-container .special-cargo-container h2, .services-container .service-charge-container h2, .services-container .deconsolidation-fee-container h2, .services-container .return-fee-container h2,
+.services-container .warehouse-container h2, .services-container .office-container h2, .services-container .storage-racks-container h2, .services-container .cold-storage-container h2, .services-container .refrigerated-van-container h2, .services-container .special-storage-container h2, .services-container .vehicle-area-container h2, .services-container .basic-rate-container h2, .services-container .special-cargo-container h2, .services-container .service-charge-container h2, .services-container .deconsolidation-fee-container h2, .services-container .return-fee-container h2,
 .rates-container .warehouse-container h2,
 .rates-container .office-container h2,
 .rates-container .storage-racks-container h2,
 .rates-container .cold-storage-container h2,
+.rates-container .refrigerated-van-container h2,
 .rates-container .special-storage-container h2,
 .rates-container .vehicle-area-container h2,
 .rates-container .basic-rate-container h2,
@@ -1493,9 +1399,42 @@ form .quote-btn {
 .rates-container .service-charge-container h2,
 .rates-container .deconsolidation-fee-container h2,
 .rates-container .return-fee-container h2 {
-  text-align: left;
+  text-align: center;
   width: 100%;
-  text-shadow: 1px 2px 3px rgb(0, 0, 0);
+  color: hsl(45deg, 93%, 50%);
+}
+.services-container .warehouse-container h3, .services-container .office-container h3, .services-container .storage-racks-container h3, .services-container .cold-storage-container h3, .services-container .refrigerated-van-container h3, .services-container .special-storage-container h3, .services-container .vehicle-area-container h3, .services-container .basic-rate-container h3, .services-container .special-cargo-container h3, .services-container .service-charge-container h3, .services-container .deconsolidation-fee-container h3, .services-container .return-fee-container h3,
+.rates-container .warehouse-container h3,
+.rates-container .office-container h3,
+.rates-container .storage-racks-container h3,
+.rates-container .cold-storage-container h3,
+.rates-container .refrigerated-van-container h3,
+.rates-container .special-storage-container h3,
+.rates-container .vehicle-area-container h3,
+.rates-container .basic-rate-container h3,
+.rates-container .special-cargo-container h3,
+.rates-container .service-charge-container h3,
+.rates-container .deconsolidation-fee-container h3,
+.rates-container .return-fee-container h3 {
+  text-align: center;
+  width: 100%;
+  color: white;
+  font-size: 5rem;
+}
+.services-container .warehouse-container ul, .services-container .office-container ul, .services-container .storage-racks-container ul, .services-container .cold-storage-container ul, .services-container .refrigerated-van-container ul, .services-container .special-storage-container ul, .services-container .vehicle-area-container ul, .services-container .basic-rate-container ul, .services-container .special-cargo-container ul, .services-container .service-charge-container ul, .services-container .deconsolidation-fee-container ul, .services-container .return-fee-container ul,
+.rates-container .warehouse-container ul,
+.rates-container .office-container ul,
+.rates-container .storage-racks-container ul,
+.rates-container .cold-storage-container ul,
+.rates-container .refrigerated-van-container ul,
+.rates-container .special-storage-container ul,
+.rates-container .vehicle-area-container ul,
+.rates-container .basic-rate-container ul,
+.rates-container .special-cargo-container ul,
+.rates-container .service-charge-container ul,
+.rates-container .deconsolidation-fee-container ul,
+.rates-container .return-fee-container ul {
+  list-style-type: none;
 }
 .services-container .warehouse, .services-container .office,
 .rates-container .warehouse,
@@ -1508,9 +1447,10 @@ form .quote-btn {
   align-items: center;
   justify-content: center;
 }
-.services-container .storage-racks, .services-container .cold-storage, .services-container .special-storage-fee, .services-container .vehicle-area, .services-container .basic-rate, .services-container .special-cargo, .services-container .service-charge, .services-container .deconsolidation-fee, .services-container .return-fee,
+.services-container .storage-racks, .services-container .cold-storage, .services-container .refrigerated-van, .services-container .special-storage-fee, .services-container .vehicle-area, .services-container .basic-rate, .services-container .special-cargo, .services-container .service-charge, .services-container .deconsolidation-fee, .services-container .return-fee,
 .rates-container .storage-racks,
 .rates-container .cold-storage,
+.rates-container .refrigerated-van,
 .rates-container .special-storage-fee,
 .rates-container .vehicle-area,
 .rates-container .basic-rate,
@@ -1525,70 +1465,39 @@ form .quote-btn {
   width: 100%;
 }
 
-table.roundedCorners {
-  border-spacing: 0;
-  width: 100%;
-  text-align: center;
+.border {
+  height: 6rem;
+  padding: 1rem;
+  border: 1px solid hsl(180deg, 8%, 97%);
 }
-table.roundedCorners th,
-table.roundedCorners td {
-  border-bottom: 0.5px solid hsl(204deg, 68%, 30%);
-  padding: 20px;
-  width: 30%;
-  background-color: rgb(37, 71, 92);
-}
-table.roundedCorners table.roundedCorners tr:last-child > td {
-  border-bottom: none;
-}
-table.roundedCorners th {
-  background: rgb(10, 34, 50);
-}
-table.roundedCorners th:first-child {
-  border-top-left-radius: 20px;
-}
-table.roundedCorners th:last-child {
-  border-top-right-radius: 20px;
+@media (min-width: 768px) {
+  .border {
+    height: 5rem;
+  }
 }
 
-.dropbtn {
-  background-color: #04AA6D;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
+.cols-1 {
+  grid-column: 1/span 2;
 }
 
-.dropdown {
-  position: relative;
-  display: inline-block;
+.cols-2 {
+  grid-column: 3/span 2;
 }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+.cols-3 {
+  grid-column: 5/span 2;
 }
 
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+.cols-4 {
+  grid-column: 7/span 2;
 }
 
-.dropdown-content a:hover {
-  background-color: #ddd;
+.cols-5 {
+  grid-column: 9/span 2;
 }
 
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown:hover .dropbtn {
-  background-color: #3e8e41;
+.cols-6 {
+  grid-column: 11/span 2;
 }
 
 #about-main {
