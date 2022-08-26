@@ -1,407 +1,397 @@
 <!DOCTYPE html>
 <html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>PairGo</title>
+      <link rel="shortcut icon" href="./images/logo/logo.png" type="image/x-icon" />
+      <link rel="stylesheet" href="./styles/css/styles.css" />
+   </head>
 
-<head>
-   <meta charset="UTF-8" />
-   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <title>PairGo</title>
-   <link rel="shortcut icon" href="./images/logo/logo.png" type="image/x-icon" />
-   <link rel="stylesheet" href="./styles/css/styles.css" />
-</head>
+   <body id="stop-scroll">
+      <div id="my-home" class="container">
+         <header id="my-header">
+            <input type="checkbox" name="burger-checkbox" id="burger-checkbox" aria-label="burger checkbox" />
 
-<body id="stop-scroll">
-   <div id="my-home" class="container">
-      <header id="my-header">
-         <input type="checkbox" name="burger-checkbox" id="burger-checkbox" aria-label="burger checkbox" />
+            <a href="#" class="logo-container">
+               <img src="./images/logo/logo-W.png" class="logo" alt="PairGO Logo" />
+            </a>
 
-         <a href="#" class="logo-container">
-            <img src="./images/logo/logo-W.png" class="logo" alt="PairGO Logo" />
-         </a>
+            <nav class="nav-bar">
+               <ul class="menu">
+                  <li class="menu-item hero active"><a href="#my-home">Home</a></li>
+                  <li class="menu-item services"><a href="#services">Services</a></li>
+                  <li class="menu-item clients"><a href="#clients">Clients</a></li>
+                  <li class="menu-item teams"><a href="#teams">Our Team</a></li>
+                  <li class="menu-item about"><a href="./pages/about.html">About us</a></li>
+                  <li class="menu-item contacts"><a href="./pages/contact.html">Contact us</a></li>
+               </ul>
+            </nav>
 
-         <nav class="nav-bar">
-            <ul class="menu">
-               <li class="menu-item hero active"><a href="#my-home">Home</a></li>
-               <li class="menu-item services"><a href="#services">Services</a></li>
-               <li class="menu-item clients"><a href="#clients">Clients</a></li>
-               <li class="menu-item teams"><a href="#teams">Our Team</a></li>
-               <li class="menu-item about"><a href="./pages/about.html">About us</a></li>
-               <li class="menu-item contacts"><a href="./pages/contact.html">Contact us</a></li>
-            </ul>
-         </nav>
+            <label for="burger-checkbox" class="hamburger">
+               <span class="line line-top"></span>
+               <span class="line line-inner"></span>
+               <span class="line line-bottom"></span>
+            </label>
+         </header>
 
-         <label for="burger-checkbox" class="hamburger">
-            <span class="line line-top"></span>
-            <span class="line line-inner"></span>
-            <span class="line line-bottom"></span>
-         </label>
-      </header>
+         <main id="my-main">
+            <!-- /* first section */ -->
+            <section id="hero">
+               <h2 class="hero-title">
+                  <span> A LEADER IN THE </span>
+                  <span> INDUSTRY </span>
+               </h2>
 
-      <main id="my-main">
-         <!-- /* first section */ -->
-         <section id="hero">
-            <h2 class="hero-title">
-               <span> A LEADER IN THE </span>
-               <span> INDUSTRY </span>
-            </h2>
+               <div id="sliders">
+                  <div class="slide">
+                     <img src="./images/hero/hero2.jpg" alt="Inside Warehouse" />
+                  </div>
 
-            <div id="sliders">
-               <div class="slide">
-                  <img src="./images/hero/hero2.jpg" alt="Inside Warehouse" />
+                  <div class="slide">
+                     <img src="./images/hero/hero1.jpg" alt="Inside Warehouse" />
+                  </div>
+
+                  <div class="slide">
+                     <img src="./images/hero/hero3.jpg" alt="Inside Warehouse" />
+                  </div>
                </div>
 
-               <div class="slide">
-                  <img src="./images/hero/hero1.jpg" alt="Inside Warehouse" />
-               </div>
+               <div class="hero-contact">
+                  <div class="query-text" id="query-text">
+                     <span> FOR ANY </span>
+                     <span> QUESTIONS </span>
+                  </div>
 
-               <div class="slide">
-                  <img src="./images/hero/hero3.jpg" alt="Inside Warehouse" />
-               </div>
-            </div>
+                  <div class="call-text">Call: 123456789</div>
 
-            <div class="hero-contact">
-               <div class="query-text" id="query-text">
-                  <span> FOR ANY </span>
-                  <span> QUESTIONS </span>
-               </div>
-
-               <div class="call-text">Call: 123456789</div>
-
-               <div class="hero-btn-container">
-                  <a href="./pages/contact.html" rel="noopener noreferrer">
-                     <input type="button" id="hero-btn" value="Contact Us" />
-                  </a>
-               </div>
-            </div>
-         </section>
-
-         <!-- /* 2nd section */ -->
-         <section id="services">
-            <div class="offer-container">
-               <h2 class="offers-title">SERVICES</h2>
-               <h3 class="offers-subtitle">WHAT WE OFFER</h3>
-
-               <div class="offer-services">
-                  <a class ="card packaging" href="./pages/services.html">
-                        <img src="./images/icons/services/warehouse.svg" class="card-img" alt="Packages" />
-                        <div class="card-title">Warehousing</div>
-                        <div class="card-description">Warehousing is the process of storing goods in a warehouse.</div>
-               </a>
-
-                  <div class="card cold-storage">
-                     <a href="./pages/services.html">
-                     <img src="./images/icons/services/cold-storage.svg" class="card-img" alt="Packages" />
-                     <div class="card-title">Cold Storage</div>
-                     <div class="card-description">Special storage.</div>
+                  <div class="hero-btn-container">
+                     <a href="./pages/contact.html" rel="noopener noreferrer">
+                        <input type="button" id="hero-btn" value="Contact Us" />
                      </a>
                   </div>
                </div>
+            </section>
 
-               <div class="offer-services">
-                  <div class="card door-to-door">
-                     <img src="./images/icons/services/door-to-door.png" class="card-img" alt="Packages" />
-                     <div class="card-title">Shipping</div>
-                     <div class="card-description">Bring products from one warehouse to another.</div>
+            <!-- /* 2nd section */ -->
+            <section id="services">
+               <div class="offer-container">
+                  <h2 class="offers-title">SERVICES</h2>
+                  <h3 class="offers-subtitle">WHAT WE OFFER</h3>
+
+                  <div class="offer-services">
+                     <div class="card packaging">
+                        <img src="./images/icons/services/warehouse.svg" class="card-img" alt="Packages" />
+                        <div class="card-title">Packaging & Storage</div>
+                        <div class="card-description">Packaging is the technology of enclosing and protecting product.</div>
+                     </div>
+
+                     <div class="card cold-storage">
+                        <img src="./images/icons/services/cold-storage.svg" class="card-img" alt="Packages" />
+                        <div class="card-title">Cold Storage</div>
+                        <div class="card-description">Special storage.</div>
+                     </div>
                   </div>
 
-                  <div class="card transport-support">
-                     <img src="./images/icons/services/road.svg" class="card-img" alt="Packages" />
-                     <div class="card-title">Ground Transport</div>
-                     <div class="card-description">We provide transport support.</div>
+                  <div class="offer-services">
+                     <div class="card door-to-door">
+                        <img src="./images/icons/services/door-to-door.png" class="card-img" alt="Packages" />
+                        <div class="card-title">Delivery</div>
+                        <div class="card-description">Bring products anywhere in the philippines.</div>
+                     </div>
+
+                     <div class="card transport-support">
+                        <img src="./images/icons/services/road.svg" class="card-img" alt="Packages" />
+                        <div class="card-title">Ground Transport</div>
+                        <div class="card-description">We provide transport support.</div>
+                     </div>
+                  </div>
+
+                  <div class="service-rates">
+                     <a href="./pages/services.html"> READ MORE... </a>
                   </div>
                </div>
 
-            </div>
+               <div class="quote-container">
+                  <h2 class="quote-title">REQUEST A QUOTE</h2>
 
-            <div class="quote-container">
-               <h2 class="quote-title">REQUEST A QUOTE</h2>
-               <form action="" id="quotes">
-                  <div class="field name-container">
-                     <label for="name">Name</label>
-                     <input type="text" name="name" id="name" class="form-field" required />
-                     <div class="warning">Must not empty. At least min 5 & max 30 characters.</div>
-                  </div>
+                  <form action="" id="quotes">
+                     <div class="field name-container">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" class="form-field" required />
+                        <div class="warning">Must not empty. At least min 5 & max 30 characters.</div>
+                     </div>
 
-                  <div class="field email-container">
-                     <label for="email">Email</label>
-                     <input type="email" name="email" id="email" class="form-field" required />
-                     <div class="warning">Invalid email. Must not empty.</div>
-                  </div>
+                     <div class="field email-container">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" class="form-field" required />
+                        <div class="warning">Invalid email. Must not empty.</div>
+                     </div>
 
-                  <div class="field select-container">
-                     <label for="select-services">Services</label>
+                     <div class="field select-container">
+                        <label for="select-services">Services</label>
 
-                     <select id="select-services" name="services" class="form-field select-services" required>
-                        <option value="" selected disabled>Select Service</option>
+                        <select id="select-services" name="services" class="form-field select-services" required>
+                           <option value="" selected disabled>Select Service</option>
 
+                           <option value="packaging">Packaging</option>
 
-                        <option value="warehousing">Warehousing</option>
+                           <option value="Warehousing">Warehousing</option>
 
-                        <option value="cold-storag">Cold Storage</option>
+                           <option value="cold-storag">Cold Storage</option>
 
-                        <option value="tranport-support">Transport Support</option>
+                           <option value="tranport-support">Transport Support</option>
 
-                        <option value="shipping">Shipping</option>
-                     </select>
-                     <div class="warning">Please select.</div>
-                  </div>
+                           <option value="delivery">Delivery</option>
+                        </select>
+                        <div class="warning">Please select.</div>
+                     </div>
 
-                  <div class="field subject-container">
-                     <label for="subject">Subject</label>
-                     <input type="text" name="subject" id="subject" class="form-field" required />
-                     <div class="warning">Must not empty. At least min 5 & max 30 characters.</div>
-                  </div>
+                     <div class="field subject-container">
+                        <label for="subject">Subject</label>
+                        <input type="text" name="subject" id="subject" class="form-field" required />
+                        <div class="warning">Must not empty. At least min 5 & max 30 characters.</div>
+                     </div>
 
-                  <div class="field message-container">
-                     <label for="message">Message</label>
-                     <textarea type="text" name="message" id="message" class="form-field" rows="4" required></textarea>
-                     <div class="warning">Must not empty. At least min 5 & max 30 characters.</div>
-                  </div>
+                     <div class="field message-container">
+                        <label for="message">Message</label>
+                        <textarea type="text" name="message" id="message" class="form-field" rows="4" required></textarea>
+                        <div class="warning">Must not empty. At least min 5 & max 30 characters.</div>
+                     </div>
 
-                  <input type="submit" class="quote-btn" value="REQUEST" />
-               </form>
-            </div>
-         </section>
-
-         <!-- /* 3rd section */ -->
-         <section id="clients">
-            <div class="max-capacity">
-               <div class="client-title">Certified as the largest with maximum capacity</div>
-
-               <div class="capacity">
-                  <strong>
-                     <em> 40,000 square meters </em>
-                  </strong>
-                  — roughly the total area of storage, shipment and service. Pairgo is designated as Public Customs
-                  Bonded Warehouse number 83 by virtue of Customs memorandum
-                  order #6-87 operating the largest International Cargo Complex at Ninoy Aquino International Airport
-                  (NAIA) with a an exact total land area of 38,952.85 m2.
+                     <input type="submit" class="quote-btn" value="REQUEST" />
+                  </form>
                </div>
-            </div>
+            </section>
 
-            <h2>VALUED CLIENTS</h2>
+            <!-- /* 3rd section */ -->
+            <section id="clients">
+               <div class="max-capacity">
+                  <div class="client-title">Certified as the largest with maximum capacity</div>
 
-            <div class="client-para">
-               <span> Our valued partnerships with the top airline </span>
-               <span> and cargo companies help make our strides in the </span>
-               <span> industry continuously significant, relevant and trail-blazing. </span>
-            </div>
+                  <div class="capacity">
+                     <strong>
+                        <em> 40,000 square meters </em>
+                     </strong>
+                     — roughly the total area of storage, shipment and service. Pairgo is designated as Public Customs Bonded Warehouse number 83 by virtue of Customs memorandum
+                     order #6-87 operating the largest International Cargo Complex at Ninoy Aquino International Airport (NAIA) with a an exact total land area of 38,952.85 m2.
+                  </div>
+               </div>
 
-            <div class="client-container">
-               <img src="./images/client/singapore-airlines.svg" class="clients" alt="singapore airlines" />
+               <h2>VALUED CLIENTS</h2>
 
-               <img src="./images/client/cathay-pacific.svg" class="clients" alt="cathay-pacific airlines" />
+               <div class="client-para">
+                  <span> Our valued partnerships with the top airline </span>
+                  <span> and cargo companies help make our strides in the </span>
+                  <span> industry continuously significant, relevant and trail-blazing. </span>
+               </div>
 
-               <img src="./images/client/cebu-pacific-air.svg" class="clients" alt="cebu-pacific airlines" />
+               <div class="client-container">
+                  <img src="./images/client/singapore-airlines.svg" class="clients" alt="singapore airlines" />
 
-               <img src="./images/client/china-airlines-skyteam-1-.svg" class="clients" alt="china airlines" />
+                  <img src="./images/client/cathay-pacific.svg" class="clients" alt="cathay-pacific airlines" />
 
-               <img src="./images/client/emirates-skycargo.svg" class="clients" alt="emirates airlines" />
+                  <img src="./images/client/cebu-pacific-air.svg" class="clients" alt="cebu-pacific airlines" />
 
-               <img src="./images/client/etihad-airways-1.svg" class="clients" alt="etihad airlines" />
+                  <img src="./images/client/china-airlines-skyteam-1-.svg" class="clients" alt="china airlines" />
 
-               <img src="./images/client/eva-air.svg" class="clients" alt="eva airlines" />
+                  <img src="./images/client/emirates-skycargo.svg" class="clients" alt="emirates airlines" />
 
-               <img src="./images/client/gulf-air.svg" class="clients" alt="gulf air" />
+                  <img src="./images/client/etihad-airways-1.svg" class="clients" alt="etihad airlines" />
 
-               <img src="./images/client/qantas-3.svg" class="clients" alt="qantas airlines" />
+                  <img src="./images/client/eva-air.svg" class="clients" alt="eva airlines" />
 
-               <img src="./images/client/qatar-airways-1.svg" class="clients" alt="qatar airlines" />
+                  <img src="./images/client/gulf-air.svg" class="clients" alt="gulf air" />
 
-               <img src="./images/client/saudi-arabian-airlines-1.svg" class="clients" alt="saudia airlines" />
+                  <img src="./images/client/qantas-3.svg" class="clients" alt="qantas airlines" />
 
-               <img src="./images/client/kuwait-airways-1.svg" class="clients" alt="kuwait airlines" />
+                  <img src="./images/client/qatar-airways-1.svg" class="clients" alt="qatar airlines" />
 
-               <img src="./images/client/thai-airways-1.svg" class="clients" alt="thai airlines" />
+                  <img src="./images/client/saudi-arabian-airlines-1.svg" class="clients" alt="saudia airlines" />
 
-               <img src="./images/client/united-airlines-7.svg" class="clients" alt="united airlines" />
+                  <img src="./images/client/kuwait-airways-1.svg" class="clients" alt="kuwait airlines" />
 
-               <img src="./images/client/japan-airlines-5.svg" class="clients" alt="japan airlines" />
+                  <img src="./images/client/thai-airways-1.svg" class="clients" alt="thai airlines" />
 
-               <img src="./images/client/jetstar-airways.svg" class="clients" alt="jetstar airlines" />
+                  <img src="./images/client/united-airlines-7.svg" class="clients" alt="united airlines" />
 
-               <img src="./images/client/korean-air.svg" class="clients" alt="korean airlines" />
+                  <img src="./images/client/japan-airlines-5.svg" class="clients" alt="japan airlines" />
 
-               <img src="./images/client/oman-air.svg" class="clients" alt="oman airlines" />
+                  <img src="./images/client/jetstar-airways.svg" class="clients" alt="jetstar airlines" />
 
-               <img src="./images/client/royal-brunei-airlines-1.svg" class="clients" alt="royal brunei airlines" />
+                  <img src="./images/client/korean-air.svg" class="clients" alt="korean airlines" />
 
-               <img src="./images/client/turkish-airlines.svg" class="clients" alt="turkish airlines" />
+                  <img src="./images/client/oman-air.svg" class="clients" alt="oman airlines" />
 
-               <img src="./images/client/delta-airlines.svg" class="clients" alt="delta airlines" />
-            </div>
+                  <img src="./images/client/royal-brunei-airlines-1.svg" class="clients" alt="royal brunei airlines" />
 
-            <div class="see-all">
-               <a href="./pages/client.html"> SEE ALL... </a>
-            </div>
-         </section>
+                  <img src="./images/client/turkish-airlines.svg" class="clients" alt="turkish airlines" />
 
-         <!-- /* 4th section */ -->
-         <section id="testimonial">
-            <h2 class="testi-title">TESTIMONIALS</h2>
+                  <img src="./images/client/delta-airlines.svg" class="clients" alt="delta airlines" />
+               </div>
 
-            <div class="testi-container">
-               <div class="card-testi first-testi">
-                  <p class="testi-para">
-                     “Pairgo has made every element of the distribution process easy and achievable. As I new business
-                     owner, I had a lot to learn about logistics and shipping,
-                     and Pairgo was there for me every step of the way. I know avail thier services will be efficient,
-                     cost effective, and safe. They are professional, and a
-                     pleasure to work with.”
-                  </p>
+               <div class="see-all">
+                  <a href="./pages/client.html"> SEE ALL... </a>
+               </div>
+            </section>
 
-                  <div class="profile">
-                     <img src="./images/icons/testomonial/profile-1.jpg" alt="Satish Patel Pic" />
+            <!-- /* 4th section */ -->
+            <section id="testimonial">
+               <h2 class="testi-title">TESTIMONIALS</h2>
 
-                     <div class="name-position" id="name-position">
-                        <div class="name">Satish Patel</div>
-                        <div class="position">Founder & CEO, Huddle</div>
+               <div class="testi-container">
+                  <div class="card-testi first-testi">
+                     <p class="testi-para">
+                        “Pairgo has made every element of the distribution process easy and achievable. As I new business owner, I had a lot to learn about logistics and shipping,
+                        and Pairgo was there for me every step of the way. I know avail thier services will be efficient, cost effective, and safe. They are professional, and a
+                        pleasure to work with.”
+                     </p>
+
+                     <div class="profile">
+                        <img src="./images/icons/testomonial/profile-1.jpg" alt="Satish Patel Pic" />
+
+                        <div class="name-position" id="name-position">
+                           <div class="name">Satish Patel</div>
+                           <div class="position">Founder & CEO, Huddle</div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="card-testi second-testi">
+                     <p class="testi-para">
+                        We've worked with Pairgo multiple times over the past few years to handle some of our warehousing and shipping logistics. They are a pleasure to work with
+                        and have been very flexible in accommodating our needs. Quick in communication and reliable in service. We will continue to use Pairgo as a trusted business
+                        partner.”
+                     </p>
+
+                     <div class="profile">
+                        <img src="./images/icons/testomonial/profile-2.jpg" alt="Bruce McKenzie Pic" />
+
+                        <div class="name-position">
+                           <div class="name">Bruce McKenzie</div>
+                           <div class="position">Founder & CEO, Enterprise</div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="card-testi third-testi">
+                     <p class="testi-para">
+                        We have been customers of Pairgo for two years. They handle all our warehousing and shipping logistics for our busy event company and have been very
+                        accommodating to our special event needs. They also provide time sensitive kitting and mailing services getting our materials across the country in a timely
+                        fashion!”
+                     </p>
+                     <div class="profile">
+                        <img src="./images/icons/testomonial/profile-3.jpg" alt="Iva Boyd Pic" />
+                        <div class="name-position">
+                           <div class="name">Iva Boyd</div>
+                           <div class="position">Founder & CEO, Company</div>
+                        </div>
                      </div>
                   </div>
                </div>
+            </section>
 
-               <div class="card-testi second-testi">
-                  <p class="testi-para">
-                     We've worked with Pairgo multiple times over the past few years to handle some of our warehousing
-                     and shipping logistics. They are a pleasure to work with
-                     and have been very flexible in accommodating our needs. Quick in communication and reliable in
-                     service. We will continue to use Pairgo as a trusted business
-                     partner.”
-                  </p>
+            <!-- /* 5th section */ -->
+            <section id="teams">
+               <h2 class="team-title">MEET OUR DEDICATED TEAM</h2>
+               <div class="team-container">
+                  <div class="team-card">
+                     <img src="./images/teams/dax.jpg" alt="Dax" />
 
-                  <div class="profile">
-                     <img src="./images/icons/testomonial/profile-2.jpg" alt="Bruce McKenzie Pic" />
+                     <a href="https://daxtangco.github.io/portfolio/" target="_blank" rel="noopener noreferrer" class="name">
+                        <span> Dax </span>
+                     </a>
 
-                     <div class="name-position">
-                        <div class="name">Bruce McKenzie</div>
-                        <div class="position">Founder & CEO, Enterprise</div>
+                     <div class="team-port">Co-Founder, Manager</div>
+                  </div>
+
+                  <div class="team-card">
+                     <img src="./images/teams/teejay.jpg" alt="Teejay" />
+
+                     <a href="#" target="_blank" rel="noopener noreferrer" class="name">
+                        <span> Teejay </span>
+                     </a>
+
+                     <div class="team-port">Co-Founder, Manager</div>
+                  </div>
+
+                  <div class="team-card">
+                     <img src="./images/teams/bryan.png" alt="Bryan" />
+
+                     <a href="https://marcandrey1215.github.io/portfolio/" target="_blank" rel="noopener noreferrer" class="name">
+                        <span> Bryan </span>
+                     </a>
+
+                     <div class="team-port">Co-Founder, Manager</div>
+                  </div>
+
+                  <div class="team-card">
+                     <img src="./images/teams/melvin.png" alt="melvin" />
+
+                     <a href="https://boymelvs.github.io/PORTFOLIO/" target="_blank" rel="noopener noreferrer" class="name">
+                        <span> Melvin </span>
+                     </a>
+
+                     <div class="team-port">Co-Founder, Manager</div>
+                  </div>
+               </div>
+            </section>
+         </main>
+
+         <footer id="my-footer">
+            <div class="about-contact">
+               <div class="about-footer">
+                  <img src="./images/logo/logo-W.png" class="footer-logo" alt="PairGO footer logo" />
+
+                  <p class="about-para">Pairgo is a comprehensive cargo handling and storage service company established in 1987</p>
+
+                  <div class="social-media">
+                     <img src="./images/icons/social-media/facebook.svg" class="facebook" alt="facebook icon" />
+
+                     <img src="./images/icons/social-media/twitter.svg" class="twitter" alt="twitter icon" />
+
+                     <img src="./images/icons/social-media/youtube.svg" class="youtube" alt="youtube icon" />
+
+                     <img src="./images/icons/social-media/instagram.svg" class="instagram" alt="instagram icon" />
+                  </div>
+               </div>
+
+               <div class="contact-footer">
+                  <h2 class="contact-text-footer">Contacts</h2>
+                  <div class="contact-text-icon">
+                     <div class="contact-icon address">
+                        <img src="./images/icons/contact/icon-location.svg" alt="location icon" />
+                        <span>Nampicuan, Nueva Ecija</span>
+                     </div>
+
+                     <div class="contact-icon phone">
+                        <img src="./images/icons/contact/icon-phone.svg" alt="phone icon" />
+                        <span>12456789</span>
+                     </div>
+
+                     <div class="contact-icon mail">
+                        <img src="./images/icons/contact/icon-email.svg" alt="email icon" />
+                        <span>melvin@pairgo.com</span>
                      </div>
                   </div>
                </div>
-
-               <div class="card-testi third-testi">
-                  <p class="testi-para">
-                     We have been customers of Pairgo for two years. They handle all our warehousing and shipping
-                     logistics for our busy event company and have been very
-                     accommodating to our special event needs. They also provide time sensitive kitting and mailing
-                     services getting our materials across the country in a timely
-                     fashion!”
-                  </p>
-                  <div class="profile">
-                     <img src="./images/icons/testomonial/profile-3.jpg" alt="Iva Boyd Pic" />
-                     <div class="name-position">
-                        <div class="name">Iva Boyd</div>
-                        <div class="position">Founder & CEO, Company</div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </section>
-
-         <!-- /* 5th section */ -->
-         <section id="teams">
-            <h2 class="team-title">MEET OUR DEDICATED TEAM</h2>
-            <div class="team-container">
-               <div class="team-card">
-                  <img src="./images/profile/profile-1.jpg" alt="melvin" />
-
-                  <a href="#" target="_blank" rel="noopener noreferrer" class="name">
-                     <span> Dax </span>
-                  </a>
-
-                  <div class="team-port">Co-Founder, Project Manager</div>
-               </div>
-
-               <div class="team-card">
-                  <img src="./images/profile/profile-1.jpg" alt="melvin" />
-
-                  <a href="#" target="_blank" rel="noopener noreferrer" class="name">
-                     <span> Teejay </span>
-                  </a>
-
-                  <div class="team-port">Co-Founder, Project Manager</div>
-               </div>
-
-               <div class="team-card">
-                  <img src="./images/profile/profile-1.jpg" alt="melvin" />
-
-                  <a href="https://marcandrey1215.github.io/portfolio/" target="_blank" rel="noopener noreferrer"
-                     class="name">
-                     <span> Bryan </span>
-                  </a>
-
-                  <div class="team-port">Co-Founder, Project Manager</div>
-               </div>
-
-               <div class="team-card">
-                  <img src="./images/profile/profile-1.jpg" alt="melvin" />
-
-                  <a href="https://boymelvs.github.io/PORTFOLIO/" target="_blank" rel="noopener noreferrer"
-                     class="name">
-                     <span> Melvin </span>
-                  </a>
-
-                  <div class="team-port">Co-Founder, Project Manager</div>
-               </div>
-            </div>
-         </section>
-      </main>
-
-      <footer id="my-footer">
-         <div class="about-contact">
-            <div class="about-footer">
-               <img src="./images/logo/logo-W.png" class="footer-logo" alt="PairGO footer logo" />
-
-               <p class="about-para">Pairgo is a comprehensive cargo handling and storage service company established in
-                  1987</p>
-
-               <div class="social-media">
-                  <img src="./images/icons/social-media/facebook.svg" class="facebook" alt="facebook icon" />
-
-                  <img src="./images/icons/social-media/twitter.svg" class="twitter" alt="twitter icon" />
-
-                  <img src="./images/icons/social-media/youtube.svg" class="youtube" alt="youtube icon" />
-
-                  <img src="./images/icons/social-media/instagram.svg" class="instagram" alt="instagram icon" />
-               </div>
             </div>
 
-            <div class="contact-footer">
-               <h2 class="contact-text-footer">Contacts</h2>
-               <div class="contact-text-icon">
-                  <div class="contact-icon address">
-                     <img src="./images/icons/contact/icon-location.svg" alt="location icon" />
-                     <span>Nampicuan, Nueva Ecija</span>
-                  </div>
+            <div class="copyright-privacy">
+               <div class="copyright">
+                  <img src="./images/icons/social-media/copyright.svg" alt="copyright" />
+                  <span>Pairgo</span>
+               </div>
 
-                  <div class="contact-icon phone">
-                     <img src="./images/icons/contact/icon-phone.svg" alt="phone icon" />
-                     <span>12456789</span>
-                  </div>
-
-                  <div class="contact-icon mail">
-                     <img src="./images/icons/contact/icon-email.svg" alt="email icon" />
-                     <span>melvin@pairgo.com</span>
-                  </div>
+               <div class="privacy">
+                  <a href="#" target="_blank" rel="noopener noreferrer">Privacy Policy</a> |
+                  <a href="#" target="_blank" rel="noopener noreferrer">Terms & Conditions</a>
                </div>
             </div>
-         </div>
-
-         <div class="copyright-privacy">
-            <div class="copyright">
-               <img src="./images/icons/social-media/copyright.svg" alt="copyright" />
-               <span>Pairgo</span>
-            </div>
-
-            <div class="privacy">
-               <a href="#" target="_blank" rel="noopener noreferrer">Privacy Policy</a> |
-               <a href="#" target="_blank" rel="noopener noreferrer">Terms & Conditions</a>
-            </div>
-         </div>
-      </footer>
-   </div>
-   <script src="./scripts/index.js"></script>
-   <script src="./scripts/form-validation.js"></script>
-</body>
-
+         </footer>
+      </div>
+      <script src="./scripts/index.js"></script>
+      <script src="./scripts/form-validation.js"></script>
+   </body>
 </html>

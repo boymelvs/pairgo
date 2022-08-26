@@ -12,6 +12,33 @@
    width: 100%;
 
    & .services-title,
+   & .rates-title,
+   & .quote-title {
+      text-align: center;
+      text-shadow: 1px 2px 3px rgb(0, 0, 0);
+      color:hsl(45deg, 93%, 50%);
+
+      
+      
+
+      @media (min-width: 768px) {
+         font-size: 3.5rem;
+      }
+
+      @media (min-width: 992px) {
+         font-size: 5rem;
+      }
+   }
+
+   & .service-text {
+      & .para {
+         padding: 2rem;
+
+         @media (min-width: 768px) {
+            padding: 2rem 4rem;
+         }
+      }
+   }
 
    & .miscellaneous {
       @include flexBox(column, center, center, 1rem);
@@ -52,7 +79,6 @@
    & .office-container,
    & .storage-racks-container,
    & .cold-storage-container,
-   & .refrigerated-van-container,
    & .special-storage-container,
    & .vehicle-area-container,
    & .basic-rate-container,
@@ -66,29 +92,16 @@
       width: 100%;
 
       & h2 {
-         text-align: center;
+         text-align: left;
          width: 100%;
-         color: hsl(45deg, 93%, 50%);
-         font-size: 5rem;
          text-shadow: 1px 2px 3px rgb(0, 0, 0);
-      }
-
-      & h3 {
-         text-align: center;
-         width: 100%;
-         color: white;
-         font-size: 4rem;
-      }
-
-      & ul {
-         list-style-type: none;
       }
    }
 
    & .warehouse,
    & .office {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(10, 1fr);
       grid-template-rows: auto;
       text-align: center;
       width: 100%;
@@ -98,7 +111,6 @@
 
    & .storage-racks,
    & .cold-storage,
-   & .refrigerated-van,
    & .special-storage-fee,
    & .vehicle-area,
    & .basic-rate,
@@ -106,155 +118,74 @@
    & .service-charge,
    & .deconsolidation-fee,
    & .return-fee {
-      display: flex;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: auto;
       text-align: center;
       width: 100%;
-      justify-content: center;
-   }
-
-   & .storage-units-main,
-   & .cold-storage-type {
-      display: block;
-      align-items: center;
-      width: 100%;
-      background: rgba(16, 33, 64, 1);
-      padding-left: 70px;
-      padding-right: 70px;
-      padding-top: 25px;
-      height: 150px;
-      border-radius: 30px;
-   }
-
-   & .storage-racks-container-row {
-      margin: 30px;
-      justify-content: center;
-      align-items: center;
-   }
-
-   & .storage-units-info {
-      width: 100%;
-      background: rgba(16, 33, 64, 0.65);
-      padding: 20px;
-      margin-top: 10px;
-      border-radius: 30px;
-      height: 100px;
-      text-align: center;
-
-      & li {
-         font-size: 1.75rem;
-      }
-   }
-   & .basic-flex {
-      display:flex;
-   }
-   
-   & .gen-cargo,
-   & .from,
-   & .to {
-      width: 100%;
-      background: rgba(16, 33, 64, 1);
-      padding: auto;
-      margin: 10px;
-      height: 100%;
-      border-radius: 30px;
-      text-align: center;
-      white-space: nowrap;
-      overflow: visible;
-
-      h4 {
-         padding-top: 15px;
-         padding-bottom: 15px;
-         margin-left: 50px;
-         margin-right: 50px;
-         font-size: 2.5rem;
-      }
-   }
-   & .gen-cargo-type {
-      width: 100%;
-      background: rgb(64, 91, 141);
-      padding: 20px;
-      margin: 10px;
-      border-radius: 30px;
-      text-align: center;
-
-      h5 {
-         font-size: 2rem;
-         
-      }
-      
-   }
-   & .rate-range {
-      width: 100%;
-      background: rgb(64, 91, 141);
-      padding: 25px;
-      margin-right:15px;
-      margin-left: 15px;
-      margin-top: 12px;
-      gap: 10px;
-      border-radius: 20px;
-      text-align: center;
-   }
-   & .rate-range-to {
-      width: 100%;
-      background: rgb(64, 91, 141);
-      padding: 25px;
-      margin-right:15px;
-      margin-left: 20px;
-      margin-top: 12px;
-      gap: 10px;
-      border-radius: 20px;
-      text-align: center;
-}
-   & .rate-container {
-      width: 100%;
-      background: rgba(16, 33, 64, 1);
-      padding-left: 10px;
-      padding-right: 10px;
-      padding-bottom: 20px;
-      padding-top: 20px;
-      margin: 10px;
-      height: 100%;
-      border-radius: 30px;
-      text-align: center;
-      white-space: nowrap;
-      overflow: visible;
-      display: flex;
-      justify-content: start;
    }
 }
+ 
 
+table.roundedCorners { 
+   border-spacing: 0;
+   width: 100%;
+   text-align: center;
 
-
-.border {
-   height: 6rem;
-   padding: 1rem;
-   border: 1px solid $azure;
-
-   @media (min-width: 768px) {
-      height: 5rem;
+   th,
+ td { 
+   border-bottom: 0.5px solid hsl(204deg, 68%, 30%);
+   padding: 20px; 
+   width: 30%;
+   background-color: rgb(37, 71, 92);;
    }
-}
+   table.roundedCorners tr:last-child > td {
+      border-bottom: none;
+   }
+ th {
+   background: rgb(10, 34, 50);
 
-.cols-1 {
-   grid-column: 1 / span 2;
-}
+ }
+ th:first-child {
+   border-top-left-radius: 20px;
+ }
+ th:last-child {
+   border-top-right-radius: 20px;
+ }
+ }
 
-.cols-2 {
-   grid-column: 3 / span 2;
-}
+ .dropbtn {
+   background-color: #04AA6D;
+   color: white;
+   padding: 16px;
+   font-size: 16px;
+   border: none;
+ }
+ 
+ .dropdown {
+   position: relative;
+   display: inline-block;
+ }
+ 
+ .dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: #f1f1f1;
+   min-width: 160px;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+ }
+ 
+ .dropdown-content a {
+   color: black;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+ }
+ 
+ .dropdown-content a:hover {background-color: #ddd;}
+ 
+ .dropdown:hover .dropdown-content {display: block;}
+ 
+ .dropdown:hover .dropbtn {background-color: #3e8e41;}
 
-.cols-3 {
-   grid-column: 5 / span 2;
-}
-
-.cols-4 {
-   grid-column: 7 / span 2;
-}
-
-.cols-5 {
-   grid-column: 9 / span 2;
-}
-
-.cols-6 {
-   grid-column: 11 / span 2;
-}
