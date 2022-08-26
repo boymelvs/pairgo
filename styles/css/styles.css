@@ -530,20 +530,6 @@ form .quote-btn {
     align-items: start;
     gap: 0rem;
   }
-  #services a {
-    text-decoration: none;
-    transition: all ease 0.2s;
-  }
-  #services a:hover {
-    text-decoration: underline;
-    transform: translateY(-10px);
-  }
-  #services a:active {
-    color: black;
-  }
-  #services a:visited {
-    color: black;
-  }
 }
 #services .offer-container {
   display: flex;
@@ -610,6 +596,34 @@ form .quote-btn {
 #services .offer-container .offer-services .card .card-description {
   text-align: center;
   font-size: 1.2rem;
+}
+#services .offer-container .service-rates {
+  position: relative;
+}
+#services .offer-container .service-rates::before {
+  content: "";
+  position: absolute;
+  bottom: -0.5rem;
+  left: 0;
+  width: 100%;
+  border-bottom: 0.3rem solid hsl(212deg, 29%, 13%);
+  transform: scale(0, 1);
+  transform-origin: right;
+  transition: transform 300ms ease-in-out;
+}
+#services .offer-container .service-rates:hover::before {
+  transform: scale(1, 1);
+  transform-origin: left;
+}
+#services .offer-container .service-rates.active::before {
+  transform: scale(1, 1);
+  transform-origin: left;
+}
+#services .offer-container .service-rates a {
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: hsl(212deg, 29%, 13%);
+  font-weight: 600;
 }
 
 #clients {
@@ -1291,8 +1305,41 @@ form .quote-btn {
   min-width: 35rem;
   width: 100%;
 }
-#service-offers .services-title, #service-offers .miscellaneous,
+#service-offers .services-title, #service-offers .rates-title, #service-offers .quote-title,
 #rates .services-title,
+#rates .rates-title,
+#rates .quote-title {
+  text-align: center;
+  text-shadow: 1px 2px 3px rgb(0, 0, 0);
+  color: hsl(45deg, 93%, 50%);
+}
+@media (min-width: 768px) {
+  #service-offers .services-title, #service-offers .rates-title, #service-offers .quote-title,
+#rates .services-title,
+#rates .rates-title,
+#rates .quote-title {
+    font-size: 3.5rem;
+  }
+}
+@media (min-width: 992px) {
+  #service-offers .services-title, #service-offers .rates-title, #service-offers .quote-title,
+#rates .services-title,
+#rates .rates-title,
+#rates .quote-title {
+    font-size: 5rem;
+  }
+}
+#service-offers .service-text .para,
+#rates .service-text .para {
+  padding: 2rem;
+}
+@media (min-width: 768px) {
+  #service-offers .service-text .para,
+#rates .service-text .para {
+    padding: 2rem 4rem;
+  }
+}
+#service-offers .miscellaneous,
 #rates .miscellaneous {
   display: flex;
   flex-direction: column;
@@ -1302,26 +1349,22 @@ form .quote-btn {
   padding: 2rem;
   width: 100%;
 }
-#service-offers .services-title div, #service-offers .miscellaneous div,
-#rates .services-title div,
+#service-offers .miscellaneous div,
 #rates .miscellaneous div {
   padding: 0 2rem;
 }
 @media (min-width: 768px) {
-  #service-offers .services-title div, #service-offers .miscellaneous div,
-#rates .services-title div,
+  #service-offers .miscellaneous div,
 #rates .miscellaneous div {
     padding: 0rem 4rem;
   }
 }
-#service-offers .services-title ol, #service-offers .miscellaneous ol,
-#rates .services-title ol,
+#service-offers .miscellaneous ol,
 #rates .miscellaneous ol {
   padding: 2rem;
 }
 @media (min-width: 768px) {
-  #service-offers .services-title ol, #service-offers .miscellaneous ol,
-#rates .services-title ol,
+  #service-offers .miscellaneous ol,
 #rates .miscellaneous ol {
     padding: 2rem 4rem;
   }
@@ -1345,12 +1388,11 @@ form .quote-btn {
     font-size: 1.4rem;
   }
 }
-.services-container .warehouse-container, .services-container .office-container, .services-container .storage-racks-container, .services-container .cold-storage-container, .services-container .refrigerated-van-container, .services-container .special-storage-container, .services-container .vehicle-area-container, .services-container .basic-rate-container, .services-container .special-cargo-container, .services-container .service-charge-container, .services-container .deconsolidation-fee-container, .services-container .return-fee-container,
+.services-container .warehouse-container, .services-container .office-container, .services-container .storage-racks-container, .services-container .cold-storage-container, .services-container .special-storage-container, .services-container .vehicle-area-container, .services-container .basic-rate-container, .services-container .special-cargo-container, .services-container .service-charge-container, .services-container .deconsolidation-fee-container, .services-container .return-fee-container,
 .rates-container .warehouse-container,
 .rates-container .office-container,
 .rates-container .storage-racks-container,
 .rates-container .cold-storage-container,
-.rates-container .refrigerated-van-container,
 .rates-container .special-storage-container,
 .rates-container .vehicle-area-container,
 .rates-container .basic-rate-container,
@@ -1367,12 +1409,11 @@ form .quote-btn {
   justify-content: center;
   width: 100%;
 }
-.services-container .warehouse-container h2, .services-container .office-container h2, .services-container .storage-racks-container h2, .services-container .cold-storage-container h2, .services-container .refrigerated-van-container h2, .services-container .special-storage-container h2, .services-container .vehicle-area-container h2, .services-container .basic-rate-container h2, .services-container .special-cargo-container h2, .services-container .service-charge-container h2, .services-container .deconsolidation-fee-container h2, .services-container .return-fee-container h2,
+.services-container .warehouse-container h2, .services-container .office-container h2, .services-container .storage-racks-container h2, .services-container .cold-storage-container h2, .services-container .special-storage-container h2, .services-container .vehicle-area-container h2, .services-container .basic-rate-container h2, .services-container .special-cargo-container h2, .services-container .service-charge-container h2, .services-container .deconsolidation-fee-container h2, .services-container .return-fee-container h2,
 .rates-container .warehouse-container h2,
 .rates-container .office-container h2,
 .rates-container .storage-racks-container h2,
 .rates-container .cold-storage-container h2,
-.rates-container .refrigerated-van-container h2,
 .rates-container .special-storage-container h2,
 .rates-container .vehicle-area-container h2,
 .rates-container .basic-rate-container h2,
@@ -1380,60 +1421,24 @@ form .quote-btn {
 .rates-container .service-charge-container h2,
 .rates-container .deconsolidation-fee-container h2,
 .rates-container .return-fee-container h2 {
-  text-align: center;
+  text-align: left;
   width: 100%;
-  color: hsl(45deg, 93%, 50%);
-  font-size: 5rem;
   text-shadow: 1px 2px 3px rgb(0, 0, 0);
-}
-.services-container .warehouse-container h3, .services-container .office-container h3, .services-container .storage-racks-container h3, .services-container .cold-storage-container h3, .services-container .refrigerated-van-container h3, .services-container .special-storage-container h3, .services-container .vehicle-area-container h3, .services-container .basic-rate-container h3, .services-container .special-cargo-container h3, .services-container .service-charge-container h3, .services-container .deconsolidation-fee-container h3, .services-container .return-fee-container h3,
-.rates-container .warehouse-container h3,
-.rates-container .office-container h3,
-.rates-container .storage-racks-container h3,
-.rates-container .cold-storage-container h3,
-.rates-container .refrigerated-van-container h3,
-.rates-container .special-storage-container h3,
-.rates-container .vehicle-area-container h3,
-.rates-container .basic-rate-container h3,
-.rates-container .special-cargo-container h3,
-.rates-container .service-charge-container h3,
-.rates-container .deconsolidation-fee-container h3,
-.rates-container .return-fee-container h3 {
-  text-align: center;
-  width: 100%;
-  color: white;
-  font-size: 4rem;
-}
-.services-container .warehouse-container ul, .services-container .office-container ul, .services-container .storage-racks-container ul, .services-container .cold-storage-container ul, .services-container .refrigerated-van-container ul, .services-container .special-storage-container ul, .services-container .vehicle-area-container ul, .services-container .basic-rate-container ul, .services-container .special-cargo-container ul, .services-container .service-charge-container ul, .services-container .deconsolidation-fee-container ul, .services-container .return-fee-container ul,
-.rates-container .warehouse-container ul,
-.rates-container .office-container ul,
-.rates-container .storage-racks-container ul,
-.rates-container .cold-storage-container ul,
-.rates-container .refrigerated-van-container ul,
-.rates-container .special-storage-container ul,
-.rates-container .vehicle-area-container ul,
-.rates-container .basic-rate-container ul,
-.rates-container .special-cargo-container ul,
-.rates-container .service-charge-container ul,
-.rates-container .deconsolidation-fee-container ul,
-.rates-container .return-fee-container ul {
-  list-style-type: none;
 }
 .services-container .warehouse, .services-container .office,
 .rates-container .warehouse,
 .rates-container .office {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(10, 1fr);
   grid-template-rows: auto;
   text-align: center;
   width: 100%;
   align-items: center;
   justify-content: center;
 }
-.services-container .storage-racks, .services-container .cold-storage, .services-container .refrigerated-van, .services-container .special-storage-fee, .services-container .vehicle-area, .services-container .basic-rate, .services-container .special-cargo, .services-container .service-charge, .services-container .deconsolidation-fee, .services-container .return-fee,
+.services-container .storage-racks, .services-container .cold-storage, .services-container .special-storage-fee, .services-container .vehicle-area, .services-container .basic-rate, .services-container .special-cargo, .services-container .service-charge, .services-container .deconsolidation-fee, .services-container .return-fee,
 .rates-container .storage-racks,
 .rates-container .cold-storage,
-.rates-container .refrigerated-van,
 .rates-container .special-storage-fee,
 .rates-container .vehicle-area,
 .rates-container .basic-rate,
@@ -1441,160 +1446,77 @@ form .quote-btn {
 .rates-container .service-charge,
 .rates-container .deconsolidation-fee,
 .rates-container .return-fee {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto;
   text-align: center;
   width: 100%;
-  justify-content: center;
 }
-.services-container .storage-units-main, .services-container .cold-storage-type,
-.rates-container .storage-units-main,
-.rates-container .cold-storage-type {
+
+table.roundedCorners {
+  border-spacing: 0;
+  width: 100%;
+  text-align: center;
+}
+table.roundedCorners th,
+table.roundedCorners td {
+  border-bottom: 0.5px solid hsl(204deg, 68%, 30%);
+  padding: 20px;
+  width: 30%;
+  background-color: rgb(37, 71, 92);
+}
+table.roundedCorners table.roundedCorners tr:last-child > td {
+  border-bottom: none;
+}
+table.roundedCorners th {
+  background: rgb(10, 34, 50);
+}
+table.roundedCorners th:first-child {
+  border-top-left-radius: 20px;
+}
+table.roundedCorners th:last-child {
+  border-top-right-radius: 20px;
+}
+
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
   display: block;
-  align-items: center;
-  width: 100%;
-  background: rgb(16, 33, 64);
-  padding-left: 70px;
-  padding-right: 70px;
-  padding-top: 25px;
-  height: 150px;
-  border-radius: 30px;
-}
-.services-container .storage-racks-container-row,
-.rates-container .storage-racks-container-row {
-  margin: 30px;
-  justify-content: center;
-  align-items: center;
-}
-.services-container .storage-units-info,
-.rates-container .storage-units-info {
-  width: 100%;
-  background: rgba(16, 33, 64, 0.65);
-  padding: 20px;
-  margin-top: 10px;
-  border-radius: 30px;
-  height: 100px;
-  text-align: center;
-}
-.services-container .storage-units-info li,
-.rates-container .storage-units-info li {
-  font-size: 1.75rem;
-}
-.services-container .basic-flex,
-.rates-container .basic-flex {
-  display: flex;
-}
-.services-container .gen-cargo, .services-container .from, .services-container .to,
-.rates-container .gen-cargo,
-.rates-container .from,
-.rates-container .to {
-  width: 100%;
-  background: rgb(16, 33, 64);
-  padding: auto;
-  margin: 10px;
-  height: 100%;
-  border-radius: 30px;
-  text-align: center;
-  white-space: nowrap;
-  overflow: visible;
-}
-.services-container .gen-cargo h4, .services-container .from h4, .services-container .to h4,
-.rates-container .gen-cargo h4,
-.rates-container .from h4,
-.rates-container .to h4 {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  margin-left: 50px;
-  margin-right: 50px;
-  font-size: 2.5rem;
-}
-.services-container .gen-cargo-type,
-.rates-container .gen-cargo-type {
-  width: 100%;
-  background: rgb(64, 91, 141);
-  padding: 20px;
-  margin: 10px;
-  border-radius: 30px;
-  text-align: center;
-}
-.services-container .gen-cargo-type h5,
-.rates-container .gen-cargo-type h5 {
-  font-size: 2rem;
-}
-.services-container .rate-range,
-.rates-container .rate-range {
-  width: 100%;
-  background: rgb(64, 91, 141);
-  padding: 25px;
-  margin-right: 15px;
-  margin-left: 15px;
-  margin-top: 12px;
-  gap: 10px;
-  border-radius: 20px;
-  text-align: center;
-}
-.services-container .rate-range-to,
-.rates-container .rate-range-to {
-  width: 100%;
-  background: rgb(64, 91, 141);
-  padding: 25px;
-  margin-right: 15px;
-  margin-left: 20px;
-  margin-top: 12px;
-  gap: 10px;
-  border-radius: 20px;
-  text-align: center;
-}
-.services-container .rate-container,
-.rates-container .rate-container {
-  width: 100%;
-  background: rgb(16, 33, 64);
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 20px;
-  padding-top: 20px;
-  margin: 10px;
-  height: 100%;
-  border-radius: 30px;
-  text-align: center;
-  white-space: nowrap;
-  overflow: visible;
-  display: flex;
-  justify-content: start;
 }
 
-.border {
-  height: 6rem;
-  padding: 1rem;
-  border: 1px solid hsl(180deg, 8%, 97%);
-}
-@media (min-width: 768px) {
-  .border {
-    height: 5rem;
-  }
+.dropdown-content a:hover {
+  background-color: #ddd;
 }
 
-.cols-1 {
-  grid-column: 1/span 2;
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
-.cols-2 {
-  grid-column: 3/span 2;
-}
-
-.cols-3 {
-  grid-column: 5/span 2;
-}
-
-.cols-4 {
-  grid-column: 7/span 2;
-}
-
-.cols-5 {
-  grid-column: 9/span 2;
-}
-
-.cols-6 {
-  grid-column: 11/span 2;
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
 }
 
 #about-main {
